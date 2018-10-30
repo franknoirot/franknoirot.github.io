@@ -1,135 +1,83 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+---
+layout: default
+---
+<section id='personal-info' class='row'>
+  <div class='col-4'>
+    <img src="assets/img/profile-pic.jpg" class="img-fluid" alt="">
+  </div>
+  <div class='card col-8'>
+    <h1>Frank Noirot</h1>
+    <nav>
+      <nav>
+       <div class="nav nav-tabs" id="nav-tab" role="tablist">
+         <a class="nav-item nav-link active" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="true">About</a>
+         <a class="nav-item nav-link" id="nav-principles-tab" data-toggle="tab" href="#nav-principles" role="tab" aria-controls="nav-principles" aria-selected="false">Principles</a>
+         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+       </div>
+      </nav>
+      <div class="tab-content card-body" id="nav-tabContent">
+       <div class="tab-pane fade show active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+         <p>My name's Francis RJ Noirot. I design objects, applications, and organizations.</p>
+         <p>I use this site as a to-do list for myself, and a portfolio for you.</p>
+         <blockquote>Right now I'm really into <em>automation &amp; scripting</em>.</blockquote>
+       </div>
+       <div class="tab-pane fade" id="nav-principles" role="tabpanel" aria-labelledby="nav-principles-tab">
+         <ul>
+           <li>Waste is a design flaw.</li>
+           <li>Nature is smarter than you.</li>
+           <li>Privilege is a debt to be repaid.</li>
+           <li>Opensource is not optional.</li>
+           <li>If you don't document it, it doesn't exist.</li>
+         </ul>
+       </div>
+       <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+         <p><a href='/resume-fj.html'><i class='far fa-file-alt fa-fw'></i>Personal Resumé</p>
+         <p><a href='https://instagram.com/franknoirot/'><i class='fab fa-instagram fa-fw'></i>@franknoirot</a></p>
+         <p><a href='https://github.com/franknoirot'><i class='fab fa-github fa-fw'></i>@franknoirot</a></p>
+       </div>
+      </div>
+    </nav>
+  </section>
 
-    <title>Blog Template for Bootstrap</title>
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  {%- if site.posts.size > 0 -%}
+  <section id='work'>
+    {%- for category in site.categories  -%}
+    {% assign catName = category[0] %}
+    <div id='work-{{ category[0] }}' class='category-container'>
+      <a class='category-toggle' data-toggle="collapse" href="#{{ category[0] }}Collapse" role="button" aria-expanded="false" aria-controls="{{ category[0] }}Collapse">
+        <h2><i class="{%- case catName -%}{%- when 'code' -%}fas fa-code {%- when 'make' -%}far fa-hand-paper {%- when 'read' -%}fas fa-book {%- when 'write' -%}fas fa-pencil-alt {% endcase %} fa-fw"></i>{{ category[0] | capitalize }}</h2></a>
+      <div class="collapse" id="{{ category[0] }}Collapse">
+        {%- for post in category[1] -%}
+        <a class='featured-work' href='{{- post.url -}}'>
+          <div class="row">
+            {% if post.featured_image %}
+            <img class='img-thumbnail' src='{{-  post.featured_image -}}'>
+            {% endif %}
+            <div class='card-body'>
+              <h3>{{ post.title | escape }}</h3>
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              <p class="post-meta">{{ post.date | date: date_format }}</p>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+              {%- if post.excerpt -%}
+                {{ post.excerpt }}
+              {%- endif -%}
 
-    <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
-  </head>
+              {% if post.tags %}
+              <p>
+                {% for tag in post.tags %}
+                  <em>#{{- tag -}} </em>
+                {% endfor %}
+              </p>
+              {% endif %}
 
-  <body>
-    <div class='container'>
-      <section id='personal-info' class='row'>
-        <div class='col-4'>
-          <img src="assets/profile-pic.jpg" class="img-fluid" alt="">
-        </div>
-        <div class='card col-8'>
-          <h1>Frank Noirot</h1>
-          <nav>
-            <nav>
-             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-               <a class="nav-item nav-link active" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="true">About</a>
-               <a class="nav-item nav-link" id="nav-principles-tab" data-toggle="tab" href="#nav-principles" role="tab" aria-controls="nav-principles" aria-selected="false">Principles</a>
-               <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
-             </div>
-            </nav>
-            <div class="tab-content" id="nav-tabContent">
-             <div class="tab-pane fade show active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-               <p>My name's Francis RJ Noirot. I design objects, applications, and organizations.</p>
-               <p>I use this site as a to-do list for myself, and a portfolio for you.</p>
-               <blockquote>Right now I'm really into <em>automation &amp; scripting</em>.</blockquote>
-             </div>
-             <div class="tab-pane fade" id="nav-principles" role="tabpanel" aria-labelledby="nav-principles-tab">
-               <ul>
-                 <li>Waste is a design flaw.</li>
-                 <li>Nature is smarter than you.</li>
-                 <li>Privilege is a debt to be repaid.</li>
-                 <li>Opensource is not optional.</li>
-                 <li>If you don't document it, it doesn't exist.</li>
-               </ul>
-             </div>
-             <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-               <p><a href='/resume-fj.html'><i class='far fa-file-alt'></i>Personal Resumé</p>
-               <p><a href='https://instagram.com/franknoirot/'><i class='fab fa-instagram'></i>@franknoirot</a></p>
-               <p><a href='https://github.com/franknoirot'><i class='fab fa-github'></i>@franknoirot</a></p>
-             </div>
             </div>
-          </nav>
-        </section>
-
-
-        <section id='work'>
-          <div id='work-code' class='category'>
-            <a class='category-toggle' data-toggle="collapse" href="#codeCollapse" role="button" aria-expanded="false" aria-controls="codeCollapse">
-              <h2><i class="fas fa-code fa-fw"></i>Code</h2></a>
-            <div class="collapse" id="codeCollapse">
-              <a class='featured-work' href='family-calender.html'>
-                <div class="card-body row">
-                  <img class='img-thumbnail' src='assets/img_thumb_code_family-calendar.png'>
-                  <div class='card-body'>
-                    <h5>Family Calender</h5>
-                    <p>I made a tool to visualize and keep track of all the birthdays in my big family.</p>
-                    <p><em>#d3js #javascript #dataviz</em></p>
-                  </div>
-                </div> <!-- /.card-body.row -->
-              </a> <!-- /.featured-work -->
-
-              <a class='btn btn-outline-primary' href='#'>See More</a>
-            </div> <!-- /#codeCollapse -->
-          </div> <!-- /#work-code -->
-
-          <div id='work-make' class='category'>
-            <a class='category-toggle' data-toggle="collapse" href="#makeCollapse" role="button" aria-expanded="false" aria-controls="makeCollapse">
-              <h2><i class="far fa-hand-paper fa-fw"></i>Make</h2></a>
-            <div class="collapse" id="makeCollapse">
-              <a class='featured-work' href='steel-chair.html'>
-                <div class="card-body row">
-                  <img class='img-thumbnail' src='assets/img_steel-chair.jpg'>
-                  <div class='card-body'>
-                    <h5>Steel Chair</h5>
-                    <p>A minimal chair in steel and plywood to learn welding.</p>
-                    <p><em>#furniture #steel #welding</em></p>
-                  </div>
-                </div> <!-- /.card-body.row -->
-              </a> <!-- /.featured-work -->
-
-              <a class='btn btn-outline-primary' href='#'>See More</a>
-            </div> <!-- /#makeCollapse -->
-          </div> <!-- /#work-make -->
-
-          <div id='work-read' class='category'>
-            <a class='category-toggle' data-toggle="collapse" href="#readCollapse" role="button" aria-expanded="false" aria-controls="readCollapse">
-              <h2><i class="fas fa-book fa-fw"></i>Read</h2></a>
-            <div class="collapse" id="readCollapse">
-              <div class="card card-body row">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              </div> <!-- /.card-body -->
-
-              <a class='btn btn-outline-primary' href='#'>See More</a>
-            </div> <!-- /#readCollapse -->
-          </div> <!-- /#work-read -->
-
-          <div id='make-write' class='category'>
-            <a class='category-toggle' data-toggle="collapse" href="#writeCollapse" role="button" aria-expanded="false" aria-controls="writeCollapse">
-              <h2><i class="fas fa-pen fa-fw"></i>Write</h2></a>
-            <div class="collapse" id="writeCollapse">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              </div> <!-- /.card-body -->
-
-              <a class='btn btn-outline-primary' href='#'>See More</a>
-            </div> <!-- /#writeCollapse -->
-          </div> <!-- /#work-write -->
-        </section> <!-- /#work -->
-
-    </div>
-
-  <!-- scripts at end for faster loading  -->
-  <script src="js/vendor/jquery-3.3.1.slim.min.js"></script>
-  <script src="js/vendor/popper.js"></script>
-  <script src="js/vendor/bootstrap.min.js"></script>
-  </body>
-</html>
+          </div> <!-- /.card-body.row -->
+        </a> <!-- /.featured-work -->
+        {% endfor %}
+        <a class='btn btn-outline-primary' href='#'>See More</a>
+      </div> <!-- /#codeCollapse -->
+    </div> <!-- /#work-code -->
+    {% endfor  %}
+  </section> <!-- /#work -->
+  {%- endif -%}
