@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-31T00:07:23-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Frank Noirot</title><subtitle>A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC.</subtitle><author><name>Frank RJ Noirot</name></author><entry><title type="html">Understanding Geometry with D3.js</title><link href="http://localhost:4000/understanding-geomtery-with-d3js/" rel="alternate" type="text/html" title="Understanding Geometry with D3.js" /><published>2018-10-29T00:00:00-04:00</published><updated>2018-10-29T00:00:00-04:00</updated><id>http://localhost:4000/understanding-geomtery-with-d3js</id><content type="html" xml:base="http://localhost:4000/understanding-geomtery-with-d3js/">&lt;p&gt;Recently in my internet wanderings I came across a Wiki page on a geometry principle known as &lt;a href=&quot;https://en.wikipedia.org/wiki/Thales%27s_theorem&quot;&gt;Thales’s Theorem&lt;/a&gt;. It caught my eye because its creator inspired the name of one of the &lt;a href=&quot;https://www.thalesgroup.com/en&quot;&gt;biggest partners&lt;/a&gt; of my employer, &lt;a href=&quot;https://iridium.com&quot;&gt;Iridium Satellite&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-31T01:05:22-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Frank Noirot</title><subtitle>A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC.</subtitle><author><name>Frank RJ Noirot</name></author><entry><title type="html">Understanding Geometry with D3.js</title><link href="http://localhost:4000/understanding-geomtery-with-d3js/" rel="alternate" type="text/html" title="Understanding Geometry with D3.js" /><published>2018-10-29T00:00:00-04:00</published><updated>2018-10-29T00:00:00-04:00</updated><id>http://localhost:4000/understanding-geomtery-with-d3js</id><content type="html" xml:base="http://localhost:4000/understanding-geomtery-with-d3js/">&lt;p&gt;In my internet wanderings I came across a Wiki page on a geometry principle known as &lt;a href=&quot;https://en.wikipedia.org/wiki/Thales%27s_theorem&quot;&gt;Thales’s Theorem&lt;/a&gt;. It caught my eye because its creator inspired the name of one of the &lt;a href=&quot;https://www.thalesgroup.com/en&quot;&gt;biggest partners&lt;/a&gt; of my employer, &lt;a href=&quot;https://iridium.com&quot;&gt;Iridium Satellite&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;It starts with a triangle inscribed inside a circle, meaning its three points lie along the circle. If one of those sides goes through the center point of the circle, the angle opposite that side will &lt;strong&gt;always be a 90°!&lt;/strong&gt; No matter where that last point is, all along the circle, that angle will always be the same.&lt;/p&gt;
 
@@ -45,4 +45,45 @@
     by &lt;a href=&quot;https://sketchfab.com/frankjohnson1993?utm_medium=embed&amp;amp;utm_source=website&amp;amp;utm_campaign=share-popup&quot; target=&quot;_blank&quot; style=&quot;font-weight: bold; color: #1CAAD9;&quot;&gt;frankjohnson1993&lt;/a&gt;
     on &lt;a href=&quot;https://sketchfab.com?utm_medium=embed&amp;amp;utm_source=website&amp;amp;utm_campaign=share-popup&quot; target=&quot;_blank&quot; style=&quot;font-weight: bold; color: #1CAAD9;&quot;&gt;Sketchfab&lt;/a&gt;
 &lt;/p&gt;
-&lt;/div&gt;</content><author><name>Frank RJ Noirot</name></author><category term="make" /><summary type="html">This simple chair was my first attempt at welding. I built it using my stepfather’s welder and some teaching from my friend Devin.</summary></entry><entry><title type="html">Family Calendar in D3.js</title><link href="http://localhost:4000/family-calender-in-d3js/" rel="alternate" type="text/html" title="Family Calendar in D3.js" /><published>2018-07-11T00:00:00-04:00</published><updated>2018-07-11T00:00:00-04:00</updated><id>http://localhost:4000/family-calender-in-d3js</id><content type="html" xml:base="http://localhost:4000/family-calender-in-d3js/">&lt;p&gt;Recently I built a calendar tool using Blockbuilder and D3.js to help remember upcoming birthdays in my big family.&lt;/p&gt;</content><author><name>Frank RJ Noirot</name></author><category term="code" /><summary type="html">Recently I built a calendar tool using Blockbuilder and D3.js to help remember upcoming birthdays in my big family.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Frank RJ Noirot</name></author><category term="make" /><summary type="html">This simple chair was my first attempt at welding. I built it using my stepfather’s welder and some teaching from my friend Devin.</summary></entry><entry><title type="html">Family Calendar in D3.js</title><link href="http://localhost:4000/family-calendar-in-d3js/" rel="alternate" type="text/html" title="Family Calendar in D3.js" /><published>2018-07-11T00:00:00-04:00</published><updated>2018-07-11T00:00:00-04:00</updated><id>http://localhost:4000/family-calendar-in-d3js</id><content type="html" xml:base="http://localhost:4000/family-calendar-in-d3js/">&lt;p&gt;I built a calendar tool using Blockbuilder and D3.js to help remember upcoming birthdays in my big family.&lt;/p&gt;
+
+&lt;p&gt;Hover over each of the dots to meet my family! The sweep of color around the circle represents how far we are in this year, and the Age axis goes from 0 on the outer edge to 100 on the inner edge.&lt;/p&gt;
+
+&lt;div id=&quot;chart&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://d3js.org/d3.v4.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;style type=&quot;text/css&quot; scoped=&quot;&quot;&gt;
+  #chart {
+    margin: auto;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  svg { margin: auto; }
+  .axis circle { fill: none; stroke:#eee; }
+  .axis line, .axis circle:nth-of-type(5n), .axis circle:first-of-type { stroke:#aaa; }
+  .r text, .r text:first-of-type { display:none; }
+  .r text:nth-of-type(10n) {display:inline;}
+  .label text {
+    font: bold;
+    font-size: .8rem;
+  }
+  .age-scale{ color: #ccc; }
+  .wedge { fill: rgba(115,190,220,0.30); z-index: -1;}
+  .toolTip {
+    position: absolute;
+    display: none;
+    min-width: 80px;
+    height: auto;
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #aca;
+    padding: 14px;
+    text-align: center;
+  }
+  .dot{ fill: #333}
+&lt;/style&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;../assets/js/family-calendar.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;My grandma loves genealogy. I remember stopping at cemeteries on road trips as a kid, trying to piece together the long story of our history from charcoal rubbings of old worn headstones. The old family joke was that she’d rather go there instead of the beach.&lt;/p&gt;
+
+&lt;p&gt;Admittedly, this kind of graph could spook some people with its blunt treatment of life’s finite length. But I take it with some family pride that my wonderful grandfather, upon seeing my little chart with his dot furthest along, said to me with his winking clarity, &lt;em&gt;“so I suppose the goal is to reach the middle then?”&lt;/em&gt;&lt;/p&gt;</content><author><name>Frank RJ Noirot</name></author><category term="code" /><summary type="html">I built a calendar tool using Blockbuilder and D3.js to help remember upcoming birthdays in my big family.</summary></entry></feed>

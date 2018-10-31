@@ -5,7 +5,7 @@ category: code
 excerpt: Recently in my internet wanderings I came across a Wiki page on a geometry principle known as Thales's Theorem.
 ---
 
-Recently in my internet wanderings I came across a Wiki page on a geometry principle known as [Thales's Theorem](https://en.wikipedia.org/wiki/Thales%27s_theorem). It caught my eye because its creator inspired the name of one of the [biggest partners](https://www.thalesgroup.com/en) of my employer, [Iridium Satellite](https://iridium.com).
+In my internet wanderings I came across a Wiki page on a geometry principle known as [Thales's Theorem](https://en.wikipedia.org/wiki/Thales%27s_theorem). It caught my eye because its creator inspired the name of one of the [biggest partners](https://www.thalesgroup.com/en) of my employer, [Iridium Satellite](https://iridium.com).
 
 It starts with a triangle inscribed inside a circle, meaning its three points lie along the circle. If one of those sides goes through the center point of the circle, the angle opposite that side will __always be a 90&deg;!__ No matter where that last point is, all along the circle, that angle will always be the same.
 
