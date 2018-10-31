@@ -13,7 +13,7 @@ Some key things I learned on this project were:
 
 I did a field-measured 3D CAD model in Autodesk Fusion after I was done building it, and I've published it on Sketchfab.com if you'd like to download the model for your own use. Here's an embedded view:
 
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/19b9f06c6f714bc08e4d0450f78ce6f3/embed?autospin=0.2&amp;autostart=1&amp;camera=0" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<div class="sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/19b9f06c6f714bc08e4d0450f78ce6f3/embed?autospin=0.2&amp;autostart=1&amp;camera=0" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
     <a href="https://sketchfab.com/models/19b9f06c6f714bc08e4d0450f78ce6f3?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Chair Steel-1</a>

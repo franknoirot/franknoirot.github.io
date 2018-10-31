@@ -13,7 +13,7 @@ This is such a such a simple, and to many, straightforward fact of geometry, but
 
 I built this little tool using only CSS and D3.js. Drag around the points on the circle and you can physically start to sense just how the mechanics of this system works.
 
-<p data-height="600" data-theme-id="0" data-slug-hash="BqxzRv" data-default-tab="result,js" data-user="franknoirot" data-pen-title="Thales Theorem" class="codepen">See the Pen <a href="https://codepen.io/franknoirot/pen/BqxzRv/">Thales Theorem</a> by Frank Noirot (<a href="https://codepen.io/franknoirot">@franknoirot</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="600" data-theme-id="0" data-slug-hash="BqxzRv" data-default-tab="result" data-user="franknoirot" data-pen-title="Thales Theorem" class="codepen">See the Pen <a href="https://codepen.io/franknoirot/pen/BqxzRv/">Thales Theorem</a> by Frank Noirot (<a href="https://codepen.io/franknoirot">@franknoirot</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 The first thing you should do is pull a Thales and position one line so that it runs straight through the dot in the center of the circle. The angle across from that line is exactly 90&deg;! Whew, people are so smart. But there's more to explore here.
