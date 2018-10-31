@@ -1,0 +1,16 @@
+# Site settings
+title: Frank Noirot
+email: frank@franknoirot.co
+author: Frank RJ Noirot
+description: A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC.
+url: franknoirot.co
+
+# Build settings
+permalink: :title/
+sass:
+  sass_dir: css
+
+# Files to excludes from your website
+ # exclude:
+ # - .gitignore
+ # - CNAME
