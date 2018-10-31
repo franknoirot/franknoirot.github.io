@@ -25,3 +25,21 @@ a:hover {
 .fa-fw {
   margin-right: .8rem;
 }
+
+
+// resume page specific styles
+.resume-section {
+  &>h2{
+    font-variant: small-caps;
+    color: $secondary;
+  }
+
+  & .date {
+    float: right;
+  }
+
+  & h4 {
+    color: $secondary;
+    font-size: 1.25rem;
+  }
+}

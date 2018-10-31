@@ -23,6 +23,15 @@ a:hover {
 .fa-fw {
   margin-right: .8rem; }
 
+.resume-section > h2 {
+  font-variant: small-caps;
+  color: #707070; }
+.resume-section .date {
+  float: right; }
+.resume-section h4 {
+  color: #707070;
+  font-size: 1.25rem; }
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
