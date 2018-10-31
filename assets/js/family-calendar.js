@@ -2,7 +2,7 @@ console.log("HELLO IS ANYONE THERE?");
 
 // SVG Setup //
 var size = 500,
-    margin = {top:5, left:5};
+    margin = {top:3, left:3};
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const era = 100;
 
