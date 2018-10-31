@@ -9,8 +9,11 @@ url: franknoirot.co
 permalink: :title/
 sass:
   sass_dir: css
+<<<<<<< HEAD
 
 # Files to excludes from your website
  # exclude:
  # - .gitignore
  # - CNAME
+=======
+>>>>>>> 0bed8ee0917f8ccf1daa074ea15621a7b07d1415
