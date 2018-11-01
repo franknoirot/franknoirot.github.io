@@ -27,14 +27,14 @@ From here on out is my _pseudocode_ for the next steps I want to take. Along the
 
 Next, let's control a rectangle with two scrubbers.
 
-_insert scrubbable rectangle_
+_//insert scrubbable rectangle_
 
 Because this is built up in a modular way, we can now tweak **an arbitrary number of variables on a 2D graphic!**
 
-// insert front of desk outline with scrubbable variables
+_// insert front of desk outline with scrubbable variables_
 
 This UI has a bit more going on behind the scenes. Before the annotation renders, it first determines how much space it has to unfold. if there's no room for a full brace and variable name, it collapses to a small pin with `fx` inside to show this dimension is scrubbable. Let me know if it's intuitive to use!
 
 One more piece makes this a viable first step for my custom furniture tool. Three tabs labelled _Top, Front, & Side_ allow me to get at least a good proxy representation of the 3D piece, and the variable scrubbing affects dimensions between the different panes.
 
-_insert three pane furniture scrubber_
+_//insert three pane furniture scrubber_
