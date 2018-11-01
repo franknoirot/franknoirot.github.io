@@ -43,3 +43,8 @@ a:hover {
     font-size: 1.25rem;
   }
 }
+
+//.center utility centering class because I don't get Bootstrap .justify-content
+.center {
+  margin: auto;
+}

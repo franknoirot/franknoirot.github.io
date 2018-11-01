@@ -6,7 +6,7 @@ description: A simple portfolio site for Frank Noirot, a designer based in Washi
 url: franknoirot.co
 
 # Build settings
-permalink: :title/
+permalink: /:categories/:title
 sass:
   sass_dir: css
 

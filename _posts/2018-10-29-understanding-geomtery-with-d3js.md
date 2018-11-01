@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding Geometry with D3.js
-category: code
+categories: code
 excerpt: Recently in my internet wanderings I came across a Wiki page on a geometry principle known as Thales's Theorem.
 ---
 

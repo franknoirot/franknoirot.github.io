@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Family Calendar in D3.js'
-category: code
+categories: code
 # featured_image: assets\img\img_thumb_code_family-calendar.png
 ---
 

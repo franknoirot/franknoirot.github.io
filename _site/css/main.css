@@ -32,6 +32,9 @@ a:hover {
   color: #707070;
   font-size: 1.25rem; }
 
+.center {
+  margin: auto; }
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
