@@ -55,7 +55,10 @@ var annotationText = lineGroup.append('text')
   .call(d3.drag()
       .on('start', scrubStart)
       .on('drag', scrub)
-      .on('end', scrubEnd));
+      .on('end', scrubEnd))
+      .on('touchstart', scrubStart)
+      .on('touchmove', scrub)
+      .on('touchend', scrubEnd);
 
 function getLength(line) {
   length = Math.sqrt(Math.pow(line.x2.value - line.x1.value, 2) + Math.pow(line.y2.value - line.y1.value, 2));
