@@ -115,6 +115,6 @@ document.onkeydown = keyHandler;
 document.onkeyup = function() {
     this.onkeydown = keyHandler;
     annotationColor = 'red';
-    scrubFactor /= 5;
+    scrubFactor /= 15;
     console.log('released!, ',scrubFactor);
 };
