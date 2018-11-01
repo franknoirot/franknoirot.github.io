@@ -37,11 +37,11 @@
 
     </div>
 </nav>
-<div class='container'>
+<div id='content-container' class='container'>
       <header class="post-header">
   <h1 class="post-title p-name" itemprop="name headline">Scrubbable Shapes</h1>
   <p class="post-meta">
-    <time class="dt-published" datetime="2018-10-31T20:45:47-04:00" itemprop="datePublished">Oct 31, 2018
+    <time class="dt-published" datetime="2018-11-01T00:00:00-04:00" itemprop="datePublished">Nov 1, 2018
     </time></p>
 </header>
 
@@ -56,11 +56,20 @@
 
 <p>Eventually I will make this into a tool for <a href="threejs.org">THREE.js</a>, where I can embed “scrubbable” triggers into whichever dimensions I want, and the user will be able to tweak while viewing in 3D. But we can build to that from a 2D. So let’s start with the simplest geometry: a line.</p>
 
-<p>To scrub the width of the line, simply click and drag on the variable name!</p>
+<p>To scrub the width of the line, simply click and drag on the variable name! You can tweak <code class="highlighter-rouge">length</code> in smaller increments by holding Ctrl (Cmd on Mac) before clicking and dragging.</p>
 
-<p><em>insert scrubbable line</em></p>
+<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
 
-<p>You can tweak <code class="highlighter-rouge">length</code> in smaller increments by holding Ctrl (Cmd on Mac) before clicking and dragging. This is bit newer on mobile, what I call “pin &amp; drag”. Pin the variable by holding a finger on one variable, then drag with another to tweak.</p>
+<div id="lineChart" class="chart"></div>
+
+<script type="text/javascript" src="../assets/js/scrubbable-line.js"></script>
+
+<hr />
+
+<h3 id="this-essay-is-still-under-construction">This essay is still under construction!</h3>
+<p>From here on out is my <em>pseudocode</em> for the next steps I want to take. Along the way, I’ll be abstracting out the javascript to work for arbitrary SVG elements, but for now it is <em><a href="/assets/js/scrubbable-line.js">nasty</a></em>. Wish me luck!</p>
+
+<p>…To change from scrub to tweak on mobile, do what I call “pin &amp; drag”. Pin the variable by holding a finger on it, then drag with another.</p>
 
 <p>Next, let’s control a rectangle with two scrubbers.</p>
 

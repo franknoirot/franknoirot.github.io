@@ -14,11 +14,16 @@ But I see a branch of this problem that could help me more directly in my furnit
 
 Eventually I will make this into a tool for [THREE.js](threejs.org), where I can embed "scrubbable" triggers into whichever dimensions I want, and the user will be able to tweak while viewing in 3D. But we can build to that from a 2D. So let's start with the simplest geometry: a line.
 
-To scrub the width of the line, simply click and drag on the variable name!
+To scrub the width of the line, simply click and drag on the variable name! You can tweak `length` in smaller increments by holding Ctrl (Cmd on Mac) before clicking and dragging.
 
-_insert scrubbable line_
+{% include scrubbable-line.html %}
 
-You can tweak `length` in smaller increments by holding Ctrl (Cmd on Mac) before clicking and dragging. This is bit newer on mobile, what I call "pin & drag". Pin the variable by holding a finger on one variable, then drag with another to tweak.
+---
+
+### This essay is still under construction!
+From here on out is my _pseudocode_ for the next steps I want to take. Along the way, I'll be abstracting out the javascript to work for arbitrary SVG elements, but for now it is _[nasty](/assets/js/scrubbable-line.js)_. Wish me luck!
+
+...To change from scrub to tweak on mobile, do what I call "pin & drag". Pin the variable by holding a finger on it, then drag with another.
 
 Next, let's control a rectangle with two scrubbers.
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6,6 +7,24 @@
  */
 section {
   margin-bottom: 1.5rem; }
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’"; }
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em; }
+
+blockquote p {
+  display: inline; }
 
 .container {
   margin-top: 5%;
@@ -32,6 +51,24 @@ a:hover {
 .resume-section h4 {
   color: #707070;
   font-size: 1.25rem; }
+
+.svg-container {
+  margin-bottom: 1.25rem; }
+
+.svg-container-narrow {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 25%;
+  /* aspect ratio */
+  vertical-align: top;
+  overflow: hidden; }
+
+.svg-content-responsive {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0; }
 
 .category-toggle > h2 {
   color: #707070; }

@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-31T21:22:02-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Frank Noirot</title><subtitle>A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC.</subtitle><author><name>Frank RJ Noirot</name></author><entry><title type="html">The Kasimir Barcart</title><link href="http://localhost:4000/make/kasimir-bar-cart" rel="alternate" type="text/html" title="The Kasimir Barcart" /><published>2018-10-31T00:00:00-04:00</published><updated>2018-10-31T00:00:00-04:00</updated><id>http://localhost:4000/make/kasimir-bar-cart</id><content type="html" xml:base="http://localhost:4000/make/kasimir-bar-cart">&lt;p&gt;I built a custom barcart for my good friend Kaz for his birthday. It was only a year later than I told him I’d make it.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-01T02:35:23-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Frank Noirot</title><subtitle>A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC.</subtitle><author><name>Frank RJ Noirot</name></author><entry><title type="html">Scrubbable Shapes</title><link href="http://localhost:4000/code/scrubbable-shapes" rel="alternate" type="text/html" title="Scrubbable Shapes" /><published>2018-11-01T00:00:00-04:00</published><updated>2018-11-01T00:00:00-04:00</updated><id>http://localhost:4000/code/scrubbable-shapes</id><content type="html" xml:base="http://localhost:4000/code/scrubbable-shapes">&lt;p&gt;I can’t stop thinking about the mathematical UX work done by &lt;a href=&quot;worrydream.com/#!/KillMath&quot;&gt;Brett Victor&lt;/a&gt;, and the even more in-depth response by &lt;a href=&quot;http://mnielsen.github.io/notes/kill_math/kill_math.html&quot;&gt;Michael Nielsen&lt;/a&gt;. I’m particularly stuck on this bit from Nielsen under the section “Moving Theorems Into the User Interface”:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;That is we should move theorems into the user interface. Tipping it upside down, we can view theorems as challenges to develop a user interface which reifies those theorems in a powerful way, providing the user with cues that help them reason, and representing mathematical objects in ways that help suggest the relevant operations and relationships.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I have been surprised on how few people seemed to build directly on their work from 2012, especially in ways that are opensource and toolbox-ready. I want to explore some of the atomic UX problems Nielsen poses in his notes in the coming months, particularly creating a gesture for instantly graphing an equation, built to work with &lt;a href=&quot;mathjax.org&quot;&gt;MathJax&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But I see a branch of this problem that could help me more directly in my furniture and product design work. What if I could present a model of a furniture piece in the browser, and allow a user to &lt;strong&gt;customize certain dimensions live by scrubbing its annotations?&lt;/strong&gt; When they’re happy with the dimensions they’ve found, they would then be able to submit it to me as a commission request with a simple button press.&lt;/p&gt;
+
+&lt;p&gt;Eventually I will make this into a tool for &lt;a href=&quot;threejs.org&quot;&gt;THREE.js&lt;/a&gt;, where I can embed “scrubbable” triggers into whichever dimensions I want, and the user will be able to tweak while viewing in 3D. But we can build to that from a 2D. So let’s start with the simplest geometry: a line.&lt;/p&gt;
+
+&lt;p&gt;To scrub the width of the line, simply click and drag on the variable name! You can tweak &lt;code class=&quot;highlighter-rouge&quot;&gt;length&lt;/code&gt; in smaller increments by holding Ctrl (Cmd on Mac) before clicking and dragging.&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://d3js.org/d3.v4.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;div id=&quot;lineChart&quot; class=&quot;chart&quot;&gt;&lt;/div&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;../assets/js/scrubbable-line.js&quot;&gt;&lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;this-essay-is-still-under-construction&quot;&gt;This essay is still under construction!&lt;/h3&gt;
+&lt;p&gt;From here on out is my &lt;em&gt;pseudocode&lt;/em&gt; for the next steps I want to take. Along the way, I’ll be abstracting out the javascript to work for arbitrary SVG elements, but for now it is &lt;em&gt;&lt;a href=&quot;/assets/js/scrubbable-line.js&quot;&gt;nasty&lt;/a&gt;&lt;/em&gt;. Wish me luck!&lt;/p&gt;
+
+&lt;p&gt;…To change from scrub to tweak on mobile, do what I call “pin &amp;amp; drag”. Pin the variable by holding a finger on it, then drag with another.&lt;/p&gt;
+
+&lt;p&gt;Next, let’s control a rectangle with two scrubbers.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;insert scrubbable rectangle&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Because this is built up in a modular way, we can now tweak &lt;strong&gt;an arbitrary number of variables on a 2D graphic!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;// insert front of desk outline with scrubbable variables&lt;/p&gt;
+
+&lt;p&gt;This UI has a bit more going on behind the scenes. Before the annotation renders, it first determines how much space it has to unfold. if there’s no room for a full brace and variable name, it collapses to a small pin with &lt;code class=&quot;highlighter-rouge&quot;&gt;fx&lt;/code&gt; inside to show this dimension is scrubbable. Let me know if it’s intuitive to use!&lt;/p&gt;
+
+&lt;p&gt;One more piece makes this a viable first step for my custom furniture tool. Three tabs labelled &lt;em&gt;Top, Front, &amp;amp; Side&lt;/em&gt; allow me to get at least a good proxy representation of the 3D piece, and the variable scrubbing affects dimensions between the different panes.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;insert three pane furniture scrubber&lt;/em&gt;&lt;/p&gt;</content><author><name>Frank RJ Noirot</name></author><summary type="html">Let's explore how Bret Victor's work on mathematical UX applies to geometry generated with D3.js.</summary></entry><entry><title type="html">The Kasimir Barcart</title><link href="http://localhost:4000/make/kasimir-bar-cart" rel="alternate" type="text/html" title="The Kasimir Barcart" /><published>2018-10-31T00:00:00-04:00</published><updated>2018-10-31T00:00:00-04:00</updated><id>http://localhost:4000/make/kasimir-bar-cart</id><content type="html" xml:base="http://localhost:4000/make/kasimir-bar-cart">&lt;p&gt;I built a custom barcart for my good friend Kaz for his birthday. It was only a year later than I told him I’d make it.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -78,7 +116,6 @@
 
 &lt;p&gt;Hover over each of the dots to meet my family! The sweep of color around the circle represents how far we are in this year, and the Age axis goes from 0 on the outer edge to 100 on the inner edge.&lt;/p&gt;
 
-&lt;div id=&quot;chart&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;https://d3js.org/d3.v4.min.js&quot;&gt;&lt;/script&gt;
 
 &lt;style type=&quot;text/css&quot; scoped=&quot;&quot;&gt;
@@ -110,6 +147,8 @@
   }
   .dot{ fill: #333}
 &lt;/style&gt;
+
+&lt;div id=&quot;chart&quot;&gt;&lt;/div&gt;
 
 &lt;script type=&quot;text/javascript&quot; src=&quot;../assets/js/family-calendar.js&quot;&gt;&lt;/script&gt;
 

@@ -1,5 +1,3 @@
-console.log("HELLO IS ANYONE THERE?");
-
 // SVG Setup //
 var size = 500,
     margin = {top:3, left:3};
@@ -100,7 +98,7 @@ d3.json("../assets/js/birthdays.json", function(error, json) {
     .startAngle(0)
     .endAngle(endAngle);
 
-  console.log("ENDANGLE", d3.timeDay.count(d3.timeYear(now), now)*360.0/365);
+  // console.log("ENDANGLE", d3.timeDay.count(d3.timeYear(now), now)*360.0/365);
 
   var wedge = svg.append("g")
     .attr("class", "wedge");
