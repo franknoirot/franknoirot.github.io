@@ -22,10 +22,10 @@ title: Frank Noirot
          <a class="btn btn-outline-primary" href='/about/'>Read More</a>
        </div>
        <div class="tab-pane fade card-body" id="nav-principles" role="tabpanel" aria-labelledby="nav-principles-tab">
-         <em>a living list:</em>
+         <p>I'm keeping a running list of things I believe about design as a constant reminder to myself:</p>
          <ol>
-           <li>Waste is a design flaw.</li>
-           <li>Nature is smarter than you.</li>
+           <li>Waste is an outdated concept. Design the thing, then design the system.</li>
+           <li>Nature is smarter than you. Learn from her.</li>
            <li>Privilege is a debt to be repaid.</li>
            <li>Opensource is not optional.</li>
            <li>If you don't document it, it doesn't exist.</li>
@@ -33,9 +33,10 @@ title: Frank Noirot
          </ol>
        </div>
        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+         <p><a href='{{ site.email }}'><i class='far fa-envelope fa-fw'></i>Email</a></p>
          <p><a href='/resume'><i class='far fa-file-alt fa-fw'></i>Personal Resumé</p>
-         <p><a href='https://instagram.com/franknoirot/'><i class='fab fa-instagram fa-fw'></i>@franknoirot</a></p>
-         <p><a href='https://github.com/franknoirot'><i class='fab fa-github fa-fw'></i>@franknoirot</a></p>
+         <p><a href='{{ site.instagram }}'><i class='fab fa-instagram fa-fw'></i>@franknoirot</a></p>
+         <p><a href='{{ site.github }}'><i class='fab fa-github fa-fw'></i>@franknoirot</a></p>
        </div>
       </div>
     </nav>
@@ -50,7 +51,7 @@ title: Frank Noirot
     <div id='work-{{ category[0] }}' class='category-container'>
       <a class='category-toggle' data-toggle="collapse" href="#{{ category[0] }}Collapse" role="button" aria-expanded="false" aria-controls="{{ category[0] }}Collapse">
         <h2><i class="{%- case catName -%}{%- when 'code' -%}fas fa-code {%- when 'make' -%}far fa-hand-paper {%- when 'read' -%}fas fa-book {%- when 'write' -%}fas fa-pencil-alt {% endcase %} fa-fw"></i>{{ category[0] | capitalize }}</h2></a>
-      <div class="collapse" id="{{ category[0] }}Collapse">
+      <div class="collapse category-collapse" id="{{ category[0] }}Collapse">
         {%- for post in category[1] -%}
         <a class='featured-work' href='{{- post.url -}}'>
           <div class="row">

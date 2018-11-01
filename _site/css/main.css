@@ -8,7 +8,8 @@ section {
   margin-bottom: 1.5rem; }
 
 .container {
-  margin-top: 5%; }
+  margin-top: 5%;
+  margin-bottom: 10%; }
 
 .card-body {
   padding: .8rem; }
@@ -32,8 +33,14 @@ a:hover {
   color: #707070;
   font-size: 1.25rem; }
 
-.center {
-  margin: auto; }
+.category-toggle > h2 {
+  color: #707070; }
+
+.collapse.show {
+  border-top: solid 2px #707070; }
+
+.collapse {
+  border-top: none; }
 
 :root {
   --blue: #007bff;

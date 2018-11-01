@@ -1,9 +1,11 @@
 # Site settings
 title: Frank Noirot
-email: frank@franknoirot.co
+email: mailto:frank@franknoirot.co
 author: Frank RJ Noirot
 description: A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC.
 url: franknoirot.co
+github: https://www.github.com/franknoirot
+instagram: https://www.instagram.com/franknoirot
 
 # Build settings
 permalink: /:categories/:title

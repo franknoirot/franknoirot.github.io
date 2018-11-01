@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/main.css">
+  <title>Frank Noirot</title>
+</head>
+
+  <body><nav id="navbar" class='navbar navbar-expand-lg sticky-top navbar-light bg-light'>
+    <a class="navbar-brand" href="/">Frank Noirot</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+    
+    
+      
+      
+
+      <!-- <li class="nav-item "> -->
+        <a class='nav-link ' href="/about/">About</a>
+      <!-- </li> -->
+
+    
+      
+      
+
+      <!-- <li class="nav-item "> -->
+        <a class='nav-link ' href="/resume/">Resumé</a>
+      <!-- </li> -->
+
+    
+
+    </div>
+</nav>
+<div class='container'>
+      <header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">Scrubbable Shapes</h1>
+  <p class="post-meta">
+    <time class="dt-published" datetime="2018-10-31T20:45:47-04:00" itemprop="datePublished">Oct 31, 2018
+    </time></p>
+</header>
+
+<p>I can’t stop thinking about the mathematical UX work done by <a href="worrydream.com/#!/KillMath">Brett Victor</a>, and the even more in-depth response by <a href="http://mnielsen.github.io/notes/kill_math/kill_math.html">Michael Nielsen</a>. I’m particularly stuck on this bit from Nielsen under the section “Moving Theorems Into the User Interface”:</p>
+<blockquote>
+  <p>That is we should move theorems into the user interface. Tipping it upside down, we can view theorems as challenges to develop a user interface which reifies those theorems in a powerful way, providing the user with cues that help them reason, and representing mathematical objects in ways that help suggest the relevant operations and relationships.</p>
+</blockquote>
+
+<p>I have been surprised on how few people seemed to build directly on their work from 2012, especially in ways that are opensource and toolbox-ready. I want to explore some of the atomic UX problems Nielsen poses in his notes in the coming months, particularly creating a gesture for instantly graphing an equation, built to work with <a href="mathjax.org">MathJax</a>.</p>
+
+<p>But I see a branch of this problem that could help me more directly in my furniture and product design work. What if I could present a model of a furniture piece in the browser, and allow a user to <strong>customize certain dimensions live by scrubbing its annotations?</strong> When they’re happy with the dimensions they’ve found, they would then be able to submit it to me as a commission request with a simple button press.</p>
+
+<p>Eventually I will make this into a tool for <a href="threejs.org">THREE.js</a>, where I can embed “scrubbable” triggers into whichever dimensions I want, and the user will be able to tweak while viewing in 3D. But we can build to that from a 2D. So let’s start with the simplest geometry: a line.</p>
+
+<p>To scrub the width of the line, simply click and drag on the variable name!</p>
+
+<p><em>insert scrubbable line</em></p>
+
+<p>You can tweak <code class="highlighter-rouge">length</code> in smaller increments by holding Ctrl (Cmd on Mac) before clicking and dragging. This is bit newer on mobile, what I call “pin &amp; drag”. Pin the variable by holding a finger on one variable, then drag with another to tweak.</p>
+
+<p>Next, let’s control a rectangle with two scrubbers.</p>
+
+<p><em>insert scrubbable rectangle</em></p>
+
+<p>Because this is built up in a modular way, we can now tweak <strong>an arbitrary number of variables on a 2D graphic!</strong></p>
+
+<p>// insert front of desk outline with scrubbable variables</p>
+
+<p>This UI has a bit more going on behind the scenes. Before the annotation renders, it first determines how much space it has to unfold. if there’s no room for a full brace and variable name, it collapses to a small pin with <code class="highlighter-rouge">fx</code> inside to show this dimension is scrubbable. Let me know if it’s intuitive to use!</p>
+
+<p>One more piece makes this a viable first step for my custom furniture tool. Three tabs labelled <em>Top, Front, &amp; Side</em> allow me to get at least a good proxy representation of the 3D piece, and the variable scrubbing affects dimensions between the different panes.</p>
+
+<p><em>insert three pane furniture scrubber</em></p>
+
+
+    </div>
+
+    <!-- JS loads faster when placed at the end of the body -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>

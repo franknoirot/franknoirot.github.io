@@ -2,6 +2,7 @@
 layout: post
 title: Scrubbable Shapes
 categories: code
+excerpt: Let's explore how Bret Victor's work on mathematical UX applies to geometry generated with D3.js.
 ---
 
 I can't stop thinking about the mathematical UX work done by [Brett Victor](worrydream.com/#!/KillMath), and the even more in-depth response by [Michael Nielsen](http://mnielsen.github.io/notes/kill_math/kill_math.html). I'm particularly stuck on this bit from Nielsen under the section "Moving Theorems Into the User Interface":
@@ -15,13 +16,13 @@ Eventually I will make this into a tool for [THREE.js](threejs.org), where I can
 
 To scrub the width of the line, simply click and drag on the variable name!
 
-// insert scrubbable line
+_insert scrubbable line_
 
 You can tweak `length` in smaller increments by holding Ctrl (Cmd on Mac) before clicking and dragging. This is bit newer on mobile, what I call "pin & drag". Pin the variable by holding a finger on one variable, then drag with another to tweak.
 
 Next, let's control a rectangle with two scrubbers.
 
-// insert scrubbable rectangle
+_insert scrubbable rectangle_
 
 Because this is built up in a modular way, we can now tweak **an arbitrary number of variables on a 2D graphic!**
 
@@ -31,4 +32,4 @@ This UI has a bit more going on behind the scenes. Before the annotation renders
 
 One more piece makes this a viable first step for my custom furniture tool. Three tabs labelled _Top, Front, & Side_ allow me to get at least a good proxy representation of the 3D piece, and the variable scrubbing affects dimensions between the different panes.
 
-// insert three pane furniture scrubber
+_insert three pane furniture scrubber_

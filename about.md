@@ -24,7 +24,7 @@ The upshot of my wide net is that it has lowered my [technical debt](https://en.
   2. I have a working knowledge on subjects from machine design to watercolor to geospatial data.
   3. These two prior facts combine into the _**lifestyle of inquiry**_ that is my happy habit.
 
-If you want to get in touch, reach out through any of my contact info on the homepage of this site!
+If you want to get in touch or work on something together, just [reach out]({{ site.email }})!
 <br>
 
 ---
@@ -38,4 +38,4 @@ If you want to get in touch, reach out through any of my contact info on the hom
 - If you don't document it, it doesn't exist.
 - ...
 
-I built this using [jekyll](https://jekyllrb.com/) with a slightly modified version of the [minima theme](https://github.com/jekyll/minima). It's hosted using the graciously free [Github Pages](https://pages.github.com/) platform.
+I built this using [jekyll](https://jekyllrb.com/) with a custom layout built using [Bootstrap](http://getbootstrap.com/). It's hosted using the graciously free [Github Pages](https://pages.github.com/) platform.
