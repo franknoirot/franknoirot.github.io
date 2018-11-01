@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 ---
 
+# About
 <img src='\assets\img\profile-pic.jpg' width="25%" style="float: right; margin: 0 0 30px 30px; min-width: 150px;">
 
 My name is Frank Johnson, and I'm a designer of objects, applications, and organizations. _Frank RJ Noirot_ is only my pseudonym, [at least for now](/im-changing-my-name).
