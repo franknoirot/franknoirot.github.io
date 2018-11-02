@@ -26,6 +26,11 @@ blockquote:before {
 blockquote p {
   display: inline; }
 
+code {
+  padding: 0 .3rem;
+  border-radius: .2rem;
+  background-color: #f0f0f0; }
+
 .container {
   margin-top: 5%;
   margin-bottom: 10%; }
@@ -36,9 +41,6 @@ blockquote p {
 a:hover {
   text-decoration: none;
   color: #333; }
-
-.category-container:not(last-of-type) {
-  margin-bottom: 1.2rem; }
 
 .fa-fw {
   margin-right: .8rem; }
@@ -70,8 +72,16 @@ a:hover {
   top: 10px;
   left: 0; }
 
+.category-container:not(last-child) {
+  margin-bottom: 1.2rem; }
+
 .category-toggle > h2 {
-  color: #707070; }
+  color: #707070;
+  transition: all .6s ease; }
+  .category-toggle > h2:hover {
+    background-color: whitesmoke;
+    border-radius: .8em;
+    color: #8d021f; }
 
 .collapse.show {
   border-top: solid 2px #707070; }

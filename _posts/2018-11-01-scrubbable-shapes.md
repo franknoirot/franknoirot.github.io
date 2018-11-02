@@ -10,13 +10,13 @@ Brett Victor's work has been on my mind a lot this week. His essay _[Up And Down
 First among them is the _scrub_ gesture for which the essay is named. In his proposed visual math system, any number on the screen can be adjusted either with the keyboard, or by clicking and dragging on the value: scrubbing. He proposes that making this gesture native, along with several much more novel interactions like linking values together, would make our math more embodied, and maybe help more people digest mathematical concepts. Here's a video from _Scrubbing Calculator_ showing how it works:
 
 <div style="text-align: center; margin-bottom: 1rem;">
-<video id="va" width="420" height="100 " controls autoplay>
+<video id="va" style='width: 100%; max-width: 420px; max-height: 100;' controls autoplay>
 		<source src="http://worrydream.com/ScrubbingCalculator/Movies/TripAdjust.mov" type="video/quicktime">
 		<source src="http://worrydream.com/ScrubbingCalculator/Movies/TripAdjust.webm" type="video/webm">
 	</video>
 </div>
 
-I agree, and with some guidance from [Michael Nielsen's notes on Victor's essay](http://mnielsen.github.io/notes/kill_math/kill_math.html) I'd like to explore some of those small, specific questions lurking in the scrub gesture.
+I agree that there is something to explore here. So with some guidance from [Michael Nielsen's notes on Victor's essay](http://mnielsen.github.io/notes/kill_math/kill_math.html) I'd like to explore some of those small, specific questions lurking in the scrub gesture.
 
 I'm no mathematician, but I do make things that deal with a lot of geometry. So here I'll be exploring what scrubbing can offer shapes. My first thought is that they can be used to drive the dimensions of a shape or drawing in a curated way as _sketch dimensions_.
 
@@ -26,7 +26,7 @@ Maybe just my kind of cool? Whatever, I'm still gonna make it.
 
 Eventually I will make this into a tool for [THREE.js](http://threejs.org), where I can embed annotations into whichever dimensions I want, and the user will be able to tweak while viewing in 3D. But we can build to that from a 2D. So let's start with the simplest geometry: a line.
 
-To scrub the width of the line, simply click and drag on the variable name! You can tweak `length` in smaller increments by holding Ctrl (Cmd on Mac) before clicking and dragging.
+To scrub the width of the line, simply click and drag on the variable name! You can tweak `length` in smaller increments by holding `Ctrl` (`Cmd` on Mac) before clicking and dragging.
 
 {% include scrubbable-line.html %}
 

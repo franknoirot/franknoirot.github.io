@@ -46,6 +46,7 @@ title: Frank Noirot
 
   {%- if site.posts.size > 0 -%}
   <section id='work'>
+    <h1 style='border-bottom: solid 1px black;'>Work</h1>
     {%- for category in site.categories  -%}
     {% assign catName = category[0] %}
     <div id='work-{{ category[0] }}' class='category-container'>
