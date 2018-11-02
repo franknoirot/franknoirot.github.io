@@ -45,16 +45,26 @@
     </time></p>
 </header>
 
-<p>I can’t stop thinking about the mathematical UX work done by <a href="worrydream.com/#!/KillMath">Brett Victor</a>, and the even more in-depth response by <a href="http://mnielsen.github.io/notes/kill_math/kill_math.html">Michael Nielsen</a>. I’m particularly stuck on this bit from Nielsen under the section “Moving Theorems Into the User Interface”:</p>
-<blockquote>
-  <p>That is we should move theorems into the user interface. Tipping it upside down, we can view theorems as challenges to develop a user interface which reifies those theorems in a powerful way, providing the user with cues that help them reason, and representing mathematical objects in ways that help suggest the relevant operations and relationships.</p>
-</blockquote>
+<p>Brett Victor’s work has been on my mind a lot this week. His essay <em><a href="http://worrydream.com/#!2/LadderOfAbstraction">Up And Down The Ladder of Abstraction</a></em> is something I consider a must-read, and his <a href="http://worrydream.com/ScrubbingCalculator/">Scrubbing Calculator</a> essay as a part of the series <a href="http://worrydream.com/#!/KillMath">Kill Math</a> is filled with tons of specific visual user experience questions I’d like to explore, because to my surprise not much attention seems to have been paid it since 2011.</p>
 
-<p>I have been surprised on how few people seemed to build directly on their work from 2012, especially in ways that are opensource and toolbox-ready. I want to explore some of the atomic UX problems Nielsen poses in his notes in the coming months, particularly creating a gesture for instantly graphing an equation, built to work with <a href="mathjax.org">MathJax</a>.</p>
+<p>First among them is the <em>scrub</em> gesture for which the essay is named. In his proposed visual math system, any number on the screen can be adjusted either with the keyboard, or by clicking and dragging on the value: scrubbing. He proposes that making this gesture native, along with several much more novel interactions like linking values together, would make our math more embodied, and maybe help more people digest mathematical concepts. Here’s a video from <em>Scrubbing Calculator</em> showing how it works:</p>
 
-<p>But I see a branch of this problem that could help me more directly in my furniture and product design work. What if I could present a model of a furniture piece in the browser, and allow a user to <strong>customize certain dimensions live by scrubbing its annotations?</strong> When they’re happy with the dimensions they’ve found, they would then be able to submit it to me as a commission request with a simple button press.</p>
+<div style="text-align: center; margin-bottom: 1rem;">
+<video id="va" width="420" height="100 " controls="" autoplay="">
+		<source src="http://worrydream.com/ScrubbingCalculator/Movies/TripAdjust.mov" type="video/quicktime" />
+		<source src="http://worrydream.com/ScrubbingCalculator/Movies/TripAdjust.webm" type="video/webm" />
+	</video>
+</div>
 
-<p>Eventually I will make this into a tool for <a href="threejs.org">THREE.js</a>, where I can embed “scrubbable” triggers into whichever dimensions I want, and the user will be able to tweak while viewing in 3D. But we can build to that from a 2D. So let’s start with the simplest geometry: a line.</p>
+<p>I agree, and with some guidance from <a href="http://mnielsen.github.io/notes/kill_math/kill_math.html">Michael Nielsen’s notes on Victor’s essay</a> I’d like to explore some of those small, specific questions lurking in the scrub gesture.</p>
+
+<p>I’m no mathematician, but I do make things that deal with a lot of geometry. So here I’ll be exploring what scrubbing can offer shapes. My first thought is that they can be used to drive the dimensions of a shape or drawing in a curated way as <em>sketch dimensions</em>.</p>
+
+<p>I make furniture pretty often, and I would like to start doing the occasional commissioned piece. <strong>Wouldn’t it be cool if I could let customers tweak a some of a furniture design’s dimensions live with a simple scrub of a value?</strong></p>
+
+<p>Maybe just my kind of cool? Whatever, I’m still gonna make it.</p>
+
+<p>Eventually I will make this into a tool for <a href="http://threejs.org">THREE.js</a>, where I can embed annotations into whichever dimensions I want, and the user will be able to tweak while viewing in 3D. But we can build to that from a 2D. So let’s start with the simplest geometry: a line.</p>
 
 <p>To scrub the width of the line, simply click and drag on the variable name! You can tweak <code class="highlighter-rouge">length</code> in smaller increments by holding Ctrl (Cmd on Mac) before clicking and dragging.</p>
 

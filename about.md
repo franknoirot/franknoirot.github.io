@@ -1,42 +1,21 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: about
 ---
 
 # About
-<img src='\assets\img\profile-pic.jpg' width="25%" style="float: right; margin: 0 0 30px 30px; min-width: 150px;">
 
-My name is Frank Johnson, and I'm a designer of objects, applications, and organizations. _Frank RJ Noirot_ is only my pseudonym, [at least for now](/im-changing-my-name).
+My name is Frank R Johnson, and I’m a designer of objects, applications, and organizations. Frank RJ Noirot is only my pseudonym, at [least for now](https://franknoirot.co/write/im-changing-my-name). I love to make art and tools.
 
-I use this website as two things:
-  1. A To-Do list to keep me documenting and working.
-  2. A portfolio for you!
+#### Work
+I work at [Iridium Satellite](http://iridium.com) as a Marketing Associate, which means I do everything from taking all the product photography to help managing their websites. I'm most proud of the reorganization I did of their system of metadata for all of their hosted files, products, and partner companies, although the coolest thing I've worked on is probably the commemorative patch for their final rocket launch.
 
+#### Education
+I went to Ohio State University and studied City & Regional Planning at [the Knowlton School](https://knowlton.osu.edu/), graduating in 2017. While I was there I helped found [OSU Maker Club](http://osumakerclub.org/), an organization that gives students of any major access to the amazing tool shops and technology that Ohio State has to offer, and holds weekly meetings to teach one another how to design and make things. The 3D printer and [CNC machine](https://www.v1engineering.com/specifications/) that I donated to them have been used by hundreds of students, and the club is going on its fifth year now.
 
----
-<br>
+Over the next two years, I am working to enter graduate school to study design and engineering, with preference toward the [MIT Media Lab](media.mit.edu). I have cast a wide net in my studies, and now I hope to take a deep dive and become an expert at something, so I can start being useful to solve wicked problems. One aim of this website is to help me pick where to dive.
 
-### Wide Net / Deep Dive
-My whole life I have struggled to find a specialty or expertise- sort of a jack of all trades, master of none situation. I blame it on all the cool stuff there is to learn in the world. But I'm looking to change that now by entering a graduate program this year, so I can dive deep into an area of inquiry and start helping on [wicked problems](https://www.un.org/sustainabledevelopment/sustainable-development-goals/). These kinds of problems are deadly serious, and need _jacks of all trades, masters of some_ to surmount together.
+#### Life
+These days I'm focusing on learning to code, work with data, build furniture, and basically how to live with complete curiousity. I live in DC, but I commute to NYC most weekends to see my wonderful partner, Emily. Right now I love the music of Milo, Saintseneca, and Moses Sumney.
 
-The upshot of my wide net is that it has lowered my [technical debt](https://en.wikipedia.org/wiki/Technical_debt) as a designer. I feel confident that I can be useful in almost any studio/lab for three reasons:
-  1. I love working on nearly anything.
-  2. I have a working knowledge on subjects from machine design to watercolor to geospatial data.
-  3. These two prior facts combine into the _**lifestyle of inquiry**_ that is my happy habit.
-
-If you want to get in touch or work on something together, just [reach out]({{ site.email }})!
-<br>
-
----
-
-<br>
-### Principles, Design & Otherwise
-- Waste is a design flaw.
-- Nature is smarter than you.
-- Privilege is a debt to be repaid.
-- Opensource is not optional.
-- If you don't document it, it doesn't exist.
-- ...
-
-I built this using [jekyll](https://jekyllrb.com/) with a custom layout built using [Bootstrap](http://getbootstrap.com/). It's hosted using the graciously free [Github Pages](https://pages.github.com/) platform.
+If you'd like to work with me or discuss ideas, [I'm always available via email](mailto:frank@franknoirot.co), or check out my [Instagram]({{ site.instagram }}), or [Github]({{ site.github }}) to learn more.

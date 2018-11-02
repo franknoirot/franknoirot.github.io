@@ -7,18 +7,22 @@ excerpt: Recently in my internet wanderings I came across a Wiki page on a geome
 
 In my internet wanderings I came across a Wiki page on a geometry principle known as [Thales's Theorem](https://en.wikipedia.org/wiki/Thales%27s_theorem). It caught my eye because its creator inspired the name of one of the [biggest partners](https://www.thalesgroup.com/en) of my employer, [Iridium Satellite](https://iridium.com).
 
-It starts with a triangle inscribed inside a circle, meaning its three points lie along the circle. If one of those sides goes through the center point of the circle, the angle opposite that side will __always be a 90&deg;!__ No matter where that last point is, all along the circle, that angle will always be the same.
+This little toy application was made using only CSS and [D3.js](http://d3js.org/) Drag the three points around the circle to get used to how the system works!
 
-This is such a such a simple, and to many, straightforward fact of geometry, but I can't stop thinking about how cool it is! The little animation on Wikipedia broke my brain in that small joyful way that any moment of learning does, and knew I wanted to make a tool to really feel how the principles of Thales's Theorem worked.
-
-I built this little tool using only CSS and D3.js. Drag around the points on the circle and you can physically start to sense just how the mechanics of this system works.
+---
 
 <p data-height="600" data-theme-id="0" data-slug-hash="BqxzRv" data-default-tab="result" data-user="franknoirot" data-pen-title="Thales Theorem" class="codepen">See the Pen <a href="https://codepen.io/franknoirot/pen/BqxzRv/">Thales Theorem</a> by Frank Noirot (<a href="https://codepen.io/franknoirot">@franknoirot</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-The first thing you should do is pull a Thales and position one line so that it runs straight through the dot in the center of the circle. The angle across from that line is exactly 90&deg;! Whew, people are so smart. But there's more to explore here.
+---
 
-Notice, for example that the angle you sweep along the circle _always stays the same, not just for the 90&deg; case mentioned above_. This is called the [Inscribed Angle Theorem](https://en.wikipedia.org/wiki/Inscribed_angle_theorem), which is the more generalized case of the one posed by Thales.
+Before we get to Thales, lets describe the general version of his theorem, which is called the [Inscribed Angle Theorem](https://en.wikipedia.org/wiki/Inscribed_angle_theorem). It's definition is super wonky, but its _implication_ is that for any triangle inscribed into a circle, sweeping one angle along the circle while keeping the other two points fixed, __the sweeping angle will always stay the same!__
+
+Isn't that kind of wild? Maybe its because my school skipped Geometry for my year (true story), but this blew my mind in the small way things do when you glimpse a deep true mathematical relationship.
+
+Now that you've got the general case of the sweeping angle down, I want you to pull a Thales and position one side of the triangle so that it runs straight through the dot in the center of the circle. __The angle across from that line will always be exactly 90&deg;!__ Whew, people are so smart. But there's more to explore here.
+
+Notice, for example that the angle you sweep along the circle _always stays the same, not just for the 90&deg; case mentioned above_. This is called the , which is the more generalized case of the one posed by Thales.
 
 Or notice how in essence, the sweeping angle is in some ways _a simple proportion of the circle that is bisected by the line across it_. The more of the circle chopped across by a side of the triangle, the bigger the angle across from it, approaching but never reaching 180&deg;. This sideles into the fundamental nature of how cosine and sine relate triangles to circles, and for the first time I felt those concepts in a visceral way.
 

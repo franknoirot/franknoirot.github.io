@@ -36,20 +36,24 @@ var circle2 = lineGroup.append('circle')
     .attr('cy', height/2)
     .attr('r', 1);
 
-var annotationBracket = lineGroup.select('path')
-  .data(line)
-  .enter()
-  .append('path')
-  .attr('d', function(d) {
-    console.log('HELLO');
-  });
+var annotationBracket = lineGroup.append('path')
+  .attr('d',
+    'M ' + pad +' '+ (height/2-4)
+    +', l 0 -3'
+    +', l ' +(width-(pad*2))+' 0'
+    +', l 0 3')
+  .attr('id', 'annotation')
+  .attr('stroke', 'gray')
+  .attr('stroke-width', .5)
+  .attr('fill', 'none');
 
 var annotationColor = 'red';
 var annotationText = lineGroup.append('text')
   .attr('x', width/2)
-  .attr('y', height/3)
+  .attr('y', height/2-9)
   .style('text-anchor', 'middle')
   .style('font-size', 3)
+  .style('fill', 'gray')
   .style('cursor', 'e-resize')
   .text('length')
   .call(d3.drag()
@@ -79,15 +83,22 @@ function scrubStart(d){
 function scrub(d) {
   xScrub = 3*(d3.event.x - mouseXInit)/scrubFactor;
 
-  lenDrag += xScrub;
+  var tx1 = parseFloat(objInit.attributes.x1.value) - xScrub;
+  var tx2 = parseFloat(objInit.attributes.x2.value) + xScrub;
 
   objSelect
-    .attr('x1', parseFloat(objInit.attributes.x1.value) - xScrub)
-    .attr('x2', parseFloat(objInit.attributes.x2.value) + xScrub);
+    .attr('x1', tx1 )
+    .attr('x2', tx2 );
 
+  annotationBracket
+    .attr('d',
+      'M '+tx1+' '+((height/2)-4)
+      +', l 0 -3, l ' +(tx2-tx1)+ ' 0'
+      +', l 0 3'
+    );
 
-  circle1.attr('cx', parseFloat(objInit.attributes.x1.value) - xScrub);
-  circle2.attr('cx', parseFloat(objInit.attributes.x2.value) - xScrub);
+  circle1.attr('cx', tx1 - xScrub);
+  circle2.attr('cx', tx2 - xScrub);
 
   d3.select(this).text(getLength(objInit.attributes).toPrecision(4) )
     .style('fill', annotationColor);
@@ -98,7 +109,7 @@ function scrub(d) {
 
 function scrubEnd(d) {
   d3.select(this).text('length')
-    .style('fill', 'black');
+    .style('fill', 'gray');
 }
 
 function keyHandler() {
@@ -106,15 +117,15 @@ function keyHandler() {
      if (event.ctrlKey) {
        annotationColor = '#f0f';
        scrubFactor *= 15;
-       console.log('pressed!, ',scrubFactor);
      }
 }
 
 document.onkeydown = keyHandler;
 
 document.onkeyup = function() {
-    this.onkeydown = keyHandler;
-    annotationColor = 'red';
-    scrubFactor /= 15;
-    console.log('released!, ',scrubFactor);
+    if (event.key == 'Control') {
+      this.onkeydown = keyHandler;
+      annotationColor = 'red';
+      scrubFactor /= 15;
+    }
 };
