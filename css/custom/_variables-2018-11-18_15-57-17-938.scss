@@ -1,6 +1,5 @@
-$primary: #3399FF; //icon blue
+$primary: #8d021f; //burgundy
 $secondary: #707070; //gray
-$tertiary: #FF6666; //icon red
 
 section {
   margin-bottom: 1.5rem;
@@ -43,7 +42,7 @@ code {
 
 a:hover {
   text-decoration: none;
-  color: $tertiary;
+  color: #333;
 }
 
 .fa-fw {
@@ -87,11 +86,9 @@ a:hover {
     left: 0;
 }
 
-
-// Bootstrap Jumbotron adjustments
 .jumbotron {
   padding-bottom: 10%;
-  background-color: $primary!important;
+  background-color: $primary;
   &::before {
     content: "";
     position: absolute;
@@ -100,7 +97,7 @@ a:hover {
     background-image: url("../assets/img/homepage-marquee.jpg");
     object-fit: cover;
     background-repeat: no-repeat;
-    filter: brightness(0.75) grayscale(0.8);
+    filter: brightness(0.8);
   }
 }
 
@@ -138,7 +135,7 @@ a:hover {
 }
 
 .collapse.show{
-  border-top: solid 2px $tertiary;
+  border-top: solid 2px $secondary;
 }
 
 .collapse{

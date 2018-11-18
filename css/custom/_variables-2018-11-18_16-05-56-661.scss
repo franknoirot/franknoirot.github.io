@@ -42,8 +42,9 @@ code {
 }
 
 a:hover {
-  text-decoration: none;
-  color: $tertiary;
+  text-decoration: underline;
+  text-decoration-color: $tertiary;
+  color: #333;
 }
 
 .fa-fw {
@@ -87,8 +88,6 @@ a:hover {
     left: 0;
 }
 
-
-// Bootstrap Jumbotron adjustments
 .jumbotron {
   padding-bottom: 10%;
   background-color: $primary!important;
@@ -138,7 +137,7 @@ a:hover {
 }
 
 .collapse.show{
-  border-top: solid 2px $tertiary;
+  border-top: solid 2px $secondary;
 }
 
 .collapse{
