@@ -6,7 +6,7 @@ materials: data, QGIS, Google Sheets
 skills: data analysis, research, writing
 carousel:
   asset_dir: /assets/img/osu-crp-thesis-slides
-  slides: 19
+  slides: 49
   file_type: .jpg
 
 ---

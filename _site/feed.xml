@@ -1,4 +1,145 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-21T01:32:53-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Frank Noirot</title><subtitle>A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC.</subtitle><author><name>Frank RJ Noirot</name></author><entry><title type="html">Scrubbable Shapes</title><link href="http://localhost:4000/code/scrubbable-shapes" rel="alternate" type="text/html" title="Scrubbable Shapes" /><published>2018-11-01T00:00:00-04:00</published><updated>2018-11-01T00:00:00-04:00</updated><id>http://localhost:4000/code/scrubbable-shapes</id><content type="html" xml:base="http://localhost:4000/code/scrubbable-shapes">&lt;p&gt;Brett Victor’s work has been on my mind a lot this week. His essay &lt;em&gt;&lt;a href=&quot;http://worrydream.com/#!2/LadderOfAbstraction&quot;&gt;Up And Down The Ladder of Abstraction&lt;/a&gt;&lt;/em&gt; is something I consider a must-read, and his &lt;a href=&quot;http://worrydream.com/ScrubbingCalculator/&quot;&gt;Scrubbing Calculator&lt;/a&gt; essay as a part of the series &lt;a href=&quot;http://worrydream.com/#!/KillMath&quot;&gt;Kill Math&lt;/a&gt; is filled with tons of specific visual user experience questions I’d like to explore, because to my surprise not much attention seems to have been paid it since 2011.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-21T02:46:38-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Frank Noirot</title><subtitle>A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC.</subtitle><author><name>Frank RJ Noirot</name></author><entry><title type="html">Jekyll Slideshows Using Bootstrap 4 Carousels</title><link href="http://localhost:4000/code/bootstrap-4-carousel-jekyll" rel="alternate" type="text/html" title="Jekyll Slideshows Using Bootstrap 4 Carousels" /><published>2018-11-21T00:00:00-05:00</published><updated>2018-11-21T00:00:00-05:00</updated><id>http://localhost:4000/code/bootstrap-4-carousel-jekyll</id><content type="html" xml:base="http://localhost:4000/code/bootstrap-4-carousel-jekyll">&lt;p&gt;Today I built a little _include file to create slideshows on my Jekyll site that is dead simple, and more importantly to me, that looks clean and readable in Markdown.&lt;/p&gt;
+
+&lt;p&gt;Jekyll’s blogging functionality is wonderful. writing simple Markdown files is so much prettier than HTML pages, and hopefully someday will let me add posts to my static site from my phone’s notepad.&lt;/p&gt;
+
+&lt;p&gt;But I have to constantly fight the urge to just elbow in HTML whenever I want something beyond simple text and images, which seems to be every post I write.&lt;/p&gt;
+
+&lt;p&gt;So when I went to embed my findings presentation into my portfolio post on my Undergraduate Research Thesis, I challenged myself to embed the slideshow with just one line of an include. Here’s my code in action:&lt;/p&gt;
+
+&lt;div id=&quot;bootstrap-4-carousel-jekyll--slideshow&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
+  &lt;ol class=&quot;carousel-indicators&quot;&gt;
+    
+    
+    &lt;li data-target=&quot;#bootstrap-4-carousel-jekyll--slideshow&quot; data-slide-to=&quot;&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+    
+    &lt;li data-target=&quot;#bootstrap-4-carousel-jekyll--slideshow&quot; data-slide-to=&quot;&quot;&gt;&lt;/li&gt;
+    
+    &lt;li data-target=&quot;#bootstrap-4-carousel-jekyll--slideshow&quot; data-slide-to=&quot;&quot;&gt;&lt;/li&gt;
+    
+    &lt;li data-target=&quot;#bootstrap-4-carousel-jekyll--slideshow&quot; data-slide-to=&quot;&quot;&gt;&lt;/li&gt;
+    
+    &lt;li data-target=&quot;#bootstrap-4-carousel-jekyll--slideshow&quot; data-slide-to=&quot;&quot;&gt;&lt;/li&gt;
+    
+  &lt;/ol&gt;
+  &lt;div class=&quot;carousel-inner&quot;&gt;
+    
+    &lt;div class=&quot;carousel-item active&quot;&gt;
+      &lt;img class=&quot;d-block w-100&quot; src=&quot;/assets/img/osu-crp-thesis-slides/1.jpg&quot; alt=&quot;Jekyll Slideshows Using Bootstrap 4 Carousels Slideshow: Page 1&quot; /&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;carousel-item &quot;&gt;
+      &lt;img class=&quot;d-block w-100&quot; src=&quot;/assets/img/osu-crp-thesis-slides/2.jpg&quot; alt=&quot;Jekyll Slideshows Using Bootstrap 4 Carousels Slideshow: Page 2&quot; /&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;carousel-item &quot;&gt;
+      &lt;img class=&quot;d-block w-100&quot; src=&quot;/assets/img/osu-crp-thesis-slides/3.jpg&quot; alt=&quot;Jekyll Slideshows Using Bootstrap 4 Carousels Slideshow: Page 3&quot; /&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;carousel-item &quot;&gt;
+      &lt;img class=&quot;d-block w-100&quot; src=&quot;/assets/img/osu-crp-thesis-slides/4.jpg&quot; alt=&quot;Jekyll Slideshows Using Bootstrap 4 Carousels Slideshow: Page 4&quot; /&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;carousel-item &quot;&gt;
+      &lt;img class=&quot;d-block w-100&quot; src=&quot;/assets/img/osu-crp-thesis-slides/5.jpg&quot; alt=&quot;Jekyll Slideshows Using Bootstrap 4 Carousels Slideshow: Page 5&quot; /&gt;
+    &lt;/div&gt;
+    
+  &lt;/div&gt;
+  &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#bootstrap-4-carousel-jekyll--slideshow&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+    &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;carousel-control-next&quot; href=&quot;#bootstrap-4-carousel-jekyll--slideshow&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+    &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This simple line is the include in my Markdown file:&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;carousel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The secret power of this include file &lt;code class=&quot;highlighter-rouge&quot;&gt;carousel.html&lt;/code&gt; is the YML variables that I’ve tucked into the frontmatter of this Markdown post:&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;carousel&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;asset_dir&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/assets/img/osu-crp-thesis-slides&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;slides&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;5&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;file_type&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;.jpg&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you can start to infer what &lt;code class=&quot;highlighter-rouge&quot;&gt;carousel.html&lt;/code&gt; is going to do. It will populate a slider with a series of images in the directory assigned to &lt;code class=&quot;highlighter-rouge&quot;&gt;asset_dir&lt;/code&gt;, of which there seem to be &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt;, and all of them must be &lt;code class=&quot;highlighter-rouge&quot;&gt;.jpg&lt;/code&gt; files.&lt;/p&gt;
+
+&lt;p&gt;In the course of building this I learned that the Liquid language that powers Jekyll &lt;a href=&quot;https://stackoverflow.com/questions/17446472/how-to-list-files-in-a-directory-with-liquid/31885127&quot;&gt;doesn’t have I/O power to read a directory and loop over the contents intelligently&lt;/a&gt;. This is why we have to do the dumb thing and explicitly tell Liquid how many slides we’re going to loop over. However, one cool upshot of this manually defined variable is that excerpting a slideshow is easy. For example, the slideshow above isn’t actually 5 slides, but &lt;strong&gt;49!&lt;/strong&gt; I limited the number of slides rendered by controlling this variable.&lt;/p&gt;
+
+&lt;p&gt;The other side of this system is my directory structure, which is simply naming each file by its slide number, ex. &lt;code class=&quot;highlighter-rouge&quot;&gt;5.jpg&lt;/code&gt;. This will make looping over the images very straightforward, and I still have my images partitioned into different directories so I don’t mind having multiple &lt;code class=&quot;highlighter-rouge&quot;&gt;1.jpg&lt;/code&gt; files across my site.&lt;/p&gt;
+
+&lt;p&gt;Now let’s check out &lt;code class=&quot;highlighter-rouge&quot;&gt;carousel.html&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+
+&amp;lt;div id=&quot;bootstrap-4-carousel-jekyll--slideshow&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&amp;gt;
+  &amp;lt;ol class=&quot;carousel-indicators&quot;&amp;gt;
+    
+    
+    &amp;lt;li data-target=&quot;#bootstrap-4-carousel-jekyll--slideshow&quot; data-slide-to=&quot;&quot; class=&quot;active&quot;&amp;gt;&amp;lt;/li&amp;gt;
+    
+    &amp;lt;li data-target=&quot;#bootstrap-4-carousel-jekyll--slideshow&quot; data-slide-to=&quot;&quot; &amp;gt;&amp;lt;/li&amp;gt;
+    
+    &amp;lt;li data-target=&quot;#bootstrap-4-carousel-jekyll--slideshow&quot; data-slide-to=&quot;&quot; &amp;gt;&amp;lt;/li&amp;gt;
+    
+    &amp;lt;li data-target=&quot;#bootstrap-4-carousel-jekyll--slideshow&quot; data-slide-to=&quot;&quot; &amp;gt;&amp;lt;/li&amp;gt;
+    
+    &amp;lt;li data-target=&quot;#bootstrap-4-carousel-jekyll--slideshow&quot; data-slide-to=&quot;&quot; &amp;gt;&amp;lt;/li&amp;gt;
+    
+  &amp;lt;/ol&amp;gt;
+  &amp;lt;div class=&quot;carousel-inner&quot;&amp;gt;
+    
+    &amp;lt;div class=&quot;carousel-item active&quot;&amp;gt;
+      &amp;lt;img class=&quot;d-block w-100&quot; src=&quot;/assets/img/osu-crp-thesis-slides/1.jpg&quot; alt=&quot;Jekyll Slideshows Using Bootstrap 4 Carousels Slideshow: Page 1&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+    
+    &amp;lt;div class=&quot;carousel-item &quot;&amp;gt;
+      &amp;lt;img class=&quot;d-block w-100&quot; src=&quot;/assets/img/osu-crp-thesis-slides/2.jpg&quot; alt=&quot;Jekyll Slideshows Using Bootstrap 4 Carousels Slideshow: Page 2&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+    
+    &amp;lt;div class=&quot;carousel-item &quot;&amp;gt;
+      &amp;lt;img class=&quot;d-block w-100&quot; src=&quot;/assets/img/osu-crp-thesis-slides/3.jpg&quot; alt=&quot;Jekyll Slideshows Using Bootstrap 4 Carousels Slideshow: Page 3&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+    
+    &amp;lt;div class=&quot;carousel-item &quot;&amp;gt;
+      &amp;lt;img class=&quot;d-block w-100&quot; src=&quot;/assets/img/osu-crp-thesis-slides/4.jpg&quot; alt=&quot;Jekyll Slideshows Using Bootstrap 4 Carousels Slideshow: Page 4&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+    
+    &amp;lt;div class=&quot;carousel-item &quot;&amp;gt;
+      &amp;lt;img class=&quot;d-block w-100&quot; src=&quot;/assets/img/osu-crp-thesis-slides/5.jpg&quot; alt=&quot;Jekyll Slideshows Using Bootstrap 4 Carousels Slideshow: Page 5&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+    
+  &amp;lt;/div&amp;gt;
+  &amp;lt;a class=&quot;carousel-control-prev&quot; href=&quot;#bootstrap-4-carousel-jekyll--slideshow&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&amp;gt;
+    &amp;lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&quot;sr-only&quot;&amp;gt;Previous&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+  &amp;lt;a class=&quot;carousel-control-next&quot; href=&quot;#bootstrap-4-carousel-jekyll--slideshow&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&amp;gt;
+    &amp;lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&quot;sr-only&quot;&amp;gt;Next&amp;lt;/span&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Remember that Jekyll uses HTML peppered with Liquid tags to provide variables and logic. Anywhere you see &lt;code class=&quot;highlighter-rouge&quot;&gt;{{ foo }}&lt;/code&gt; a Liquid variable is being referenced, and &lt;code class=&quot;highlighter-rouge&quot;&gt;{% bar %}&lt;/code&gt; is some Liquid logic, like If statements or For loops.&lt;/p&gt;
+
+&lt;p&gt;The other stuff is HTML, specifically &lt;a href=&quot;https://getbootstrap.com/docs/4.0/components/carousel/#with-indicators&quot;&gt;the Carousel component with controls and indicators from Bootstrap 4&lt;/a&gt;. Click the link; I really just lifted this code straight from there and tweaked it!&lt;/p&gt;
+
+&lt;p&gt;Here’s what my code does to make carousel abstracted to be used on any page with any images:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Make sure the page asking for a carousel has the &lt;code class=&quot;highlighter-rouge&quot;&gt;:carousel&lt;/code&gt; YML variable defined before we start building broken stuff.&lt;/li&gt;
+  &lt;li&gt;Name the carousel we’re building by making the id unique by the &lt;code class=&quot;highlighter-rouge&quot;&gt;page.slug&lt;/code&gt; variable&lt;/li&gt;
+  &lt;li&gt;Loop over the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;li&amp;gt;&lt;/code&gt; elements that power the carousel by iterating over the range &lt;code class=&quot;highlighter-rouge&quot;&gt;(1..page.carousel.slides)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;In a new loop for the inner contents of the carousel, iterate over the same range. This time we grab our images by concatenating &lt;code class=&quot;highlighter-rouge&quot;&gt;page.carousel.asset_dir&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;slide&lt;/code&gt; (which is an index number), and &lt;code class=&quot;highlighter-rouge&quot;&gt;page.carousel.file_type&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you’re using Jekyll and Bootstrap 4 for your website, feel free to use the code above to create your own slideshow pipeline without any external plugins! If you’re an experienced developer, &lt;a href=&quot;mailto:frank@franknoirot.co&quot;&gt;let me know&lt;/a&gt; if I’m doing anything that looks like nails on a chalkboard to you. I’m still learning this web development stuff!&lt;/p&gt;</content><author><name>Frank RJ Noirot</name></author><summary type="html">Building a slideshow module using a Jekyll include, simple Bootstrap, and simple images. No plugins!</summary></entry><entry><title type="html">Scrubbable Shapes</title><link href="http://localhost:4000/code/scrubbable-shapes" rel="alternate" type="text/html" title="Scrubbable Shapes" /><published>2018-11-01T00:00:00-04:00</published><updated>2018-11-01T00:00:00-04:00</updated><id>http://localhost:4000/code/scrubbable-shapes</id><content type="html" xml:base="http://localhost:4000/code/scrubbable-shapes">&lt;p&gt;Brett Victor’s work has been on my mind a lot this week. His essay &lt;em&gt;&lt;a href=&quot;http://worrydream.com/#!2/LadderOfAbstraction&quot;&gt;Up And Down The Ladder of Abstraction&lt;/a&gt;&lt;/em&gt; is something I consider a must-read, and his &lt;a href=&quot;http://worrydream.com/ScrubbingCalculator/&quot;&gt;Scrubbing Calculator&lt;/a&gt; essay as a part of the series &lt;a href=&quot;http://worrydream.com/#!/KillMath&quot;&gt;Kill Math&lt;/a&gt; is filled with tons of specific visual user experience questions I’d like to explore, because to my surprise not much attention seems to have been paid it since 2011.&lt;/p&gt;
 
 &lt;p&gt;First among them is the &lt;em&gt;scrub&lt;/em&gt; gesture for which the essay is named. In his proposed visual math system, any number on the screen can be adjusted either with the keyboard, or by clicking and dragging on the value: scrubbing. He proposes that making this gesture native, along with several much more novel interactions like linking values together, would make our math more embodied, and maybe help more people digest mathematical concepts. Here’s a video from &lt;em&gt;Scrubbing Calculator&lt;/em&gt; showing how it works:&lt;/p&gt;
 
