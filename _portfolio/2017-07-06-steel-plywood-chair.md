@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: portfolio_project
 title: "Steel & Plywood Chair"
 categories: make
+materials: plywood, square steel tube
+skills: modelling, welding
 ---
 
 This simple chair was my first attempt at welding. I built it using my stepfather's welder and some teaching from my friend Devin.

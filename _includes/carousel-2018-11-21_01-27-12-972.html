@@ -1,0 +1,27 @@
+{% if page.carousel %}
+{% capture slideSlug %}{{ page.slug }}--slideshow{% endcapture %}
+<div id="{{ slideSlug }}" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    {% assign slides = page.carousel.slides %}
+    {% for slide in (1..slides) %}
+    <li data-target="#{{ slideSlug }}" data-slide-to="{{ slide-1 }}" {% if slide == 1 %}class="active"{% endif %}></li>
+    <p>{{ slide }}</p>
+    {%  endfor %}
+  </ol>
+  <div class="carousel-inner">
+    {% for slide in (1..slides) %}
+    <div class="carousel-item {% if slide == 1 %}active{% endif %}">
+      <img class="d-block w-100" src="{{ page.carousel.asset_dir }}/{{ slide }}{{ page.carousel.file_type }}" alt="{{ page.title }} Slideshow: Page {{ forloop.index }}">
+    </div>
+    {% endfor %}
+  </div>
+  <a class="carousel-control-prev" href="#{{ slideSlug }}" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#{{ slideSlug }}" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+{% endif %}

@@ -1,8 +1,10 @@
 ---
-layout: post
-title: 'Family Calendar in D3.js'
+layout: portfolio_project
+title: Family Calendar in D3.js
 categories: code
-# featured_image: assets\img\img_thumb_code_family-calendar.png
+materials: D3.js, HTML, CSS
+skills: coding, data visualization
+# featured_image: /assets/img/img_thumb_code_family-calendar.png
 ---
 
 I built a calendar tool using Blockbuilder and D3.js to help remember upcoming birthdays in my big family.

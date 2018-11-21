@@ -12,6 +12,12 @@ permalink: /:categories/:title
 sass:
   sass_dir: css
 
+# Portfolio collection
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:title
+
 # Files to excludes from your website
 exclude:
   - .gitignore

@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: portfolio_project
 title: The Kasimir Barcart
 categories: make
+materials: plywood, square tube steel, drawer lining
+skills: modeling, welding, box joinery
 ---
 
 I built a custom barcart for my good friend Kaz for his birthday. It was only a year later than I told him I'd make it.
