@@ -7,7 +7,13 @@ nav_order: 4
 
 # About
 
-My name is Frank R Johnson, and I love to make art and tools. __Frank RJ Noirot__ is only my pseudonym, at [least for now](https://franknoirot.co/write/im-changing-my-name).
+My name is Frank R Johnson, and I love to make art and tools. __Frank RJ Noirot__ is only my pseudonym, at [least for now](https://franknoirot.co/write/im-changing-my-name). I love learning new things and meeting new people, so please reach out if you're interested in anything I'm doing!
+
+#### Contact
+[<i class='far fa-envelope fa-fw'></i> Email]({{ site.email }}) <br>
+[<i class='far fa-file-alt fa-fw'></i> Resumé](/resume) <br>
+[<i class='fab fa-instagram fa-fw'></i> Intagram]({{ site.instagram }}) <br>
+[<i class='fab fa-github fa-fw'></i> Github]({{ site.github }}) <br>
 
 ----
 
@@ -28,9 +34,3 @@ Over the next two years, I am working to enter graduate school to study design a
 
 #### Life
 These days I'm focusing on learning to code, work with data, build furniture, and basically how to live with complete curiousity. I live in DC, but I commute to NYC most weekends to see my wonderful partner, Emily. Right now I love the music of Milo, Saintseneca, and Moses Sumney.
-
-#### Contact
-[<i class='far fa-envelope fa-fw'></i> Email]({{ site.email }}) <br>
-[<i class='far fa-file-alt fa-fw'></i> Resumé](/resume) <br>
-[<i class='fab fa-instagram fa-fw'></i> Intagram]({{ site.instagram }}) <br>
-[<i class='fab fa-github fa-fw'></i> Github]({{ site.github }}) <br>
