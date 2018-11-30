@@ -2,7 +2,7 @@
 layout: post
 title: Scrubbable Shapes
 categories: code
-featured_image: scrubbable-shapes.JPG
+featured_image: scrubbable-shapes-feature.jpg
 excerpt: Let's explore how Bret Victor's work on mathematical UX applies to geometry generated with D3.js.
 ---
 

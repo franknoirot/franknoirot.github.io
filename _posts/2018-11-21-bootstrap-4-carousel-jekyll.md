@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll Slideshows Using Bootstrap 4 Carousels
 categories: code
-featured_image: jekyll-bootstrap-carousel.JPG
+featured_image: jekyll-bootstrap-carousel-feature.jpg
 description: Building a slideshow module using a Jekyll include, simple Bootstrap, and simple images. No plugins!
 
 asset_dir: /assets/img/osu-crp-thesis-slides
