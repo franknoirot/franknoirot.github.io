@@ -1,0 +1,43 @@
+{% if page.carousel %}
+{% capture slideSlug %}{{ page.slug }}--slideshow--{{ include.id }}{% endcapture %}
+<!-- {% assign slides = page.carousel.slides %} -->
+{% assign start = include.start %}
+{% assign end = include.end %}
+{% assign start = start | plus: 0 %}
+{% assign end = end | plus: 0  %}
+<style type="text/css" scoped>
+  .carousel-item {
+    height: 60vmin;
+  }
+
+  {% for slide in (start..end) %}
+  .slide--{{ slide }} {
+    background: url({{ page.asset_dir }}/{{ slide }}{{ page.carousel.file_type }});
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  {% endfor %}
+</style>
+<div id="{{ slideSlug }}" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    {% for slide in (start..end) %}
+    <li data-target="#{{ slideSlug }}" data-slide-to="{{ slide-1 }}" {% if slide == 1 %}class="active"{% endif %}></li>
+    {%  endfor %}
+  </ol>
+  <div class="carousel-inner">
+    {% for slide in (start..end) %}
+    <div class="carousel-item {% if slide == 1 %}active{% endif %} slide--{{ slide }}">
+    </div>
+    {% endfor %}
+  </div>
+  <a class="carousel-control-prev" href="#{{ slideSlug }}" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#{{ slideSlug }}" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+{% endif %}

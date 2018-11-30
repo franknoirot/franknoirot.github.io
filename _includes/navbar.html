@@ -6,16 +6,18 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
-    {% assign links = site.data.navigation %}
-    {% for link in links %}
+    {% assign navlinks = site.html_pages | sort: 'nav_order' %}
+    {% for link in navlinks %}
       {% assign class = nil %}
-      {% if page.url contains link.url %}
+      {% if page.url == link.url %}
         {% assign class = 'active' %}
       {% endif %}
 
+      {% if link.nav_order %}
       <!-- <li class="nav-item {{ class }}"> -->
-        <a class='nav-link {{ class }}' href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+        <a class='nav-link {{ class }}' href="{{ link.url }}">{{ link.title }}</a>
       <!-- </li> -->
+      {% endif %}
 
     {% endfor %}
 

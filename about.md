@@ -1,12 +1,15 @@
 ---
-layout: page
-title: about
+layout: default
+title: About
 permalink: /about/
+nav_order: 4
 ---
 
 # About
 
-My name is Frank R Johnson, and I love to make art and tools. Frank RJ Noirot is only my pseudonym, at [least for now](https://franknoirot.co/write/im-changing-my-name).
+My name is Frank R Johnson, and I love to make art and tools. __Frank RJ Noirot__ is only my pseudonym, at [least for now](https://franknoirot.co/write/im-changing-my-name).
+
+----
 
 #### Work
 I work at [Iridium Satellite](http://iridium.com) as a Marketing Associate, which means I do everything from taking all the product photography to help managing their websites. I'm most proud of the reorganization I did of their system of metadata for all of their hosted files, products, and partner companies, although the coolest thing I've worked on is probably the commemorative patch for their final rocket launch.
