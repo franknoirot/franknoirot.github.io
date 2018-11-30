@@ -1,16 +1,33 @@
 {% if page.carousel %}
-{% capture slideSlug %}{{ page.slug }}--slideshow{% endcapture %}
+{% capture slideSlug %}{{ page.slug }}--slideshow--{{ include.id }}{% endcapture %}
+<!-- {% assign slides = page.carousel.slides %} -->
+{% assign start = include.start %}
+{% assign end = include.end %}
+{% assign start = start | plus: 0 %}
+{% assign end = end | plus: 0  %}
+<style type="text/css" scoped>
+  .carousel-item {
+    height: 60vmin;
+  }
+
+  {% for slide in (start..end) %}
+  .slide--{{ slide }} {
+    background: url({{ page.asset_dir }}/{{ slide }}{{ page.carousel.file_type }});
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  {% endfor %}
+</style>
 <div id="{{ slideSlug }}" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    {% assign slides = page.carousel.slides %}
-    {% for slide in (1..slides) %}
+    {% for slide in (start..end) %}
     <li data-target="#{{ slideSlug }}" data-slide-to="{{ slide-1 }}" {% if slide == 1 %}class="active"{% endif %}></li>
     {%  endfor %}
   </ol>
   <div class="carousel-inner">
-    {% for slide in (1..slides) %}
-    <div class="carousel-item {% if slide == 1 %}active{% endif %}">
-      <img class="d-block w-100" src="{{ page.carousel.asset_dir }}/{{ slide }}{{ page.carousel.file_type }}" alt="{{ page.title }} Slideshow: Page {{ forloop.index }}">
+    {% for slide in (start..end) %}
+    <div class="carousel-item {% if slide == 1 %}active{% endif %} slide--{{ slide }}">
     </div>
     {% endfor %}
   </div>

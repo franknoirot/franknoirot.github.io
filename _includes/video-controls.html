@@ -1,0 +1,9 @@
+<video width="640" height="480"  controls>
+  {% if include.mp4 %}
+  <source src="{{ site.url }}/{{ include.mp4 }}" type="video/mp4">
+  {% endif %}
+  {% if include.ogg %}
+  <source src="{{ site.url }}/{{ include.ogg }}" type="video/ogg">
+  {% endif %}
+Your browser does not support the video tag.
+</video>

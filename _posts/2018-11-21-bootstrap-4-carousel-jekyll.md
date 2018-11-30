@@ -2,11 +2,11 @@
 layout: post
 title: Jekyll Slideshows Using Bootstrap 4 Carousels
 categories: code
-excerpt: Building a slideshow module using a Jekyll include, simple Bootstrap, and simple images. No plugins!
+featured_image: jekyll-bootstrap-carousel.jpg
+description: Building a slideshow module using a Jekyll include, simple Bootstrap, and simple images. No plugins!
 
+asset_dir: /assets/img/osu-crp-thesis-slides
 carousel:
-  asset_dir: /assets/img/osu-crp-thesis-slides
-  slides: 5
   file_type: .jpg
 
 ---
@@ -19,14 +19,13 @@ But I have to constantly fight the urge to just elbow in HTML whenever I want so
 
 So when I went to embed my findings presentation into my portfolio post on my Undergraduate Research Thesis, I challenged myself to embed the slideshow with just one line of an include. Here's my code in action:
 
-{% include carousel.html %}
+{% include carousel.html start='1' end='5' %}
 
+---
 This simple line is the include in my Markdown file:
 
 {% raw %}
-```liquid
-{% include carousel.html %}
-```
+`{% include carousel.html start='1' end='5' %}`
 {% endraw %}
 
 The secret power of this include file `carousel.html` is the YML variables that I've tucked into the frontmatter of this Markdown post:
@@ -46,7 +45,8 @@ The other side of this system is my directory structure, which is simply naming 
 
 Now let's check out `carousel.html`:
 
-```
+{% raw %}
+```html
 {% if page.carousel %}
 {% capture slideSlug %}{{ page.slug }}--slideshow{% endcapture %}
 <div id="{{ slideSlug }}" class="carousel slide" data-ride="carousel">
@@ -74,6 +74,7 @@ Now let's check out `carousel.html`:
 </div>
 {% endif %}
 ```
+{% endraw %}
 
 {% raw %}
 Remember that Jekyll uses HTML peppered with Liquid tags to provide variables and logic. Anywhere you see `{{ foo }}` a Liquid variable is being referenced, and `{% bar %}` is some Liquid logic, like If statements or For loops.

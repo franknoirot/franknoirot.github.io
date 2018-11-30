@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/css/main.css">
   <title>Frank Noirot</title>
+  <meta itemprop="description" name="description" content="A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC." />
 </head>
 
   <body><nav id="navbar" class='navbar navbar-expand-lg sticky-top navbar-light bg-light'>
@@ -27,16 +28,6 @@
       
       
 
-      
-
-    
-      
-      
-
-      
-      <!-- <li class="nav-item "> -->
-        <a class='nav-link ' href="/portfolio/">Portfolio</a>
-      <!-- </li> -->
       
 
     
@@ -73,84 +64,36 @@
 
     </div>
 </nav>
-<div id='content-container' class='container'>
+<div id='main-content' class='main-content'>
       <section id='personal-info' class='jumbotron'>
   <div class="jumbotron--inner">
     <h1 class="jumbotron--heading jumbotron--heading--light">Frank Noirot</h1>
   </div>
-</section><section id='work'>
-    <h1 style='border-bottom: solid 1px black;'>Work</h1>
-    <div id='work-write' class='category-container'>
-      <a class='category-toggle' data-toggle="collapse" href="#writeCollapse" role="button" aria-expanded="false" aria-controls="writeCollapse">
-        <h2><i class="fas fa-pencil-alt  fa-fw"></i>Write</h2></a>
-      <div class="collapse category-collapse" id="writeCollapse"><a class='featured-work' href='/write/im-changing-my-name'>
-          <div class="row">
-            
-            <div class='card-body'>
-              <h3>I&#39;m Changing My Name</h3><p class="post-meta">Oct 27, 2018</p>On December 1st, 2018 I will be starting the process of changing my legal name from Frank Richard Johnson to Francis Richard Johnson Noirot.
-              <p>
-                
-              </p>
-              
+</section>
 
-            </div>
-          </div> <!-- /.card-body.row -->
-        </a> <!-- /.featured-work -->
-        
-        <!-- <a class='btn btn-outline-primary' href='#'>See More</a> -->
-      </div> <!-- /#codeCollapse -->
-    </div> <!-- /#work-code -->
-    
-    <div id='work-code' class='category-container'>
-      <a class='category-toggle' data-toggle="collapse" href="#codeCollapse" role="button" aria-expanded="false" aria-controls="codeCollapse">
-        <h2><i class="fas fa-code fa-fw"></i>Code</h2></a>
-      <div class="collapse category-collapse" id="codeCollapse"><a class='featured-work' href='/code/bootstrap-4-carousel-jekyll'>
-          <div class="row">
-            
-            <div class='card-body'>
-              <h3>Jekyll Slideshows Using Bootstrap 4 Carousels</h3><p class="post-meta">Nov 21, 2018</p>Building a slideshow module using a Jekyll include, simple Bootstrap, and simple images. No plugins!
-              <p>
-                
-              </p>
-              
+<section id='portfolio'>
+  <div class='portfolio-list'>
+  <a href='/portfolio/kasimir-bar-cart'>
+      <div class='portfolio-item'style='background-image: url("http://localhost:4000//assets/img/kasimir-barcart/1.jpg")'></div>
+    </a><a href='/portfolio/sunday-desk'>
+      <div class='portfolio-item'style='background-image: url("http://localhost:4000//assets/img/sunday-desk/1.jpg")'></div>
+    </a><a href='/portfolio/ohio-state-crp-thesis'>
+      <div class='portfolio-item'style='background-image: url("http://localhost:4000//assets/img/osu-crp-thesis-slides/1.jpg")'></div>
+    </a><a href='/portfolio/mpcnc'>
+      <div class='portfolio-item'style='background-image: url("http://localhost:4000//assets/img/mpcnc/1.jpg")'></div>
+    </a><a href='/portfolio/chairs-2017'>
+      <div class='portfolio-item'style='background-image: url("http://localhost:4000//assets/img/chairs-2017/1.jpg")'></div>
+    </a><a href='/portfolio/cajon-drum'>
+      <div class='portfolio-item'style='background-image: url("http://localhost:4000//assets/img/cajon/1.jpg")'></div>
+    </a><a href='/portfolio/sculptures-2017'>
+      <div class='portfolio-item'style='background-image: url("http://localhost:4000//assets/img/sculptures-2017/1.jpg")'></div>
+    </a><a href='/portfolio/d3js-birthday-calendar'>
+      <div class='portfolio-item'style='background-image: url("http://localhost:4000/assets/img/family-calendar-d3js/1.jpg")'></div>
+    </a></div>
 
-            </div>
-          </div> <!-- /.card-body.row -->
-        </a> <!-- /.featured-work -->
-        <a class='featured-work' href='/code/scrubbable-shapes'>
-          <div class="row">
-            
-            <div class='card-body'>
-              <h3>Scrubbable Shapes</h3><p class="post-meta">Nov 1, 2018</p>Let's explore how Bret Victor's work on mathematical UX applies to geometry generated with D3.js.
-              <p>
-                
-              </p>
-              
+</section>
 
-            </div>
-          </div> <!-- /.card-body.row -->
-        </a> <!-- /.featured-work -->
-        <a class='featured-work' href='/code/understanding-geomtery-with-d3js'>
-          <div class="row">
-            
-            <div class='card-body'>
-              <h3>Understanding Geometry with D3.js</h3><p class="post-meta">Oct 29, 2018</p>Recently in my internet wanderings I came across a Wiki page on a geometry principle known as Thales's Theorem.
-              <p>
-                
-              </p>
-              
-
-            </div>
-          </div> <!-- /.card-body.row -->
-        </a> <!-- /.featured-work -->
-        
-        <!-- <a class='btn btn-outline-primary' href='#'>See More</a> -->
-      </div> <!-- /#codeCollapse -->
-    </div> <!-- /#work-code -->
-    
-  </section> <!-- /#work -->
     </div>
-
     <!-- JS loads faster when placed at the end of the body -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

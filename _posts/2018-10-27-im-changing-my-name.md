@@ -2,6 +2,7 @@
 layout: post
 title: I'm Changing My Name
 categories: write
+featured_image: changing-my-name.jpg
 excerpt: On December 1st, 2018 I will be starting the process of changing my legal name from Frank Richard Johnson to Francis Richard Johnson Noirot.
 ---
 
