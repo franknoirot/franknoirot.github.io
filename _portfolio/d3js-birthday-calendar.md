@@ -6,7 +6,7 @@ categories: code
 materials: D3.js, HTML, CSS
 skills: coding, data visualization
 
-asset_dir: assets/img/family-calendar-d3js
+asset_dir: /assets/img/family-calendar-d3js
 # featured_image: /assets/img/img_thumb_code_family-calendar.png
 ---
 
