@@ -22,8 +22,7 @@
 <div id="{{ slideSlug }}" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     {% for slide in (start..end) %}
-    {% slide | plus:0 %}
-    <li data-target="#{{ slideSlug }}" data-slide-to="{{ slide-1 }}" {% if slide == 1 %}class="active"{% endif %}></li>
+    <li data-target="#{{ slideSlug }}" data-slide-to="{{ forloop.index | minus:1 }}" {% if slide == 1 %}class="active"{% endif %}></li>
     {%  endfor %}
   </ol>
   <div class="carousel-inner">
