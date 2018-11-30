@@ -2,7 +2,7 @@
 layout: post
 title: Scrubbable Shapes
 categories: code
-featured_image: scrubbable-shapes.jpg
+featured_image: scrubbable-shapes.JPG
 excerpt: Let's explore how Bret Victor's work on mathematical UX applies to geometry generated with D3.js.
 ---
 
@@ -11,7 +11,7 @@ Brett Victor's work has been on my mind a lot this week. His essay _[Up And Down
 First among them is the _scrub_ gesture for which the essay is named. In his proposed visual math system, any number on the screen can be adjusted either with the keyboard, or by clicking and dragging on the value: scrubbing. He proposes that making this gesture native, along with several much more novel interactions like linking values together, would make our math more embodied, and maybe help more people digest mathematical concepts. Here's a video from _Scrubbing Calculator_ showing how it works:
 
 <div style="text-align: center; margin-bottom: 1rem;">
-<video id="va" style='width: 100%; max-width: 420px; max-height: 100;' controls autoplay>
+	<video id="va" style='width: 100%; max-width: 420px; max-height: 100;' controls autoplay>
 		<source src="http://worrydream.com/ScrubbingCalculator/Movies/TripAdjust.mov" type="video/quicktime">
 		<source src="http://worrydream.com/ScrubbingCalculator/Movies/TripAdjust.webm" type="video/webm">
 	</video>
