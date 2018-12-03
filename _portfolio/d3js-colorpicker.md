@@ -15,7 +15,7 @@ Tap around below to use it, then scroll to read why I made it!
 
 ----
 
-<p data-height="857" data-theme-id="light" data-slug-hash="GwXePP" data-default-tab="result" data-user="franknoirot" data-pen-title="d3.js Colorpicker" class="codepen">See the Pen <a href="https://codepen.io/franknoirot/pen/GwXePP/">d3.js Colorpicker</a> by Frank Noirot (<a href="https://codepen.io/franknoirot">@franknoirot</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="550" data-theme-id="light" data-slug-hash="GwXePP" data-default-tab="result" data-user="franknoirot" data-pen-title="d3.js Colorpicker" class="codepen">See the Pen <a href="https://codepen.io/franknoirot/pen/GwXePP/">d3.js Colorpicker</a> by Frank Noirot (<a href="https://codepen.io/franknoirot">@franknoirot</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ----
