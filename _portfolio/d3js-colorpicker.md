@@ -38,7 +38,7 @@ This arrangement is useful and quick to use, but hides some truths about the HSL
 
 ----
 
-This is because HSL best represented as a bicone, which is two cones attached at the bottom. Hue is measured in degrees about the circle of the cones, Saturation by the distance from the circle's center, and Lightness is actually that vertical dimension along the bicone. This space lets us move between any color values without discontinuities, it is _compact_.
+This is because the HSL color space is [best represented as a __bicone__](https://en.wikipedia.org/wiki/HSL_and_HSV), which is essentially two cones attached at the bottom. Hue is measured in degrees about the circle of the cones, Saturation by the distance from the circle's center, and Lightness is actually that vertical dimension along the bicone. This space lets us move between any color values without discontinuities, it is _compact_.
 
 ----
 
@@ -47,6 +47,8 @@ This is because HSL best represented as a bicone, which is two cones attached at
 
 ----
 
-So my color picker tries to acknowledge the true shape of the color space we're exploring, while remaining useful and intuitive.
+My color picker tries to acknowledge the true shape of the color space we're exploring, while remaining useful and intuitive. The circle is a cross section of the bicone at the given lightness value, and the radius of the circle shrinks as you move away from Lightness = 50%.
+
+This arrangement makes tangible one concept that isn't present in the Adobe one: __that the selection of perceivably different colors shrinks as you get lighter or darker from the middle!__
 
 [Let me know what you think!]({{ site.email }}) Is this easy to use or more confusing than the standard color picker?
