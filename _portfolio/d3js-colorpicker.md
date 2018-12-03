@@ -11,6 +11,8 @@ asset_dir: /assets/img/d3js-colorpicker
 
 In late November 2018 I made a color picker to explore the Hue-Saturation-Lightness color space with D3.js.
 
+Tap around below to use it, then scroll to read why I made it!
+
 ----
 
 <p data-height="857" data-theme-id="light" data-slug-hash="GwXePP" data-default-tab="result" data-user="franknoirot" data-pen-title="d3.js Colorpicker" class="codepen">See the Pen <a href="https://codepen.io/franknoirot/pen/GwXePP/">d3.js Colorpicker</a> by Frank Noirot (<a href="https://codepen.io/franknoirot">@franknoirot</a>) on <a href="https://codepen.io">CodePen</a>.</p>
@@ -24,7 +26,7 @@ With this I tried to make the color space of HSL feel more immediately understan
 
 ----
 
-![Adobe's colorpicker, snipped from Adobe Illustrator.]({{ page.asset_dir }}/adobe-colorpicker.jpg)
+![Adobe's colorpicker, snipped from Adobe Illustrator.]({{ page.asset_dir }}/adobe-colorpicker.jpg){: .img-fluid }
 
 ----
 
@@ -32,7 +34,7 @@ This arrangement is useful and quick to use, but hides some truths about the HSL
 
 ----
 
-![Diagram of the color space model implied by the Adobe Color Picker.]({{ page.asset_dir }}/adobe-colorspace.jpg)
+![Diagram of the color space model implied by the Adobe Color Picker.]({{ page.asset_dir }}/adobe-colorspace.jpg){: .img-fluid }
 
 ----
 
@@ -40,7 +42,7 @@ This is because HSL best represented as a bicone, which is two cones attached at
 
 ----
 
-<p><a href="https://commons.wikimedia.org/wiki/File:HSL_color_solid_dblcone_chroma_gray.png#/media/File:HSL_color_solid_dblcone_chroma_gray.png"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/HSL_color_solid_dblcone_chroma_gray.png" alt="HSL color solid dblcone chroma gray.png" height="480" width="640"></a><br><em>By <a href="//commons.wikimedia.org/wiki/File:Hcl-hcv_models.svg" title="File:Hcl-hcv models.svg">Hcl-hcv_models.svg</a>: <a href="//commons.wikimedia.org/wiki/User:Jacobolus" title="User:Jacobolus">Jacob Rus</a>
+<p><a href="https://commons.wikimedia.org/wiki/File:HSL_color_solid_dblcone_chroma_gray.png#/media/File:HSL_color_solid_dblcone_chroma_gray.png"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/HSL_color_solid_dblcone_chroma_gray.png" class='img-fluid' alt="HSL color solid dblcone chroma gray.png" height="480" width="640"></a><br><em>By <a href="//commons.wikimedia.org/wiki/File:Hcl-hcv_models.svg" title="File:Hcl-hcv models.svg">Hcl-hcv_models.svg</a>: <a href="//commons.wikimedia.org/wiki/User:Jacobolus" title="User:Jacobolus">Jacob Rus</a>
 <a href="//commons.wikimedia.org/wiki/File:HSL_color_solid_dblcone.png" title="File:HSL color solid dblcone.png">HSL_color_solid_dblcone.png</a>: <a href="//commons.wikimedia.org/wiki/User:SharkD" class="mw-redirect" title="User:SharkD">SharkD</a></em></p>
 
 ----

@@ -26,6 +26,6 @@ I learned about the myth of the scorpion and the frog around the same time that 
 _papier mache clay, wire_
 
 This work is simply form, no purposeful thematic statement. I wanted to try out papier mache clay using newspaper collected from work, and I had been intrigued by how that might look having a scale human body part coming our of a wall of the same color. I like the effect.
-![papier mache sculpture of a hand in a gun gesture](/assets/img/sculptures-2017/4.jpg)
+![papier mache sculpture of a hand in a gun gesture](/assets/img/sculptures-2017/4.jpg){: .img-fluid }
 
 <!-- {% include carousel.html id='2' start='4' end='5' %} -->
