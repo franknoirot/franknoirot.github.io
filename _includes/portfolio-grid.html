@@ -1,4 +1,4 @@
-<div class='portfolio-list'>
+<section class='portfolio-grid'>
   {% assign items = site.portfolio | sort: 'tier' %}
   {%- for project in items -%}
     <a href='{{ project.url }}'>
@@ -15,4 +15,4 @@
       </div>
     </a>
   {%- endfor -%}
-</div>
+  </section>

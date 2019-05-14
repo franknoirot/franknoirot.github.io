@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/main.css">
+  
+  <link rel="stylesheet" href="/css/roll-replace.css">
+  <link href="https://fonts.googleapis.com/css?family=Domine|Space+Mono" rel="stylesheet">
+  <title>D3.js Colorpicker</title>
+  <meta itemprop="description" name="description" content="A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC." />
+</head>
+
+  <body><nav id="navbar" class='site-navbar'>
+    <a class='primary-nav--link' href="#">About</a>
+    <a class='primary-nav--link' href="#">Contact</a>
+    <a class='primary-nav--link' href="https://www.instagram.com/franknoirot" target="_blank">@franknoirot</a>
+</nav>
+<main>
+      <div class="header--overlay">
+  <h1 class="post-title p-name" itemprop="name headline">D3.js Colorpicker</h1>
+  <p class="post-meta"><span class='secondary'><em>Materials: HTML, CSS, D3.js</em></span></p>
+</div>
+
+
+<p>In late November 2018 I made a color picker to explore the Hue-Saturation-Lightness color space with D3.js.</p>
+
+<p>Tap around below to use it, then scroll to read why I made it!</p>
+
+<hr />
+
+<p data-height="550" data-theme-id="light" data-slug-hash="GwXePP" data-default-tab="result" data-user="franknoirot" data-pen-title="d3.js Colorpicker" class="codepen">See the Pen <a href="https://codepen.io/franknoirot/pen/GwXePP/">d3.js Colorpicker</a> by Frank Noirot (<a href="https://codepen.io/franknoirot">@franknoirot</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<hr />
+
+<p>Color spaces are fascinating to me because they reveal the complexity underlying something so familiar a intuitive to us, color. Most people in the digital age are quite comfortable using tools like the colorpicker in Adobe Creative products, but so often we don’t know that in order to make a tool like that we have to understand and map out all the possible colors in that space. How we design the tool affects the metaphors users employ to understand the system.</p>
+
+<p>With this I tried to make the color space of HSL feel more immediately understandable. Adobe’s colorpicker consists of a square mapping the Saturation in the X direction and Lightness in the Y for a given Hue. A rectangular bar to the right of this square lets the user select the Hue, always showing the rainbow of Hue values at S = 100% and L = 50%.</p>
+
+<hr />
+
+<p><img src="/assets/img/d3js-colorpicker/adobe-colorpicker.jpg" alt="Adobe's colorpicker, snipped from Adobe Illustrator." class="img-fluid" /></p>
+
+<hr />
+
+<p>This arrangement is useful and quick to use, but hides some truths about the HSL color space’s reality. With this layout, you might think that the HSL color space is a cube or prism, just extending the square of Saturation-Lightness vertically along a Hue axis. But this prism is red at both ends: if we want to move from orange to purple we feel like we’re teleporting!</p>
+
+<hr />
+
+<p><img src="/assets/img/d3js-colorpicker/adobe-colorspace.jpg" alt="Diagram of the color space model implied by the Adobe Color Picker." class="img-fluid" /></p>
+
+<hr />
+
+<p>This is because the HSL color space is <a href="https://en.wikipedia.org/wiki/HSL_and_HSV">best represented as a <strong>bicone</strong></a>, which is essentially two cones attached at the bottom. Hue is measured in degrees about the circle of the cones, Saturation by the distance from the circle’s center, and Lightness is actually that vertical dimension along the bicone. This space lets us move between any color values without discontinuities, it is <em>compact</em>.</p>
+
+<hr />
+
+<p><a href="https://commons.wikimedia.org/wiki/File:HSL_color_solid_dblcone_chroma_gray.png#/media/File:HSL_color_solid_dblcone_chroma_gray.png"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/HSL_color_solid_dblcone_chroma_gray.png" class="img-fluid" alt="HSL color solid dblcone chroma gray.png" height="480" width="640" /></a><br /><em>By <a href="//commons.wikimedia.org/wiki/File:Hcl-hcv_models.svg" title="File:Hcl-hcv models.svg">Hcl-hcv_models.svg</a>: <a href="//commons.wikimedia.org/wiki/User:Jacobolus" title="User:Jacobolus">Jacob Rus</a>
+<a href="//commons.wikimedia.org/wiki/File:HSL_color_solid_dblcone.png" title="File:HSL color solid dblcone.png">HSL_color_solid_dblcone.png</a>: <a href="//commons.wikimedia.org/wiki/User:SharkD" class="mw-redirect" title="User:SharkD">SharkD</a></em></p>
+
+<hr />
+
+<p>My color picker tries to acknowledge the true shape of the color space we’re exploring, while remaining useful and intuitive. The circle is a cross section of the bicone at the given lightness value, and the radius of the circle shrinks as you move away from Lightness = 50%.</p>
+
+<p>This arrangement makes tangible one concept that isn’t present in the Adobe one: <strong>that the selection of perceivably different colors shrinks as you get lighter or darker from the middle!</strong></p>
+
+<p><a href="mailto:frank@franknoirot.co">Let me know what you think!</a> Is this easy to use or more confusing than the standard color picker?</p>
+
+
+    </main>
+    <footer>
+    <nav id='contact-nav'>
+    <a href="mailto:frank@franknoirot.co">Email</a>
+    <a href="/resume">Resumé</a>
+    <a href="https://www.instagram.com/franknoirot" target="_blank">Intagram</a>
+    <a href="https://www.github.com/franknoirot" target="_blank">Github</a>
+  </nav>
+</footer>
+
+    <svg version="1.1" id="img-filters" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <filter id="filter-warp">
+          <feSpecularLighting result="spotlight" specularConstant="1.2"
+              specularExponent="50" lighting-color="#fff">
+            <fePointLight id="point-light" z="120"/>
+          </feSpecularLighting>
+          <feTurbulence type="turbulence" baseFrequency="0.05"
+            numOctaves="2" result="turbulence_rgb"/>
+          <feColorMatrix type="matrix" values=
+       "0 0 0 0 0,
+       0 0 0 0 0,
+       0 0 0 0 0,
+       0 0 0 -1.2 1.1"
+       in="FRACTAL-TEXTURE_10" result="turbulence_bw" />
+          <feComposite in="spotlight" in2="turbulence_bw" operator="arithmetic" k1="-1" k2="0" k3="0" k4=".5" result="turbspotlight"/>
+          <feComposite in="SourceGraphic" in2 = "spotlight" operator="arithmetic" k1=".5" k2="1" k3=".15" k4="0" result="hotspot"/>
+          <feDisplacementMap in="hotspot" in2="turbspotlight"
+            scale="20"/>
+        </filter>
+      </defs>
+    </svg>
+    
+    <script type="text/javascript" src="/assets/js/roll-replace.js"></script>
+    <script type="text/javascript" src="/assets/js/img-filters.js"></script>
+  </body>
+</html>

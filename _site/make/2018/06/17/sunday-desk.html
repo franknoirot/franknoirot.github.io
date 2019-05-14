@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/main.css">
+  
+  <link rel="stylesheet" href="/css/roll-replace.css">
+  <link href="https://fonts.googleapis.com/css?family=Domine|Space+Mono" rel="stylesheet">
+  <title>The Sunday Desk</title>
+  <meta itemprop="description" name="description" content="A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC." />
+</head>
+
+  <body><nav id="navbar" class='site-navbar'>
+    <a class='primary-nav--link' href="#">About</a>
+    <a class='primary-nav--link' href="#">Contact</a>
+    <a class='primary-nav--link' href="https://www.instagram.com/franknoirot" target="_blank">@franknoirot</a>
+</nav>
+<main>
+      <div class="header--overlay">
+  <h1 class="post-title p-name" itemprop="name headline">The Sunday Desk</h1>
+  <p class="post-meta"><span class='secondary'><em>Materials: plywood</em></span></p>
+</div>
+
+
+<p>I named this desk the Sunday because that was the day I woke up and designed and built it in one go.</p>
+
+<p>This was the weirdest projects I think I’ve ever worked on because it was so effortless. It was so much fun, and so surreal, to have a fully formed plan in my head about how to make something then just get to making it. I only drew one sketch before cutting wood.</p>
+
+<p>I don’t know if I learned any lessons or best practices from this project other than sometimes you should just let it rip and have fun with making things.</p>
+
+<hr />
+
+<!--  -->
+
+<style type="text/css" scoped="">
+  .carousel-item {
+    height: 60vmin;
+  }
+
+  
+  .slide--1 {
+    background: url(/assets/img/sunday-desk/1.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .slide--2 {
+    background: url(/assets/img/sunday-desk/2.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .slide--3 {
+    background: url(/assets/img/sunday-desk/3.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .slide--4 {
+    background: url(/assets/img/sunday-desk/4.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .slide--5 {
+    background: url(/assets/img/sunday-desk/5.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+</style>
+
+<div id="sunday-desk--slideshow--" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    
+    <li data-target="#sunday-desk--slideshow--" data-slide-to="0" class="active"></li>
+    
+    <li data-target="#sunday-desk--slideshow--" data-slide-to="1"></li>
+    
+    <li data-target="#sunday-desk--slideshow--" data-slide-to="2"></li>
+    
+    <li data-target="#sunday-desk--slideshow--" data-slide-to="3"></li>
+    
+    <li data-target="#sunday-desk--slideshow--" data-slide-to="4"></li>
+    
+  </ol>
+  <div class="carousel-inner">
+    
+    <div class="carousel-item active slide--1">
+    </div>
+    
+    <div class="carousel-item  slide--2">
+    </div>
+    
+    <div class="carousel-item  slide--3">
+    </div>
+    
+    <div class="carousel-item  slide--4">
+    </div>
+    
+    <div class="carousel-item  slide--5">
+    </div>
+    
+  </div>
+  <a class="carousel-control-prev" href="#sunday-desk--slideshow--" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#sunday-desk--slideshow--" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<hr />
+
+
+    </main>
+    <footer>
+    <nav id='contact-nav'>
+    <a href="mailto:frank@franknoirot.co">Email</a>
+    <a href="/resume">Resumé</a>
+    <a href="https://www.instagram.com/franknoirot" target="_blank">Intagram</a>
+    <a href="https://www.github.com/franknoirot" target="_blank">Github</a>
+  </nav>
+</footer>
+
+    <svg version="1.1" id="img-filters" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <filter id="filter-warp">
+          <feSpecularLighting result="spotlight" specularConstant="1.2"
+              specularExponent="50" lighting-color="#fff">
+            <fePointLight id="point-light" z="120"/>
+          </feSpecularLighting>
+          <feTurbulence type="turbulence" baseFrequency="0.05"
+            numOctaves="2" result="turbulence_rgb"/>
+          <feColorMatrix type="matrix" values=
+       "0 0 0 0 0,
+       0 0 0 0 0,
+       0 0 0 0 0,
+       0 0 0 -1.2 1.1"
+       in="FRACTAL-TEXTURE_10" result="turbulence_bw" />
+          <feComposite in="spotlight" in2="turbulence_bw" operator="arithmetic" k1="-1" k2="0" k3="0" k4=".5" result="turbspotlight"/>
+          <feComposite in="SourceGraphic" in2 = "spotlight" operator="arithmetic" k1=".5" k2="1" k3=".15" k4="0" result="hotspot"/>
+          <feDisplacementMap in="hotspot" in2="turbspotlight"
+            scale="20"/>
+        </filter>
+      </defs>
+    </svg>
+    
+    <script type="text/javascript" src="/assets/js/roll-replace.js"></script>
+    <script type="text/javascript" src="/assets/js/img-filters.js"></script>
+  </body>
+</html>

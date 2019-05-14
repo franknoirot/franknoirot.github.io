@@ -1,25 +1,5 @@
-<nav id="navbar" class='navbar navbar-expand sticky-top navbar-light bg-light'>
-    <a class="navbar-brand" href="/"><img id='site-icon' src='../assets/img/icon_franknoirot-co.png'></a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-    {% assign navlinks = site.html_pages | sort: 'nav_order' %}
-    {% for link in navlinks %}
-      {% assign class = nil %}
-      {% if page.url == link.url %}
-        {% assign class = 'active' %}
-      {% endif %}
-
-      {% if link.nav_order %}
-      <!-- <li class="nav-item {{ class }}"> -->
-        <a class='nav-link {{ class }}' href="{{ link.url }}">{{ link.title }}</a>
-      <!-- </li> -->
-      {% endif %}
-
-    {% endfor %}
-
-    </div>
+<nav id="navbar" class='site-navbar'>
+    <a class='primary-nav--link' href="#">About</a>
+    <a class='primary-nav--link' href="#">Contact</a>
+    <a class='primary-nav--link' href="https://www.instagram.com/franknoirot" target="_blank">@franknoirot</a>
 </nav>

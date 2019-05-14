@@ -5,108 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/css/main.css">
+  
+  <link rel="stylesheet" href="/css/roll-replace.css">
+  <link href="https://fonts.googleapis.com/css?family=Domine|Space+Mono" rel="stylesheet">
   <title>Frank Noirot</title>
   <meta itemprop="description" name="description" content="A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC." />
 </head>
 
-  <body><nav id="navbar" class='navbar navbar-expand sticky-top navbar-light bg-light'>
-    <a class="navbar-brand" href="/"><img id='site-icon' src='../assets/img/icon_franknoirot-co.png'></a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-    
-    
-      
-      
-
-      
-
-    
-      
-      
-
-      
-
-    
-      
-      
-
-      
-
-    
-      
-      
-
-      
-      <!-- <li class="nav-item "> -->
-        <a class='nav-link ' href="/blog/">Blog</a>
-      <!-- </li> -->
-      
-
-    
-      
-      
-
-      
-      <!-- <li class="nav-item "> -->
-        <a class='nav-link ' href="/resume/">Resumé</a>
-      <!-- </li> -->
-      
-
-    
-      
-      
-
-      
-      <!-- <li class="nav-item "> -->
-        <a class='nav-link ' href="/about/">About</a>
-      <!-- </li> -->
-      
-
-    
-
-    </div>
+  <body><nav id="navbar" class='site-navbar'>
+    <a class='primary-nav--link' href="#">About</a>
+    <a class='primary-nav--link' href="#">Contact</a>
+    <a class='primary-nav--link' href="https://www.instagram.com/franknoirot" target="_blank">@franknoirot</a>
 </nav>
-<div id='main-content' class='main-content'>
-      <section id='personal-info' class='jumbotron'>
-  <div class="jumbotron--inner">
-    <h1 class="jumbotron--heading jumbotron--heading--light">Frank Noirot</h1>
+<main>
+      <section id="bio">
+  <h1 class="bio-name">Frank <span class="roll-replace" data-replace="Noirot" data-duration='.1' data-delay=".05">Johnson</h1>
+  <div id="bio-quick">
+    <p class="bio-quick">Working as a <u style="text-decoration-color:#33658A">Designer</u></p>
+    <p class="bio-quick">Trained as a <u style="text-decoration-color: #F6AE2D">Planner</u></p>
+    <p class="bio-quick">Raised as a <u style="text-decoration-color: #F26419">Maker</u></p>
+  </div>
+  <img class="bio-img warp" src="/assets/img/kasimir-barcart/1.jpg" alt="Frank in front of the bar cart he made."/>
+  <div class="bio-tagline">
+    <p>It is my joy to learn widely and help build things <br>for and with good people,<br>whether it's a bar cart or a brand.</p>
+</section>
+<section id="work">
+  <h2 class="work-heading">My Work</h2>
+  <div class="work-item iridium">
+    <h3>Iridium Satellite</h3>
+    <p>Iridium has given me the chance to make a lot of wildly different things. I've made a rocket launch patch. I've helped organize a metadata system for 300+ products, 1700+ documents, and 1000+ users. I've taken product photography. I've helped manage three Wordpress sites.</p>
+    <p>This is where I've learned how much I love building things, especially tools, for other people.</p>
   </div>
 </section>
+    </main>
+    <footer>
+    <nav id='contact-nav'>
+    <a href="mailto:frank@franknoirot.co">Email</a>
+    <a href="/resume">Resumé</a>
+    <a href="https://www.instagram.com/franknoirot" target="_blank">Intagram</a>
+    <a href="https://www.github.com/franknoirot" target="_blank">Github</a>
+  </nav>
+</footer>
 
-<section id='portfolio'>
-  <div class='portfolio-list'>
-  <a href='/portfolio/kasimir-bar-cart'>
-      <div class='portfolio-item'style='background-image: url("/assets/img/kasimir-barcart/1.jpg")'></div>
-    </a><a href='/portfolio/ohio-state-crp-thesis'>
-      <div class='portfolio-item'style='background-image: url("/assets/img/osu-crp-thesis-slides/1.jpg")'></div>
-    </a><a href='/portfolio/sunday-desk'>
-      <div class='portfolio-item'style='background-image: url("/assets/img/sunday-desk/1.jpg")'></div>
-    </a><a href='/portfolio/d3js-colorpicker'>
-      <div class='portfolio-item'style='background-image: url("/assets/img/d3js-colorpicker/1.jpg")'></div>
-    </a><a href='/portfolio/mpcnc'>
-      <div class='portfolio-item'style='background-image: url("/assets/img/mpcnc/1.jpg")'></div>
-    </a><a href='/portfolio/chairs-2017'>
-      <div class='portfolio-item'style='background-image: url("/assets/img/chairs-2017/1.jpg")'></div>
-    </a><a href='/portfolio/cajon-drum'>
-      <div class='portfolio-item'style='background-image: url("/assets/img/cajon/1.jpg")'></div>
-    </a><a href='/portfolio/sculptures-2017'>
-      <div class='portfolio-item'style='background-image: url("/assets/img/sculptures-2017/1.jpg")'></div>
-    </a><a href='/portfolio/d3js-birthday-calendar'>
-      <div class='portfolio-item'style='background-image: url("/assets/img/d3js-calendar/1.jpg")'></div>
-    </a></div>
-
-</section>
-
-    </div>
-    <!-- JS loads faster when placed at the end of the body -->
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <svg version="1.1" id="img-filters" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <filter id="filter-warp">
+          <feSpecularLighting result="spotlight" specularConstant="1.2"
+              specularExponent="50" lighting-color="#fff">
+            <fePointLight id="point-light" z="120"/>
+          </feSpecularLighting>
+          <feTurbulence type="turbulence" baseFrequency="0.05"
+            numOctaves="2" result="turbulence_rgb"/>
+          <feColorMatrix type="matrix" values=
+       "0 0 0 0 0,
+       0 0 0 0 0,
+       0 0 0 0 0,
+       0 0 0 -1.2 1.1"
+       in="FRACTAL-TEXTURE_10" result="turbulence_bw" />
+          <feComposite in="spotlight" in2="turbulence_bw" operator="arithmetic" k1="-1" k2="0" k3="0" k4=".5" result="turbspotlight"/>
+          <feComposite in="SourceGraphic" in2 = "spotlight" operator="arithmetic" k1=".5" k2="1" k3=".15" k4="0" result="hotspot"/>
+          <feDisplacementMap in="hotspot" in2="turbspotlight"
+            scale="20"/>
+        </filter>
+      </defs>
+    </svg>
+    
+    <script type="text/javascript" src="/assets/js/roll-replace.js"></script>
+    <script type="text/javascript" src="/assets/js/img-filters.js"></script>
   </body>
 </html>
