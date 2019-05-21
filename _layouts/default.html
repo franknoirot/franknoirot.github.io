@@ -3,9 +3,12 @@
   {% include head.html %}
   <body>
     {%- include navbar.html -%}
-    <div id='main-content' class='main-content'>
+    <main>
       {{ content }}
-    </div>
+    </main>
     {% include footer.html %}
+    {% include img-filters.html %}
+    
+    <script type="text/javascript" src="/assets/js/roll-replace.js"></script>
   </body>
 </html>

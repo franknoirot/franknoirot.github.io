@@ -1,0 +1,35 @@
+.date {
+    float: right;
+}
+
+main {
+    padding: 4vh 3vw;
+}
+
+section {
+    margin: 5vh 0;
+}
+
+h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: 150%;
+    font-weight: normal;
+}
+h4 {
+    color: #999;
+    font-size: 120%;
+    margin: .5em 0;
+}
+
+a.email::before {
+    content: "✉: ";
+}
+
+a.social::before {
+    content: "📷: ";
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}

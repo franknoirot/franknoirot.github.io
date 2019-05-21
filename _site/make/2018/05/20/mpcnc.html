@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/main.css">
+  
+  <link rel="stylesheet" href="/css/roll-replace.css">
+  <link href="https://fonts.googleapis.com/css?family=Domine|Space+Mono" rel="stylesheet">
+  <title>MPCNC</title>
+  <meta itemprop="description" name="description" content="A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC." />
+</head>
+
+  <body><nav id="nav-bar" class='site-navbar'>
+    <a class="nav-toggle nav-open" onclick="document.getElementById('nav-about').focus()">&#xff0b;</a>
+    <a class="nav-toggle nav-close">x</a>
+    <a class='nav-item home' href="/">Home</a>
+    <a class='nav-item' href="/contact">Contact</a>
+    <a id="nav-about" class='nav-item' href="/about">About</a>
+    <a class='nav-item' href="/resume" target="_blank">Resumé</a>
+    <a class='nav-item' href="https://www.instagram.com/franknoirot" target="_blank">@franknoirot</a>
+</nav>
+<main>
+      <div class="header--overlay">
+  <h1 class="post-title p-name" itemprop="name headline">MPCNC</h1>
+  <p class="post-meta"><span class='secondary'><em>Materials: PLA plastic, electrical conduit, electronics</em></span></p>
+</div>
+
+
+<p>Over the fall of 2017 I printed all of the parts needed to build Ryan Zellers’ excellent CNC machine design, the Mostly Printed CNC.</p>
+
+<p>CNC’s use code to move their center around in three dimensions within a frame. The tool holder at its center can hold anything from a pen to a router or even a laser. It was the perfect thing for me to build while I continue to learn both fabrication and coding- a tool exactly at the center of those two spaces!</p>
+
+<p>While this essentially a kit build, I include it in my portfolio because it was such a long process of learning and building. The plastic parts on this machine were 3d printed in over 30 hours of prints that I troubleshooted and assembled. Furthermore, I built the 3D printer that made all those parts, so it has been a nesting doll of fabrication.</p>
+
+<p>Finally getting to see this thing move was amazing. I was so excited to see that it worked that I built another one and donated it to <a href="http://osumakerclub.org/">The Maker Club at OSU</a>.</p>
+
+<hr />
+
+<!--  -->
+
+<div id="--slideshow--" class="carousel">
+  <div class="carousel__track-container">
+    <ul class="carousel__track" tabindex="0"><li class="carousel__slide active">
+          
+            <img class="carousel__item" src="/1" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/2" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/3" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/4" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li></ul>
+  </div>
+  <button class="carousel__button carousel__button--left" name="Previous Image">
+    <img src="/assets/img/carousel-arrow-left.svg" alt="Previous" />
+  </button>
+  <button class="carousel__button carousel__button--right" name="Next Image">
+      <img src="/assets/img/carousel-arrow-right.svg" alt="Next" />
+  </button>
+  <div class="carousel__nav">
+    
+    <button class="carousel__indicator active"></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+  </div>
+</div>
+
+
+
+    </main>
+    <footer>
+    <p>coded by <a href="https://github.com/franknoirot" target="_blank">Frank Johnson</a>, 2019</p>
+    <p>built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+    <nav id='contact-nav'>
+    <a href="mailto:frank@franknoirot.co">Email</a>
+    <a href="https://www.instagram.com/franknoirot" target="_blank">Intagram</a>
+    <a href="https://www.github.com/franknoirot" target="_blank">Github</a>
+  </nav>
+</footer>
+
+    <svg version="1.1" id="img-filters" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <filter id="filter-warp">
+        <feSpecularLighting id="warp-spec-light"result="spotlight" specularConstant="1.2"
+            specularExponent="50" lighting-color="#fff">
+          <fePointLight id="point-light" z="120"/>
+        </feSpecularLighting>
+        <feTurbulence type="turbulence" baseFrequency="0.05"
+          numOctaves="2" result="turbulence_rgb"/>
+        <feColorMatrix type="matrix" values=
+     "0 0 0 0 0,
+     0 0 0 0 0,
+     0 0 0 0 0,
+     0 0 0 -1.2 1.1"
+     in="FRACTAL-TEXTURE_10" result="turbulence_bw" />
+        <feComposite in="spotlight" in2="turbulence_bw" operator="arithmetic" k1="-1" k2="0" k3="0" k4=".5" result="turbspotlight"/>
+        <feComposite in="SourceGraphic" in2 = "spotlight" operator="arithmetic" k1=".5" k2="1" k3=".15" k4="0" result="hotspot"/>
+        <feDisplacementMap in="hotspot" in2="turbspotlight"
+          scale="20"/>
+      </filter>
+    </defs>
+  </svg>
+    
+    <script type="text/javascript" src="/assets/js/roll-replace.js"></script>
+    <script type="text/javascript" src="/assets/js/img-filters.js"></script>
+    <script type="text/javascript" src="/assets/js/carousel.js"></script>
+    <script type="text/javascript" src="/assets/js/intersection-observer.js"></script>
+  </body>
+</html>

@@ -1,25 +1,9 @@
-<nav id="navbar" class='navbar navbar-expand sticky-top navbar-light bg-light'>
-    <a class="navbar-brand" href="/"><img id='site-icon' src='../assets/img/icon_franknoirot-co.png'></a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-    {% assign navlinks = site.html_pages | sort: 'nav_order' %}
-    {% for link in navlinks %}
-      {% assign class = nil %}
-      {% if page.url == link.url %}
-        {% assign class = 'active' %}
-      {% endif %}
-
-      {% if link.nav_order %}
-      <!-- <li class="nav-item {{ class }}"> -->
-        <a class='nav-link {{ class }}' href="{{ link.url }}">{{ link.title }}</a>
-      <!-- </li> -->
-      {% endif %}
-
-    {% endfor %}
-
-    </div>
+<nav id="nav-bar" class='site-navbar'>
+    <a class="nav-toggle nav-open" onclick="document.getElementById('nav-about').focus()">&#xff0b;</a>
+    <a class="nav-toggle nav-close">x</a>
+    <a class='nav-item home' href="/">Home</a>
+    <a class='nav-item' href="/contact">Contact</a>
+    <a id="nav-about" class='nav-item' href="/about">About</a>
+    <a class='nav-item' href="/resume" target="_blank">Resumé</a>
+    <a class='nav-item' href="https://www.instagram.com/franknoirot" target="_blank">@franknoirot</a>
 </nav>

@@ -7,10 +7,6 @@ url: franknoirot.co
 github: https://www.github.com/franknoirot
 instagram: https://www.instagram.com/franknoirot
 
-# Build settings
-permalink: /:categories/:title
-sass:
-  sass_dir: css
 
 # Portfolio collection
 collections:
