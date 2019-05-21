@@ -1,3 +1,9 @@
+:root {
+    --dark-gray: #333333;
+    --slop-underline: all .23s cubic-bezier(0.1,0.7, 0.8, 1.4);
+}
+
+
 .date {
     float: right;
 }
@@ -6,9 +12,54 @@ main {
     padding: 4vh 3vw;
 }
 
+section {
+    margin: 5vh 0;
+}
+
 h2 {
     font-family: 'Space Mono', monospace;
     font-size: 150%;
     font-weight: normal;
 }
-h4 { color: #999; }
+h4 {
+    color: #999;
+    font-size: 120%;
+    margin: .5em 0;
+}
+
+.resume-nav a {
+    text-decoration: none;
+    position: relative;
+    margin: .2em 1em;
+}
+
+.resume-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    height: 2px;
+    left: 0;
+    width: 0;
+    background: var(--dark-gray);
+    transform: translate(50%, 0);
+    transition: var(--slop-underline);
+}
+
+.resume-nav a:hover::after {
+    width: 100%;
+    transform: translate(0, 0);
+}
+
+
+a.email::before {
+    content: "✉: ";
+}
+
+a.social::before {
+    content: "📷: ";
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}

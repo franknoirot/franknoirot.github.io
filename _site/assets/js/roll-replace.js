@@ -1,5 +1,6 @@
 const rollReplace = (e) => {
     e.target.removeEventListener("click", rollReplace);
+    e.target.removeEventListener('keydown', keyCheck);
     let oldStr = e.target.innerText.split('');
     let duration = (e.target.getAttribute('data-duration')) ? parseFloat(e.target.getAttribute('data-duration')) : .3;
     let delay = (e.target.getAttribute('data-delay')) ? parseFloat(e.target.getAttribute('data-delay')) : .1;
@@ -38,10 +39,19 @@ const rollReplace = (e) => {
         e.target.setAttribute('data-replace', oldStr.join(''));
         
         e.target.addEventListener("click", rollReplace);
+        e.target.addEventListener('keydown', keyCheck);
       }, newStr.length*500*duration);
     }, oldStr.length*500*duration);
   }
   
+  function keyCheck(e) {
+    if (e.code === "Tab" || e.repeat || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    e.preventDefault();
+    rollReplace(e);
+  }
+
   window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.roll-replace').tabIndex = 0;
     document.querySelector('.roll-replace').addEventListener('click', rollReplace);
+    document.querySelector('.roll-replace').addEventListener('keydown', keyCheck);
   });

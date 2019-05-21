@@ -12,10 +12,14 @@
   <meta itemprop="description" name="description" content="A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC." />
 </head>
 
-  <body><nav id="navbar" class='site-navbar'>
-    <a class='primary-nav--link' href="#">About</a>
-    <a class='primary-nav--link' href="#">Contact</a>
-    <a class='primary-nav--link' href="https://www.instagram.com/franknoirot" target="_blank">@franknoirot</a>
+  <body><nav id="nav-bar" class='site-navbar'>
+    <a class="nav-toggle nav-open" onclick="document.getElementById('nav-about').focus()">&#xff0b;</a>
+    <a class="nav-toggle nav-close">x</a>
+    <a class='nav-item home' href="/">Home</a>
+    <a class='nav-item' href="/contact">Contact</a>
+    <a id="nav-about" class='nav-item' href="/about">About</a>
+    <a class='nav-item' href="/resume" target="_blank">Resumé</a>
+    <a class='nav-item' href="https://www.instagram.com/franknoirot" target="_blank">@franknoirot</a>
 </nav>
 <main>
       <div class="header--overlay">
@@ -34,115 +38,104 @@
 
 <!--  -->
 
-<style type="text/css" scoped="">
-  .carousel-item {
-    height: 60vmin;
-  }
-
-  
-  .slide--1 {
-    background: url(/assets/img/cajon/1.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--2 {
-    background: url(/assets/img/cajon/2.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--3 {
-    background: url(/assets/img/cajon/3.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--4 {
-    background: url(/assets/img/cajon/4.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-</style>
-
-<div id="cajon-drum--slideshow--" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
+<div id="--slideshow--" class="carousel">
+  <div class="carousel__track-container">
+    <ul class="carousel__track" tabindex="0"><li class="carousel__slide active">
+          
+            <img class="carousel__item" src="/1" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/2" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/3" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/4" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li></ul>
+  </div>
+  <button class="carousel__button carousel__button--left" name="Previous Image">
+    <img src="/assets/img/carousel-arrow-left.svg" alt="Previous" />
+  </button>
+  <button class="carousel__button carousel__button--right" name="Next Image">
+      <img src="/assets/img/carousel-arrow-right.svg" alt="Next" />
+  </button>
+  <div class="carousel__nav">
     
-    <li data-target="#cajon-drum--slideshow--" data-slide-to="0" class="active"></li>
+    <button class="carousel__indicator active"></button>
     
-    <li data-target="#cajon-drum--slideshow--" data-slide-to="1"></li>
+    <button class="carousel__indicator "></button>
     
-    <li data-target="#cajon-drum--slideshow--" data-slide-to="2"></li>
+    <button class="carousel__indicator "></button>
     
-    <li data-target="#cajon-drum--slideshow--" data-slide-to="3"></li>
-    
-  </ol>
-  <div class="carousel-inner">
-    
-    <div class="carousel-item active slide--1">
-    </div>
-    
-    <div class="carousel-item  slide--2">
-    </div>
-    
-    <div class="carousel-item  slide--3">
-    </div>
-    
-    <div class="carousel-item  slide--4">
-    </div>
+    <button class="carousel__indicator "></button>
     
   </div>
-  <a class="carousel-control-prev" href="#cajon-drum--slideshow--" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#cajon-drum--slideshow--" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
 
 
 
     </main>
     <footer>
+    <p>coded by <a href="https://github.com/franknoirot" target="_blank">Frank Johnson</a>, 2019</p>
+    <p>built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
     <nav id='contact-nav'>
     <a href="mailto:frank@franknoirot.co">Email</a>
-    <a href="/resume">Resumé</a>
     <a href="https://www.instagram.com/franknoirot" target="_blank">Intagram</a>
     <a href="https://www.github.com/franknoirot" target="_blank">Github</a>
   </nav>
 </footer>
 
     <svg version="1.1" id="img-filters" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <defs>
-        <filter id="filter-warp">
-          <feSpecularLighting result="spotlight" specularConstant="1.2"
-              specularExponent="50" lighting-color="#fff">
-            <fePointLight id="point-light" z="120"/>
-          </feSpecularLighting>
-          <feTurbulence type="turbulence" baseFrequency="0.05"
-            numOctaves="2" result="turbulence_rgb"/>
-          <feColorMatrix type="matrix" values=
-       "0 0 0 0 0,
-       0 0 0 0 0,
-       0 0 0 0 0,
-       0 0 0 -1.2 1.1"
-       in="FRACTAL-TEXTURE_10" result="turbulence_bw" />
-          <feComposite in="spotlight" in2="turbulence_bw" operator="arithmetic" k1="-1" k2="0" k3="0" k4=".5" result="turbspotlight"/>
-          <feComposite in="SourceGraphic" in2 = "spotlight" operator="arithmetic" k1=".5" k2="1" k3=".15" k4="0" result="hotspot"/>
-          <feDisplacementMap in="hotspot" in2="turbspotlight"
-            scale="20"/>
-        </filter>
-      </defs>
-    </svg>
+    <defs>
+      <filter id="filter-warp">
+        <feSpecularLighting id="warp-spec-light"result="spotlight" specularConstant="1.2"
+            specularExponent="50" lighting-color="#fff">
+          <fePointLight id="point-light" z="120"/>
+        </feSpecularLighting>
+        <feTurbulence type="turbulence" baseFrequency="0.05"
+          numOctaves="2" result="turbulence_rgb"/>
+        <feColorMatrix type="matrix" values=
+     "0 0 0 0 0,
+     0 0 0 0 0,
+     0 0 0 0 0,
+     0 0 0 -1.2 1.1"
+     in="FRACTAL-TEXTURE_10" result="turbulence_bw" />
+        <feComposite in="spotlight" in2="turbulence_bw" operator="arithmetic" k1="-1" k2="0" k3="0" k4=".5" result="turbspotlight"/>
+        <feComposite in="SourceGraphic" in2 = "spotlight" operator="arithmetic" k1=".5" k2="1" k3=".15" k4="0" result="hotspot"/>
+        <feDisplacementMap in="hotspot" in2="turbspotlight"
+          scale="20"/>
+      </filter>
+    </defs>
+  </svg>
     
     <script type="text/javascript" src="/assets/js/roll-replace.js"></script>
     <script type="text/javascript" src="/assets/js/img-filters.js"></script>
+    <script type="text/javascript" src="/assets/js/carousel.js"></script>
+    <script type="text/javascript" src="/assets/js/intersection-observer.js"></script>
   </body>
 </html>

@@ -12,10 +12,14 @@
   <meta itemprop="description" name="description" content="A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC." />
 </head>
 
-  <body><nav id="navbar" class='site-navbar'>
-    <a class='primary-nav--link' href="#">About</a>
-    <a class='primary-nav--link' href="#">Contact</a>
-    <a class='primary-nav--link' href="https://www.instagram.com/franknoirot" target="_blank">@franknoirot</a>
+  <body><nav id="nav-bar" class='site-navbar'>
+    <a class="nav-toggle nav-open" onclick="document.getElementById('nav-about').focus()">&#xff0b;</a>
+    <a class="nav-toggle nav-close">x</a>
+    <a class='nav-item home' href="/">Home</a>
+    <a class='nav-item' href="/contact">Contact</a>
+    <a id="nav-about" class='nav-item' href="/about">About</a>
+    <a class='nav-item' href="/resume" target="_blank">Resumé</a>
+    <a class='nav-item' href="https://www.instagram.com/franknoirot" target="_blank">@franknoirot</a>
 </nav>
 <main>
       <div class="header--overlay">
@@ -71,38 +75,41 @@
 
     </main>
     <footer>
+    <p>coded by <a href="https://github.com/franknoirot" target="_blank">Frank Johnson</a>, 2019</p>
+    <p>built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
     <nav id='contact-nav'>
     <a href="mailto:frank@franknoirot.co">Email</a>
-    <a href="/resume">Resumé</a>
     <a href="https://www.instagram.com/franknoirot" target="_blank">Intagram</a>
     <a href="https://www.github.com/franknoirot" target="_blank">Github</a>
   </nav>
 </footer>
 
     <svg version="1.1" id="img-filters" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <defs>
-        <filter id="filter-warp">
-          <feSpecularLighting result="spotlight" specularConstant="1.2"
-              specularExponent="50" lighting-color="#fff">
-            <fePointLight id="point-light" z="120"/>
-          </feSpecularLighting>
-          <feTurbulence type="turbulence" baseFrequency="0.05"
-            numOctaves="2" result="turbulence_rgb"/>
-          <feColorMatrix type="matrix" values=
-       "0 0 0 0 0,
-       0 0 0 0 0,
-       0 0 0 0 0,
-       0 0 0 -1.2 1.1"
-       in="FRACTAL-TEXTURE_10" result="turbulence_bw" />
-          <feComposite in="spotlight" in2="turbulence_bw" operator="arithmetic" k1="-1" k2="0" k3="0" k4=".5" result="turbspotlight"/>
-          <feComposite in="SourceGraphic" in2 = "spotlight" operator="arithmetic" k1=".5" k2="1" k3=".15" k4="0" result="hotspot"/>
-          <feDisplacementMap in="hotspot" in2="turbspotlight"
-            scale="20"/>
-        </filter>
-      </defs>
-    </svg>
+    <defs>
+      <filter id="filter-warp">
+        <feSpecularLighting id="warp-spec-light"result="spotlight" specularConstant="1.2"
+            specularExponent="50" lighting-color="#fff">
+          <fePointLight id="point-light" z="120"/>
+        </feSpecularLighting>
+        <feTurbulence type="turbulence" baseFrequency="0.05"
+          numOctaves="2" result="turbulence_rgb"/>
+        <feColorMatrix type="matrix" values=
+     "0 0 0 0 0,
+     0 0 0 0 0,
+     0 0 0 0 0,
+     0 0 0 -1.2 1.1"
+     in="FRACTAL-TEXTURE_10" result="turbulence_bw" />
+        <feComposite in="spotlight" in2="turbulence_bw" operator="arithmetic" k1="-1" k2="0" k3="0" k4=".5" result="turbspotlight"/>
+        <feComposite in="SourceGraphic" in2 = "spotlight" operator="arithmetic" k1=".5" k2="1" k3=".15" k4="0" result="hotspot"/>
+        <feDisplacementMap in="hotspot" in2="turbspotlight"
+          scale="20"/>
+      </filter>
+    </defs>
+  </svg>
     
     <script type="text/javascript" src="/assets/js/roll-replace.js"></script>
     <script type="text/javascript" src="/assets/js/img-filters.js"></script>
+    <script type="text/javascript" src="/assets/js/carousel.js"></script>
+    <script type="text/javascript" src="/assets/js/intersection-observer.js"></script>
   </body>
 </html>

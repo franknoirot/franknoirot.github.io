@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-14T01:36:25-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Frank Noirot</title><subtitle>A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC.</subtitle><author><name>Frank RJ Noirot</name></author><entry><title type="html">D3.js Colorpicker</title><link href="http://localhost:4000/code/2018/10/31/d3js-colorpicker.html" rel="alternate" type="text/html" title="D3.js Colorpicker" /><published>2018-10-31T00:00:00-04:00</published><updated>2018-10-31T00:00:00-04:00</updated><id>http://localhost:4000/code/2018/10/31/d3js-colorpicker</id><content type="html" xml:base="http://localhost:4000/code/2018/10/31/d3js-colorpicker.html">&lt;p&gt;In late November 2018 I made a color picker to explore the Hue-Saturation-Lightness color space with D3.js.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-21T01:55:55-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Frank Noirot</title><subtitle>A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC.</subtitle><author><name>Frank RJ Noirot</name></author><entry><title type="html">D3.js Colorpicker</title><link href="http://localhost:4000/code/2018/10/31/d3js-colorpicker.html" rel="alternate" type="text/html" title="D3.js Colorpicker" /><published>2018-10-31T00:00:00-04:00</published><updated>2018-10-31T00:00:00-04:00</updated><id>http://localhost:4000/code/2018/10/31/d3js-colorpicker</id><content type="html" xml:base="http://localhost:4000/code/2018/10/31/d3js-colorpicker.html">&lt;p&gt;In late November 2018 I made a color picker to explore the Hue-Saturation-Lightness color space with D3.js.&lt;/p&gt;
 
 &lt;p&gt;Tap around below to use it, then scroll to read why I made it!&lt;/p&gt;
 
@@ -46,89 +46,74 @@
 
 &lt;!--  --&gt;
 
-&lt;style type=&quot;text/css&quot; scoped=&quot;&quot;&gt;
-  .carousel-item {
-    height: 60vmin;
-  }
-
-  
-  .slide--1 {
-    background: url(/assets/img/kasimir-barcart/1.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--2 {
-    background: url(/assets/img/kasimir-barcart/2.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--3 {
-    background: url(/assets/img/kasimir-barcart/3.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--4 {
-    background: url(/assets/img/kasimir-barcart/4.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--5 {
-    background: url(/assets/img/kasimir-barcart/5.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-&lt;/style&gt;
-
-&lt;div id=&quot;kasimir-bar-cart--slideshow--&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
-  &lt;ol class=&quot;carousel-indicators&quot;&gt;
+&lt;div id=&quot;--slideshow--&quot; class=&quot;carousel&quot;&gt;
+  &lt;div class=&quot;carousel__track-container&quot;&gt;
+    &lt;ul class=&quot;carousel__track&quot; tabindex=&quot;0&quot;&gt;&lt;li class=&quot;carousel__slide active&quot;&gt;
+          
+            &lt;img class=&quot;carousel__item&quot; src=&quot;/1&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/2&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/3&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/4&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/5&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;carousel__button carousel__button--left&quot; name=&quot;Previous Image&quot;&gt;
+    &lt;img src=&quot;/assets/img/carousel-arrow-left.svg&quot; alt=&quot;Previous&quot; /&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;carousel__button carousel__button--right&quot; name=&quot;Next Image&quot;&gt;
+      &lt;img src=&quot;/assets/img/carousel-arrow-right.svg&quot; alt=&quot;Next&quot; /&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;carousel__nav&quot;&gt;
     
-    &lt;li data-target=&quot;#kasimir-bar-cart--slideshow--&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator active&quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#kasimir-bar-cart--slideshow--&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#kasimir-bar-cart--slideshow--&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#kasimir-bar-cart--slideshow--&quot; data-slide-to=&quot;3&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#kasimir-bar-cart--slideshow--&quot; data-slide-to=&quot;4&quot;&gt;&lt;/li&gt;
-    
-  &lt;/ol&gt;
-  &lt;div class=&quot;carousel-inner&quot;&gt;
-    
-    &lt;div class=&quot;carousel-item active slide--1&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--2&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--3&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--4&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--5&quot;&gt;
-    &lt;/div&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
   &lt;/div&gt;
-  &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#kasimir-bar-cart--slideshow--&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
-    &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
-  &lt;/a&gt;
-  &lt;a class=&quot;carousel-control-next&quot; href=&quot;#kasimir-bar-cart--slideshow--&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
-    &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
-  &lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr /&gt;
@@ -153,89 +138,74 @@
 
 &lt;!--  --&gt;
 
-&lt;style type=&quot;text/css&quot; scoped=&quot;&quot;&gt;
-  .carousel-item {
-    height: 60vmin;
-  }
-
-  
-  .slide--1 {
-    background: url(/assets/img/sunday-desk/1.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--2 {
-    background: url(/assets/img/sunday-desk/2.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--3 {
-    background: url(/assets/img/sunday-desk/3.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--4 {
-    background: url(/assets/img/sunday-desk/4.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--5 {
-    background: url(/assets/img/sunday-desk/5.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-&lt;/style&gt;
-
-&lt;div id=&quot;sunday-desk--slideshow--&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
-  &lt;ol class=&quot;carousel-indicators&quot;&gt;
+&lt;div id=&quot;--slideshow--&quot; class=&quot;carousel&quot;&gt;
+  &lt;div class=&quot;carousel__track-container&quot;&gt;
+    &lt;ul class=&quot;carousel__track&quot; tabindex=&quot;0&quot;&gt;&lt;li class=&quot;carousel__slide active&quot;&gt;
+          
+            &lt;img class=&quot;carousel__item&quot; src=&quot;/1&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/2&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/3&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/4&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/5&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;carousel__button carousel__button--left&quot; name=&quot;Previous Image&quot;&gt;
+    &lt;img src=&quot;/assets/img/carousel-arrow-left.svg&quot; alt=&quot;Previous&quot; /&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;carousel__button carousel__button--right&quot; name=&quot;Next Image&quot;&gt;
+      &lt;img src=&quot;/assets/img/carousel-arrow-right.svg&quot; alt=&quot;Next&quot; /&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;carousel__nav&quot;&gt;
     
-    &lt;li data-target=&quot;#sunday-desk--slideshow--&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator active&quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#sunday-desk--slideshow--&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#sunday-desk--slideshow--&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#sunday-desk--slideshow--&quot; data-slide-to=&quot;3&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#sunday-desk--slideshow--&quot; data-slide-to=&quot;4&quot;&gt;&lt;/li&gt;
-    
-  &lt;/ol&gt;
-  &lt;div class=&quot;carousel-inner&quot;&gt;
-    
-    &lt;div class=&quot;carousel-item active slide--1&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--2&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--3&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--4&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--5&quot;&gt;
-    &lt;/div&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
   &lt;/div&gt;
-  &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#sunday-desk--slideshow--&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
-    &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
-  &lt;/a&gt;
-  &lt;a class=&quot;carousel-control-next&quot; href=&quot;#sunday-desk--slideshow--&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
-    &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
-  &lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr /&gt;</content><author><name>Frank RJ Noirot</name></author><summary type="html">I named this desk the Sunday because that was the day I woke up and designed and built it in one go.</summary></entry><entry><title type="html">MPCNC</title><link href="http://localhost:4000/make/2018/05/20/mpcnc.html" rel="alternate" type="text/html" title="MPCNC" /><published>2018-05-20T00:00:00-04:00</published><updated>2018-05-20T00:00:00-04:00</updated><id>http://localhost:4000/make/2018/05/20/mpcnc</id><content type="html" xml:base="http://localhost:4000/make/2018/05/20/mpcnc.html">&lt;p&gt;Over the fall of 2017 I printed all of the parts needed to build Ryan Zellers’ excellent CNC machine design, the Mostly Printed CNC.&lt;/p&gt;
@@ -250,77 +220,63 @@
 
 &lt;!--  --&gt;
 
-&lt;style type=&quot;text/css&quot; scoped=&quot;&quot;&gt;
-  .carousel-item {
-    height: 60vmin;
-  }
-
-  
-  .slide--1 {
-    background: url(/assets/img/mpcnc/1.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--2 {
-    background: url(/assets/img/mpcnc/2.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--3 {
-    background: url(/assets/img/mpcnc/3.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--4 {
-    background: url(/assets/img/mpcnc/4.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-&lt;/style&gt;
-
-&lt;div id=&quot;mpcnc--slideshow--&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
-  &lt;ol class=&quot;carousel-indicators&quot;&gt;
+&lt;div id=&quot;--slideshow--&quot; class=&quot;carousel&quot;&gt;
+  &lt;div class=&quot;carousel__track-container&quot;&gt;
+    &lt;ul class=&quot;carousel__track&quot; tabindex=&quot;0&quot;&gt;&lt;li class=&quot;carousel__slide active&quot;&gt;
+          
+            &lt;img class=&quot;carousel__item&quot; src=&quot;/1&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/2&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/3&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/4&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;carousel__button carousel__button--left&quot; name=&quot;Previous Image&quot;&gt;
+    &lt;img src=&quot;/assets/img/carousel-arrow-left.svg&quot; alt=&quot;Previous&quot; /&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;carousel__button carousel__button--right&quot; name=&quot;Next Image&quot;&gt;
+      &lt;img src=&quot;/assets/img/carousel-arrow-right.svg&quot; alt=&quot;Next&quot; /&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;carousel__nav&quot;&gt;
     
-    &lt;li data-target=&quot;#mpcnc--slideshow--&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator active&quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#mpcnc--slideshow--&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#mpcnc--slideshow--&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#mpcnc--slideshow--&quot; data-slide-to=&quot;3&quot;&gt;&lt;/li&gt;
-    
-  &lt;/ol&gt;
-  &lt;div class=&quot;carousel-inner&quot;&gt;
-    
-    &lt;div class=&quot;carousel-item active slide--1&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--2&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--3&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--4&quot;&gt;
-    &lt;/div&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
   &lt;/div&gt;
-  &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#mpcnc--slideshow--&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
-    &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
-  &lt;/a&gt;
-  &lt;a class=&quot;carousel-control-next&quot; href=&quot;#mpcnc--slideshow--&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
-    &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
-  &lt;/a&gt;
 &lt;/div&gt;</content><author><name>Frank RJ Noirot</name></author><summary type="html">Over the fall of 2017 I printed all of the parts needed to build Ryan Zellers’ excellent CNC machine design, the Mostly Printed CNC.</summary></entry><entry><title type="html">2017 Sculptures</title><link href="http://localhost:4000/make/2017/08/10/sculptures-2017.html" rel="alternate" type="text/html" title="2017 Sculptures" /><published>2017-08-10T00:00:00-04:00</published><updated>2017-08-10T00:00:00-04:00</updated><id>http://localhost:4000/make/2017/08/10/sculptures-2017</id><content type="html" xml:base="http://localhost:4000/make/2017/08/10/sculptures-2017.html">&lt;p&gt;I made two sculptures over the summer and winter of 2017.&lt;/p&gt;
 
 &lt;h3 id=&quot;middle-passage&quot;&gt;Middle Passage&lt;/h3&gt;
@@ -330,65 +286,52 @@
 
 &lt;!--  --&gt;
 
-&lt;style type=&quot;text/css&quot; scoped=&quot;&quot;&gt;
-  .carousel-item {
-    height: 60vmin;
-  }
-
-  
-  .slide--1 {
-    background: url(/assets/img/sculptures-2017/1.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--2 {
-    background: url(/assets/img/sculptures-2017/2.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--3 {
-    background: url(/assets/img/sculptures-2017/3.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-&lt;/style&gt;
-
-&lt;div id=&quot;sculptures-2017--slideshow--1&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
-  &lt;ol class=&quot;carousel-indicators&quot;&gt;
+&lt;div id=&quot;--slideshow--1&quot; class=&quot;carousel&quot;&gt;
+  &lt;div class=&quot;carousel__track-container&quot;&gt;
+    &lt;ul class=&quot;carousel__track&quot; tabindex=&quot;0&quot;&gt;&lt;li class=&quot;carousel__slide active&quot;&gt;
+          
+            &lt;img class=&quot;carousel__item&quot; src=&quot;/1&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/2&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/3&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;carousel__button carousel__button--left&quot; name=&quot;Previous Image&quot;&gt;
+    &lt;img src=&quot;/assets/img/carousel-arrow-left.svg&quot; alt=&quot;Previous&quot; /&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;carousel__button carousel__button--right&quot; name=&quot;Next Image&quot;&gt;
+      &lt;img src=&quot;/assets/img/carousel-arrow-right.svg&quot; alt=&quot;Next&quot; /&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;carousel__nav&quot;&gt;
     
-    &lt;li data-target=&quot;#sculptures-2017--slideshow--1&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator active&quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#sculptures-2017--slideshow--1&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#sculptures-2017--slideshow--1&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
-    
-  &lt;/ol&gt;
-  &lt;div class=&quot;carousel-inner&quot;&gt;
-    
-    &lt;div class=&quot;carousel-item active slide--1&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--2&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--3&quot;&gt;
-    &lt;/div&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
   &lt;/div&gt;
-  &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#sculptures-2017--slideshow--1&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
-    &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
-  &lt;/a&gt;
-  &lt;a class=&quot;carousel-control-next&quot; href=&quot;#sculptures-2017--slideshow--1&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
-    &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
-  &lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr /&gt;
@@ -400,58 +343,44 @@
 &lt;img src=&quot;/assets/img/sculptures-2017/4.jpg&quot; alt=&quot;papier mache sculpture of a hand in a gun gesture&quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;
 
 &lt;!-- 
-
 &lt;!--  --&gt;
 
-&lt;style type=&quot;text/css&quot; scoped=&quot;&quot;&gt;
-  .carousel-item {
-    height: 60vmin;
-  }
-
-  
-  .slide--4 {
-    background: url(/assets/img/sculptures-2017/4.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--5 {
-    background: url(/assets/img/sculptures-2017/5.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-&lt;/style&gt;
-
-&lt;div id=&quot;sculptures-2017--slideshow--2&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
-  &lt;ol class=&quot;carousel-indicators&quot;&gt;
+&lt;div id=&quot;--slideshow--2&quot; class=&quot;carousel&quot;&gt;
+  &lt;div class=&quot;carousel__track-container&quot;&gt;
+    &lt;ul class=&quot;carousel__track&quot; tabindex=&quot;0&quot;&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/4&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/5&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;carousel__button carousel__button--left&quot; name=&quot;Previous Image&quot;&gt;
+    &lt;img src=&quot;/assets/img/carousel-arrow-left.svg&quot; alt=&quot;Previous&quot; /&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;carousel__button carousel__button--right&quot; name=&quot;Next Image&quot;&gt;
+      &lt;img src=&quot;/assets/img/carousel-arrow-right.svg&quot; alt=&quot;Next&quot; /&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;carousel__nav&quot;&gt;
     
-    &lt;li data-target=&quot;#sculptures-2017--slideshow--2&quot; data-slide-to=&quot;0&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#sculptures-2017--slideshow--2&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
-    
-  &lt;/ol&gt;
-  &lt;div class=&quot;carousel-inner&quot;&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--4&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--5&quot;&gt;
-    &lt;/div&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
   &lt;/div&gt;
-  &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#sculptures-2017--slideshow--2&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
-    &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
-  &lt;/a&gt;
-  &lt;a class=&quot;carousel-control-next&quot; href=&quot;#sculptures-2017--slideshow--2&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
-    &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
-  &lt;/a&gt;
 &lt;/div&gt;
-
 &lt;p&gt;–&amp;gt;&lt;/p&gt;</content><author><name>Frank RJ Noirot</name></author><summary type="html">I made two sculptures over the summer and winter of 2017.</summary></entry><entry><title type="html">2017 Chairs</title><link href="http://localhost:4000/make/2017/06/25/chairs-2017.html" rel="alternate" type="text/html" title="2017 Chairs" /><published>2017-06-25T00:00:00-04:00</published><updated>2017-06-25T00:00:00-04:00</updated><id>http://localhost:4000/make/2017/06/25/chairs-2017</id><content type="html" xml:base="http://localhost:4000/make/2017/06/25/chairs-2017.html">&lt;p&gt;I made two chairs during the summer after graduating from college.&lt;/p&gt;
 
 &lt;p&gt;The first is a &lt;strong&gt;steel &amp;amp; plywood chair&lt;/strong&gt; I made to learn welding from my stepfather after finding out he owned a mig welder. I 3D modeled it after making it for practice, and the model can be seen at the end of the page.&lt;/p&gt;
@@ -462,53 +391,41 @@
 
 &lt;!--  --&gt;
 
-&lt;style type=&quot;text/css&quot; scoped=&quot;&quot;&gt;
-  .carousel-item {
-    height: 60vmin;
-  }
-
-  
-  .slide--1 {
-    background: url(/assets/img/chairs-2017/1.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--2 {
-    background: url(/assets/img/chairs-2017/2.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-&lt;/style&gt;
-
-&lt;div id=&quot;chairs-2017--slideshow--&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
-  &lt;ol class=&quot;carousel-indicators&quot;&gt;
+&lt;div id=&quot;--slideshow--&quot; class=&quot;carousel&quot;&gt;
+  &lt;div class=&quot;carousel__track-container&quot;&gt;
+    &lt;ul class=&quot;carousel__track&quot; tabindex=&quot;0&quot;&gt;&lt;li class=&quot;carousel__slide active&quot;&gt;
+          
+            &lt;img class=&quot;carousel__item&quot; src=&quot;/1&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/2&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;carousel__button carousel__button--left&quot; name=&quot;Previous Image&quot;&gt;
+    &lt;img src=&quot;/assets/img/carousel-arrow-left.svg&quot; alt=&quot;Previous&quot; /&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;carousel__button carousel__button--right&quot; name=&quot;Next Image&quot;&gt;
+      &lt;img src=&quot;/assets/img/carousel-arrow-right.svg&quot; alt=&quot;Next&quot; /&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;carousel__nav&quot;&gt;
     
-    &lt;li data-target=&quot;#chairs-2017--slideshow--&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator active&quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#chairs-2017--slideshow--&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
-    
-  &lt;/ol&gt;
-  &lt;div class=&quot;carousel-inner&quot;&gt;
-    
-    &lt;div class=&quot;carousel-item active slide--1&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--2&quot;&gt;
-    &lt;/div&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
   &lt;/div&gt;
-  &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#chairs-2017--slideshow--&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
-    &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
-  &lt;/a&gt;
-  &lt;a class=&quot;carousel-control-next&quot; href=&quot;#chairs-2017--slideshow--&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
-    &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
-  &lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr /&gt;
@@ -543,617 +460,558 @@
 
 &lt;!--  --&gt;
 
-&lt;style type=&quot;text/css&quot; scoped=&quot;&quot;&gt;
-  .carousel-item {
-    height: 60vmin;
-  }
-
-  
-  .slide--1 {
-    background: url(/assets/img/osu-crp-thesis-slides/1.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--2 {
-    background: url(/assets/img/osu-crp-thesis-slides/2.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--3 {
-    background: url(/assets/img/osu-crp-thesis-slides/3.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--4 {
-    background: url(/assets/img/osu-crp-thesis-slides/4.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--5 {
-    background: url(/assets/img/osu-crp-thesis-slides/5.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--6 {
-    background: url(/assets/img/osu-crp-thesis-slides/6.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--7 {
-    background: url(/assets/img/osu-crp-thesis-slides/7.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--8 {
-    background: url(/assets/img/osu-crp-thesis-slides/8.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--9 {
-    background: url(/assets/img/osu-crp-thesis-slides/9.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--10 {
-    background: url(/assets/img/osu-crp-thesis-slides/10.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--11 {
-    background: url(/assets/img/osu-crp-thesis-slides/11.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--12 {
-    background: url(/assets/img/osu-crp-thesis-slides/12.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--13 {
-    background: url(/assets/img/osu-crp-thesis-slides/13.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--14 {
-    background: url(/assets/img/osu-crp-thesis-slides/14.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--15 {
-    background: url(/assets/img/osu-crp-thesis-slides/15.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--16 {
-    background: url(/assets/img/osu-crp-thesis-slides/16.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--17 {
-    background: url(/assets/img/osu-crp-thesis-slides/17.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--18 {
-    background: url(/assets/img/osu-crp-thesis-slides/18.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--19 {
-    background: url(/assets/img/osu-crp-thesis-slides/19.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--20 {
-    background: url(/assets/img/osu-crp-thesis-slides/20.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--21 {
-    background: url(/assets/img/osu-crp-thesis-slides/21.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--22 {
-    background: url(/assets/img/osu-crp-thesis-slides/22.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--23 {
-    background: url(/assets/img/osu-crp-thesis-slides/23.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--24 {
-    background: url(/assets/img/osu-crp-thesis-slides/24.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--25 {
-    background: url(/assets/img/osu-crp-thesis-slides/25.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--26 {
-    background: url(/assets/img/osu-crp-thesis-slides/26.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--27 {
-    background: url(/assets/img/osu-crp-thesis-slides/27.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--28 {
-    background: url(/assets/img/osu-crp-thesis-slides/28.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--29 {
-    background: url(/assets/img/osu-crp-thesis-slides/29.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--30 {
-    background: url(/assets/img/osu-crp-thesis-slides/30.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--31 {
-    background: url(/assets/img/osu-crp-thesis-slides/31.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--32 {
-    background: url(/assets/img/osu-crp-thesis-slides/32.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--33 {
-    background: url(/assets/img/osu-crp-thesis-slides/33.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--34 {
-    background: url(/assets/img/osu-crp-thesis-slides/34.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--35 {
-    background: url(/assets/img/osu-crp-thesis-slides/35.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--36 {
-    background: url(/assets/img/osu-crp-thesis-slides/36.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--37 {
-    background: url(/assets/img/osu-crp-thesis-slides/37.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--38 {
-    background: url(/assets/img/osu-crp-thesis-slides/38.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--39 {
-    background: url(/assets/img/osu-crp-thesis-slides/39.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--40 {
-    background: url(/assets/img/osu-crp-thesis-slides/40.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--41 {
-    background: url(/assets/img/osu-crp-thesis-slides/41.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--42 {
-    background: url(/assets/img/osu-crp-thesis-slides/42.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--43 {
-    background: url(/assets/img/osu-crp-thesis-slides/43.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--44 {
-    background: url(/assets/img/osu-crp-thesis-slides/44.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--45 {
-    background: url(/assets/img/osu-crp-thesis-slides/45.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--46 {
-    background: url(/assets/img/osu-crp-thesis-slides/46.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--47 {
-    background: url(/assets/img/osu-crp-thesis-slides/47.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--48 {
-    background: url(/assets/img/osu-crp-thesis-slides/48.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--49 {
-    background: url(/assets/img/osu-crp-thesis-slides/49.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-&lt;/style&gt;
-
-&lt;div id=&quot;ohio-state-crp-thesis--slideshow--&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
-  &lt;ol class=&quot;carousel-indicators&quot;&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;3&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;4&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;5&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;6&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;7&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;8&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;9&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;10&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;11&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;12&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;13&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;14&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;15&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;16&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;17&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;18&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;19&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;20&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;21&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;22&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;23&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;24&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;25&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;26&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;27&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;28&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;29&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;30&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;31&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;32&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;33&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;34&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;35&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;36&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;37&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;38&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;39&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;40&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;41&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;42&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;43&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;44&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;45&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;46&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;47&quot;&gt;&lt;/li&gt;
-    
-    &lt;li data-target=&quot;#ohio-state-crp-thesis--slideshow--&quot; data-slide-to=&quot;48&quot;&gt;&lt;/li&gt;
-    
-  &lt;/ol&gt;
-  &lt;div class=&quot;carousel-inner&quot;&gt;
-    
-    &lt;div class=&quot;carousel-item active slide--1&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--2&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--3&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--4&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--5&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--6&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--7&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--8&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--9&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--10&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--11&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--12&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--13&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--14&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--15&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--16&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--17&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--18&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--19&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--20&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--21&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--22&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--23&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--24&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--25&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--26&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--27&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--28&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--29&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--30&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--31&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--32&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--33&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--34&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--35&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--36&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--37&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--38&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--39&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--40&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--41&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--42&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--43&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--44&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--45&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--46&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--47&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--48&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--49&quot;&gt;
-    &lt;/div&gt;
+&lt;div id=&quot;--slideshow--&quot; class=&quot;carousel&quot;&gt;
+  &lt;div class=&quot;carousel__track-container&quot;&gt;
+    &lt;ul class=&quot;carousel__track&quot; tabindex=&quot;0&quot;&gt;&lt;li class=&quot;carousel__slide active&quot;&gt;
+          
+            &lt;img class=&quot;carousel__item&quot; src=&quot;/1&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/2&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/3&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/4&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/5&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/6&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/7&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/8&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/9&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/10&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/11&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/12&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/13&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/14&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/15&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/16&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/17&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/18&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/19&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/20&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/21&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/22&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/23&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/24&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/25&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/26&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/27&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/28&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/29&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/30&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/31&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/32&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/33&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/34&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/35&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/36&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/37&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/38&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/39&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/40&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/41&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/42&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/43&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/44&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/45&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/46&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/47&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/48&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/49&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;carousel__button carousel__button--left&quot; name=&quot;Previous Image&quot;&gt;
+    &lt;img src=&quot;/assets/img/carousel-arrow-left.svg&quot; alt=&quot;Previous&quot; /&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;carousel__button carousel__button--right&quot; name=&quot;Next Image&quot;&gt;
+      &lt;img src=&quot;/assets/img/carousel-arrow-right.svg&quot; alt=&quot;Next&quot; /&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;carousel__nav&quot;&gt;
+    
+    &lt;button class=&quot;carousel__indicator active&quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
+    
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
   &lt;/div&gt;
-  &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#ohio-state-crp-thesis--slideshow--&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
-    &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
-  &lt;/a&gt;
-  &lt;a class=&quot;carousel-control-next&quot; href=&quot;#ohio-state-crp-thesis--slideshow--&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
-    &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
-  &lt;/a&gt;
 &lt;/div&gt;
 
 &lt;p&gt;—–&lt;/p&gt;
@@ -1615,77 +1473,63 @@ This policy linked people’s inherent value, here in terms of perceived “risk
 
 &lt;!--  --&gt;
 
-&lt;style type=&quot;text/css&quot; scoped=&quot;&quot;&gt;
-  .carousel-item {
-    height: 60vmin;
-  }
-
-  
-  .slide--1 {
-    background: url(/assets/img/cajon/1.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--2 {
-    background: url(/assets/img/cajon/2.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--3 {
-    background: url(/assets/img/cajon/3.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--4 {
-    background: url(/assets/img/cajon/4.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-&lt;/style&gt;
-
-&lt;div id=&quot;cajon-drum--slideshow--&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
-  &lt;ol class=&quot;carousel-indicators&quot;&gt;
+&lt;div id=&quot;--slideshow--&quot; class=&quot;carousel&quot;&gt;
+  &lt;div class=&quot;carousel__track-container&quot;&gt;
+    &lt;ul class=&quot;carousel__track&quot; tabindex=&quot;0&quot;&gt;&lt;li class=&quot;carousel__slide active&quot;&gt;
+          
+            &lt;img class=&quot;carousel__item&quot; src=&quot;/1&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/2&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/3&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;li class=&quot;carousel__slide &quot;&gt;
+          
+            &lt;img class=&quot;carousel__item lazy&quot; data-src=&quot;/4&quot; type=&quot;video/mp4&quot; /&gt;&amp;lt;/a&amp;gt;
+          
+          &lt;div class=&quot;carousel__item-info&quot;&gt;
+            
+            &lt;h4&gt;&lt;/h4&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/li&gt;&lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;carousel__button carousel__button--left&quot; name=&quot;Previous Image&quot;&gt;
+    &lt;img src=&quot;/assets/img/carousel-arrow-left.svg&quot; alt=&quot;Previous&quot; /&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;carousel__button carousel__button--right&quot; name=&quot;Next Image&quot;&gt;
+      &lt;img src=&quot;/assets/img/carousel-arrow-right.svg&quot; alt=&quot;Next&quot; /&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;carousel__nav&quot;&gt;
     
-    &lt;li data-target=&quot;#cajon-drum--slideshow--&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator active&quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#cajon-drum--slideshow--&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#cajon-drum--slideshow--&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
-    &lt;li data-target=&quot;#cajon-drum--slideshow--&quot; data-slide-to=&quot;3&quot;&gt;&lt;/li&gt;
-    
-  &lt;/ol&gt;
-  &lt;div class=&quot;carousel-inner&quot;&gt;
-    
-    &lt;div class=&quot;carousel-item active slide--1&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--2&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--3&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;carousel-item  slide--4&quot;&gt;
-    &lt;/div&gt;
+    &lt;button class=&quot;carousel__indicator &quot;&gt;&lt;/button&gt;
     
   &lt;/div&gt;
-  &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#cajon-drum--slideshow--&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
-    &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
-  &lt;/a&gt;
-  &lt;a class=&quot;carousel-control-next&quot; href=&quot;#cajon-drum--slideshow--&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
-    &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
-  &lt;/a&gt;
 &lt;/div&gt;</content><author><name>Frank RJ Noirot</name></author><summary type="html">I built this cajon, or box drum, in the spring of 2018 for my girlfriend Emily.</summary></entry><entry><title type="html">Family Calendar in D3.js</title><link href="http://localhost:4000/code/2016/12/27/d3js-birthday-calendar.html" rel="alternate" type="text/html" title="Family Calendar in D3.js" /><published>2016-12-27T00:00:00-05:00</published><updated>2016-12-27T00:00:00-05:00</updated><id>http://localhost:4000/code/2016/12/27/d3js-birthday-calendar</id><content type="html" xml:base="http://localhost:4000/code/2016/12/27/d3js-birthday-calendar.html">&lt;p&gt;I built a calendar tool using D3.js to help remember upcoming birthdays in my big family.&lt;/p&gt;
 
 &lt;p&gt;Hover over each of the dots to meet my family! The sweep of color around the circle represents how far we are in this year, and the Age axis goes from 0 on the outer edge to 100 on the inner edge.&lt;/p&gt;

@@ -12,10 +12,14 @@
   <meta itemprop="description" name="description" content="A simple portfolio site for Frank Noirot, a designer based in Washington DC and NYC." />
 </head>
 
-  <body><nav id="navbar" class='site-navbar'>
-    <a class='primary-nav--link' href="#">About</a>
-    <a class='primary-nav--link' href="#">Contact</a>
-    <a class='primary-nav--link' href="https://www.instagram.com/franknoirot" target="_blank">@franknoirot</a>
+  <body><nav id="nav-bar" class='site-navbar'>
+    <a class="nav-toggle nav-open" onclick="document.getElementById('nav-about').focus()">&#xff0b;</a>
+    <a class="nav-toggle nav-close">x</a>
+    <a class='nav-item home' href="/">Home</a>
+    <a class='nav-item' href="/contact">Contact</a>
+    <a id="nav-about" class='nav-item' href="/about">About</a>
+    <a class='nav-item' href="/resume" target="_blank">Resumé</a>
+    <a class='nav-item' href="https://www.instagram.com/franknoirot" target="_blank">@franknoirot</a>
 </nav>
 <main>
       <div class="header--overlay">
@@ -36,617 +40,558 @@
 
 <!--  -->
 
-<style type="text/css" scoped="">
-  .carousel-item {
-    height: 60vmin;
-  }
-
-  
-  .slide--1 {
-    background: url(/assets/img/osu-crp-thesis-slides/1.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--2 {
-    background: url(/assets/img/osu-crp-thesis-slides/2.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--3 {
-    background: url(/assets/img/osu-crp-thesis-slides/3.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--4 {
-    background: url(/assets/img/osu-crp-thesis-slides/4.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--5 {
-    background: url(/assets/img/osu-crp-thesis-slides/5.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--6 {
-    background: url(/assets/img/osu-crp-thesis-slides/6.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--7 {
-    background: url(/assets/img/osu-crp-thesis-slides/7.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--8 {
-    background: url(/assets/img/osu-crp-thesis-slides/8.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--9 {
-    background: url(/assets/img/osu-crp-thesis-slides/9.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--10 {
-    background: url(/assets/img/osu-crp-thesis-slides/10.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--11 {
-    background: url(/assets/img/osu-crp-thesis-slides/11.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--12 {
-    background: url(/assets/img/osu-crp-thesis-slides/12.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--13 {
-    background: url(/assets/img/osu-crp-thesis-slides/13.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--14 {
-    background: url(/assets/img/osu-crp-thesis-slides/14.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--15 {
-    background: url(/assets/img/osu-crp-thesis-slides/15.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--16 {
-    background: url(/assets/img/osu-crp-thesis-slides/16.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--17 {
-    background: url(/assets/img/osu-crp-thesis-slides/17.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--18 {
-    background: url(/assets/img/osu-crp-thesis-slides/18.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--19 {
-    background: url(/assets/img/osu-crp-thesis-slides/19.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--20 {
-    background: url(/assets/img/osu-crp-thesis-slides/20.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--21 {
-    background: url(/assets/img/osu-crp-thesis-slides/21.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--22 {
-    background: url(/assets/img/osu-crp-thesis-slides/22.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--23 {
-    background: url(/assets/img/osu-crp-thesis-slides/23.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--24 {
-    background: url(/assets/img/osu-crp-thesis-slides/24.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--25 {
-    background: url(/assets/img/osu-crp-thesis-slides/25.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--26 {
-    background: url(/assets/img/osu-crp-thesis-slides/26.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--27 {
-    background: url(/assets/img/osu-crp-thesis-slides/27.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--28 {
-    background: url(/assets/img/osu-crp-thesis-slides/28.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--29 {
-    background: url(/assets/img/osu-crp-thesis-slides/29.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--30 {
-    background: url(/assets/img/osu-crp-thesis-slides/30.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--31 {
-    background: url(/assets/img/osu-crp-thesis-slides/31.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--32 {
-    background: url(/assets/img/osu-crp-thesis-slides/32.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--33 {
-    background: url(/assets/img/osu-crp-thesis-slides/33.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--34 {
-    background: url(/assets/img/osu-crp-thesis-slides/34.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--35 {
-    background: url(/assets/img/osu-crp-thesis-slides/35.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--36 {
-    background: url(/assets/img/osu-crp-thesis-slides/36.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--37 {
-    background: url(/assets/img/osu-crp-thesis-slides/37.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--38 {
-    background: url(/assets/img/osu-crp-thesis-slides/38.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--39 {
-    background: url(/assets/img/osu-crp-thesis-slides/39.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--40 {
-    background: url(/assets/img/osu-crp-thesis-slides/40.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--41 {
-    background: url(/assets/img/osu-crp-thesis-slides/41.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--42 {
-    background: url(/assets/img/osu-crp-thesis-slides/42.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--43 {
-    background: url(/assets/img/osu-crp-thesis-slides/43.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--44 {
-    background: url(/assets/img/osu-crp-thesis-slides/44.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--45 {
-    background: url(/assets/img/osu-crp-thesis-slides/45.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--46 {
-    background: url(/assets/img/osu-crp-thesis-slides/46.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--47 {
-    background: url(/assets/img/osu-crp-thesis-slides/47.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--48 {
-    background: url(/assets/img/osu-crp-thesis-slides/48.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .slide--49 {
-    background: url(/assets/img/osu-crp-thesis-slides/49.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-</style>
-
-<div id="ohio-state-crp-thesis--slideshow--" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="0" class="active"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="1"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="2"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="3"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="4"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="5"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="6"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="7"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="8"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="9"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="10"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="11"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="12"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="13"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="14"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="15"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="16"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="17"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="18"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="19"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="20"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="21"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="22"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="23"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="24"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="25"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="26"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="27"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="28"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="29"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="30"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="31"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="32"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="33"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="34"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="35"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="36"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="37"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="38"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="39"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="40"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="41"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="42"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="43"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="44"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="45"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="46"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="47"></li>
-    
-    <li data-target="#ohio-state-crp-thesis--slideshow--" data-slide-to="48"></li>
-    
-  </ol>
-  <div class="carousel-inner">
-    
-    <div class="carousel-item active slide--1">
-    </div>
-    
-    <div class="carousel-item  slide--2">
-    </div>
-    
-    <div class="carousel-item  slide--3">
-    </div>
-    
-    <div class="carousel-item  slide--4">
-    </div>
-    
-    <div class="carousel-item  slide--5">
-    </div>
-    
-    <div class="carousel-item  slide--6">
-    </div>
-    
-    <div class="carousel-item  slide--7">
-    </div>
-    
-    <div class="carousel-item  slide--8">
-    </div>
-    
-    <div class="carousel-item  slide--9">
-    </div>
-    
-    <div class="carousel-item  slide--10">
-    </div>
-    
-    <div class="carousel-item  slide--11">
-    </div>
-    
-    <div class="carousel-item  slide--12">
-    </div>
-    
-    <div class="carousel-item  slide--13">
-    </div>
-    
-    <div class="carousel-item  slide--14">
-    </div>
-    
-    <div class="carousel-item  slide--15">
-    </div>
-    
-    <div class="carousel-item  slide--16">
-    </div>
-    
-    <div class="carousel-item  slide--17">
-    </div>
-    
-    <div class="carousel-item  slide--18">
-    </div>
-    
-    <div class="carousel-item  slide--19">
-    </div>
-    
-    <div class="carousel-item  slide--20">
-    </div>
-    
-    <div class="carousel-item  slide--21">
-    </div>
-    
-    <div class="carousel-item  slide--22">
-    </div>
-    
-    <div class="carousel-item  slide--23">
-    </div>
-    
-    <div class="carousel-item  slide--24">
-    </div>
-    
-    <div class="carousel-item  slide--25">
-    </div>
-    
-    <div class="carousel-item  slide--26">
-    </div>
-    
-    <div class="carousel-item  slide--27">
-    </div>
-    
-    <div class="carousel-item  slide--28">
-    </div>
-    
-    <div class="carousel-item  slide--29">
-    </div>
-    
-    <div class="carousel-item  slide--30">
-    </div>
-    
-    <div class="carousel-item  slide--31">
-    </div>
-    
-    <div class="carousel-item  slide--32">
-    </div>
-    
-    <div class="carousel-item  slide--33">
-    </div>
-    
-    <div class="carousel-item  slide--34">
-    </div>
-    
-    <div class="carousel-item  slide--35">
-    </div>
-    
-    <div class="carousel-item  slide--36">
-    </div>
-    
-    <div class="carousel-item  slide--37">
-    </div>
-    
-    <div class="carousel-item  slide--38">
-    </div>
-    
-    <div class="carousel-item  slide--39">
-    </div>
-    
-    <div class="carousel-item  slide--40">
-    </div>
-    
-    <div class="carousel-item  slide--41">
-    </div>
-    
-    <div class="carousel-item  slide--42">
-    </div>
-    
-    <div class="carousel-item  slide--43">
-    </div>
-    
-    <div class="carousel-item  slide--44">
-    </div>
-    
-    <div class="carousel-item  slide--45">
-    </div>
-    
-    <div class="carousel-item  slide--46">
-    </div>
-    
-    <div class="carousel-item  slide--47">
-    </div>
-    
-    <div class="carousel-item  slide--48">
-    </div>
-    
-    <div class="carousel-item  slide--49">
-    </div>
+<div id="--slideshow--" class="carousel">
+  <div class="carousel__track-container">
+    <ul class="carousel__track" tabindex="0"><li class="carousel__slide active">
+          
+            <img class="carousel__item" src="/1" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/2" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/3" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/4" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/5" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/6" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/7" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/8" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/9" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/10" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/11" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/12" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/13" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/14" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/15" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/16" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/17" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/18" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/19" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/20" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/21" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/22" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/23" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/24" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/25" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/26" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/27" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/28" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/29" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/30" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/31" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/32" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/33" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/34" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/35" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/36" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/37" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/38" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/39" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/40" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/41" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/42" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/43" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/44" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/45" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/46" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/47" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/48" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li><li class="carousel__slide ">
+          
+            <img class="carousel__item lazy" data-src="/49" type="video/mp4" />&lt;/a&gt;
+          
+          <div class="carousel__item-info">
+            
+            <h4></h4>
+            <p></p>
+          </div>
+      </li></ul>
+  </div>
+  <button class="carousel__button carousel__button--left" name="Previous Image">
+    <img src="/assets/img/carousel-arrow-left.svg" alt="Previous" />
+  </button>
+  <button class="carousel__button carousel__button--right" name="Next Image">
+      <img src="/assets/img/carousel-arrow-right.svg" alt="Next" />
+  </button>
+  <div class="carousel__nav">
+    
+    <button class="carousel__indicator active"></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
+    
+    <button class="carousel__indicator "></button>
     
   </div>
-  <a class="carousel-control-prev" href="#ohio-state-crp-thesis--slideshow--" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#ohio-state-crp-thesis--slideshow--" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
 
 <p>—–</p>
@@ -1103,38 +1048,41 @@ This policy linked people’s inherent value, here in terms of perceived “risk
 
     </main>
     <footer>
+    <p>coded by <a href="https://github.com/franknoirot" target="_blank">Frank Johnson</a>, 2019</p>
+    <p>built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
     <nav id='contact-nav'>
     <a href="mailto:frank@franknoirot.co">Email</a>
-    <a href="/resume">Resumé</a>
     <a href="https://www.instagram.com/franknoirot" target="_blank">Intagram</a>
     <a href="https://www.github.com/franknoirot" target="_blank">Github</a>
   </nav>
 </footer>
 
     <svg version="1.1" id="img-filters" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <defs>
-        <filter id="filter-warp">
-          <feSpecularLighting result="spotlight" specularConstant="1.2"
-              specularExponent="50" lighting-color="#fff">
-            <fePointLight id="point-light" z="120"/>
-          </feSpecularLighting>
-          <feTurbulence type="turbulence" baseFrequency="0.05"
-            numOctaves="2" result="turbulence_rgb"/>
-          <feColorMatrix type="matrix" values=
-       "0 0 0 0 0,
-       0 0 0 0 0,
-       0 0 0 0 0,
-       0 0 0 -1.2 1.1"
-       in="FRACTAL-TEXTURE_10" result="turbulence_bw" />
-          <feComposite in="spotlight" in2="turbulence_bw" operator="arithmetic" k1="-1" k2="0" k3="0" k4=".5" result="turbspotlight"/>
-          <feComposite in="SourceGraphic" in2 = "spotlight" operator="arithmetic" k1=".5" k2="1" k3=".15" k4="0" result="hotspot"/>
-          <feDisplacementMap in="hotspot" in2="turbspotlight"
-            scale="20"/>
-        </filter>
-      </defs>
-    </svg>
+    <defs>
+      <filter id="filter-warp">
+        <feSpecularLighting id="warp-spec-light"result="spotlight" specularConstant="1.2"
+            specularExponent="50" lighting-color="#fff">
+          <fePointLight id="point-light" z="120"/>
+        </feSpecularLighting>
+        <feTurbulence type="turbulence" baseFrequency="0.05"
+          numOctaves="2" result="turbulence_rgb"/>
+        <feColorMatrix type="matrix" values=
+     "0 0 0 0 0,
+     0 0 0 0 0,
+     0 0 0 0 0,
+     0 0 0 -1.2 1.1"
+     in="FRACTAL-TEXTURE_10" result="turbulence_bw" />
+        <feComposite in="spotlight" in2="turbulence_bw" operator="arithmetic" k1="-1" k2="0" k3="0" k4=".5" result="turbspotlight"/>
+        <feComposite in="SourceGraphic" in2 = "spotlight" operator="arithmetic" k1=".5" k2="1" k3=".15" k4="0" result="hotspot"/>
+        <feDisplacementMap in="hotspot" in2="turbspotlight"
+          scale="20"/>
+      </filter>
+    </defs>
+  </svg>
     
     <script type="text/javascript" src="/assets/js/roll-replace.js"></script>
     <script type="text/javascript" src="/assets/js/img-filters.js"></script>
+    <script type="text/javascript" src="/assets/js/carousel.js"></script>
+    <script type="text/javascript" src="/assets/js/intersection-observer.js"></script>
   </body>
 </html>
