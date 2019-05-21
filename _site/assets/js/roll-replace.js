@@ -51,7 +51,10 @@ const rollReplace = (e) => {
   }
 
   window.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.roll-replace').tabIndex = 0;
-    document.querySelector('.roll-replace').addEventListener('click', rollReplace);
-    document.querySelector('.roll-replace').addEventListener('keydown', keyCheck);
+    let roll = document.querySelector('.roll-replace');
+    if (roll) {
+      roll.tabIndex = 0;
+      roll.addEventListener('click', rollReplace);
+      roll.addEventListener('keydown', keyCheck);
+    }
   });

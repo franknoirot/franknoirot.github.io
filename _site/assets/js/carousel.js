@@ -8,7 +8,6 @@ const setup = (carousel) => {
     const prevBtn = carousel.querySelector(".carousel__button--left");
     const dotsNav = carousel.querySelector(".carousel__nav");
     const dots = Array.from(dotsNav.children);
-    console.log(slides);
 
     const setSlidePos = (slides) => {
         const slideW = slides[0].getBoundingClientRect().width;
@@ -112,7 +111,6 @@ const setup = (carousel) => {
     let swipeX = null;
     let swipeThresh = 50;
     track.addEventListener('touchstart', e => {
-        console.log(e);
         swipeX = e.changedTouches[0].pageX;
     }, false);
     track.addEventListener('touchmove', e => {
