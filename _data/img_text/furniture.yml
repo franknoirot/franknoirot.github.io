@@ -1,42 +1,51 @@
 1:
   ext: .jpg
   heading: Sunday Desk, 2017
+  alt: Plywood desk with a milk crate built into it as a shelf.
   body: I built this desk in a fit of creativity one Sunday. I made a quick mood video on it for Instagram.
   href: https://www.instagram.com/p/BlWP2LrnuKJ/
   site: Instagram
 2:
   ext: .jpg
   heading: A Plaque for Josh, 2019
+  alt: CNC-carved plaque with words and designs from Josh's life carved into it.
   body: This was my first commission, a Valentine's Day gift my coworker gave to her husband. It was also my first full project using the MPCNC machine I built.
   href: https://www.instagram.com/p/Bt3hr4GnxGP/
   site: Instagram
 3:
   ext: .jpg
   heading: Kasimir Bar Cart, 2018
+  alt: Bar cart with steel square tubing frame and plywood shelving, and a corner detail of steel.
   body: I made this bar cart out of steel and plywood as a birthday gift for my best friend.
 4:
   ext: .jpg
+  alt: Simple chair with steel square tube frame and plywood surfaces.
   heading: First Chair, 2017
   body: I used this project to learn welding from my good friend Devin after I graduated college.
 5:
   ext: .jpg
+  alt: A director's style folding chair.
   heading: Folding Chair Clone, 2017
   body: I copied a folding chair I had borrowed from a friend because I had to give it back soon. My mom retaught me some sewing too.
 6:
   ext: .jpg
+  alt: A rustic-looking end table.
   heading: Rough Oak Table, 2017
   body: My first piece of furniture, just rough cut oak boards. I really didn't understand joinery when I made this.
 7:
   ext: .jpg
   heading: Skate Rail, 2017
+  alt: A simple steel skateboard rail.
   body: This was a quick welding project out of scrap from my stepdad's metal shop. I made a music video of my making experience for Instagram.
   href: https://www.instagram.com/p/BVnADfcAcyk/
   site: Instagram
 8:
   ext: .jpg
+  alt: A cajon box drum out of plywood, with a drawing of an elephant on the corner.
   heading: Emily Cajon, 2018
-  body: I made this cajon drum as a gift for my partner's birthday. It was a tutorial build but I'm pround of how well it's snare mechanism works.
+  body: I made this cajon drum as a gift for my partner's birthday. It was a tutorial build but I'm pround of how well its snare mechanism works.
 9:
   ext: .jpg
+  alt: A close-up of the snare adjustment gear and lock for the cajon drum.
   heading: Emily Cajon, 2018 - Snare Adjuster
   body: This is a detail of my 3D-printed snare adjustment mechanism of the cajon drum.

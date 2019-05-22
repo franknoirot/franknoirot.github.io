@@ -47,22 +47,22 @@
     <svg version="1.1" id="img-filters" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
       <filter id="filter-warp">
-        <feSpecularLighting id="warp-spec-light"result="spotlight" specularConstant="1.2"
+        <feSpecularLighting id="warp-spec-light" result="spotlight" specularConstant="1.2"
             specularExponent="50" lighting-color="#fff">
-          <fePointLight id="point-light" z="120"/>
+          <fePointLight id="point-light" z="120"></fePointLight>
         </feSpecularLighting>
         <feTurbulence type="turbulence" baseFrequency="0.05"
-          numOctaves="2" result="turbulence_rgb"/>
+          numOctaves="2" result="turbulence_rgb"></feTurbulence>
         <feColorMatrix type="matrix" values=
      "0 0 0 0 0,
      0 0 0 0 0,
      0 0 0 0 0,
      0 0 0 -1.2 1.1"
-     in="FRACTAL-TEXTURE_10" result="turbulence_bw" />
-        <feComposite in="spotlight" in2="turbulence_bw" operator="arithmetic" k1="-1" k2="0" k3="0" k4=".5" result="turbspotlight"/>
-        <feComposite in="SourceGraphic" in2 = "spotlight" operator="arithmetic" k1=".5" k2="1" k3=".15" k4="0" result="hotspot"/>
+     in="FRACTAL-TEXTURE_10" result="turbulence_bw"></feColorMatrix>
+        <feComposite in="spotlight" in2="turbulence_bw" operator="arithmetic" k1="-1" k2="0" k3="0" k4=".5" result="turbspotlight"></feComposite>
+        <feComposite in="SourceGraphic" in2 = "spotlight" operator="arithmetic" k1=".5" k2="1" k3=".15" k4="0" result="hotspot"></feComposite>
         <feDisplacementMap in="hotspot" in2="turbspotlight"
-          scale="20"/>
+          scale="20"></feDisplacementMap>
       </filter>
     </defs>
   </svg>

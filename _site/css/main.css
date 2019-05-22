@@ -559,30 +559,27 @@ input[type="submit"] {
 }
 
 /* ABOUT PAGE */
-.flex-7525 {
+.about__section {
     margin: 5vmin 0;
     display: flex;
 }
 
-.flex-7525 .flex-left {
+.about__section .about__video {
     margin: 3vh 4vw;
-}
-
-img.flex-left {
     object-fit: cover;
     max-width: 100%;
 }
 
-.flex-7525 .flex-right {
+.about__section .about__text {
     width: 75%;
 }
 
 @media(orientation: portrait) {
-    .flex-7525 {
+    .about__section {
         flex-direction: column;
     }
 
-    .flex-7525 .flex-left {
+    .about__section img {
         margin: 1vh 1vw;
     }
 }
