@@ -10,7 +10,7 @@
       {%- for slide in (start..end) -%}
       <li class="carousel__slide {% if slide == 1 %}active{% endif %}">
           {% assign card = site.data.img_text[include.slug][slide] %}
-          <img class="carousel__item{% if slide != 1 %} lazy{% endif %}" alt={{ card.alt }}
+          <img class="carousel__item{% if slide != 1 %} lazy{% endif %}" alt="{{ card.alt }}"
             {% if slide == 1 %}src{%- else -%}data-src{%- endif -%}="{{ include.asset_dir }}/{{ slide }}{{ card.ext }}" type="video/mp4">
           <div class="carousel__item-info">
             
