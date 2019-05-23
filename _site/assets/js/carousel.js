@@ -117,20 +117,20 @@ var setup = function setup(carousel) {
   track.addEventListener('click', lightBoxSetup);
   track.addEventListener('keydown', trackKeyCheck); // SWIPE LISTENING
 
-  var swipeX = null;
+  var swipeX = null, swipeY = null;
   var swipeThresh = 50;
   track.addEventListener('touchstart', function (e) {
     swipeX = e.changedTouches[0].pageX;
-  }, false);
-  track.addEventListener('touchmove', function (e) {
-    e.preventDefault();
+    swipeY = e.changedTouches[0].pageY;
   }, false);
   track.addEventListener('touchend', function (e) {
     if (!swipeX) return;
-    var dist = swipeX - e.changedTouches[0].pageX;
+    var distX = swipeX - e.changedTouches[0].pageX;
+    var distY = swipeY - e.changedTouches[0].pageY;
+    if (Math.abs(distY) >= Math.abs(distX)) return;
 
-    if (Math.abs(dist) > swipeThresh) {
-      if (dist >= 0) slideRight();else slideLeft();
+    if (Math.abs(distX) > swipeThresh) {
+      if (distX >= 0) slideRight();else slideLeft();
     }
   }, false);
 };
