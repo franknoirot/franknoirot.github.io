@@ -24,11 +24,6 @@ h3 { font-size: 200%; }
 h4 { font-size: 175%; }
 h5 { font-size: 125%; }
 
-
-p {
-    font-size: 110%;
-}
-
 #img-filters {
     visibility: hidden;
     position: absolute;
@@ -58,6 +53,12 @@ section {
 
 .icon {
     fill: inherit;
+}
+
+@media(min-width: 1260px) {
+    p {
+        font-size: 110%;
+    }
 }
 
 /* NAVBAR */
@@ -579,5 +580,9 @@ input[type="submit"] {
 
     .about__section img {
         margin: 1vh 1vw;
+    }
+
+    .about__section .about__text {
+        width: 100%;
     }
 }
