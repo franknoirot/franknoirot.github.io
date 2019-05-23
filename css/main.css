@@ -4,8 +4,8 @@
 
 * {
     box-sizing: border-box;
-    --dark-gray: #333333;
-    --light-gray: #999;
+    --dark-gray: #333;
+    --light-gray: #737373;
     --design-color: #33658A;
     --slop-underline: all .23s cubic-bezier(0.1,0.7, 0.8, 1.4);
     color: var(--dark-gray);
@@ -63,9 +63,9 @@ section {
 /* NAVBAR */
 #nav-bar {
     position: fixed;
-    height: 100vh;
-    width: 200px;
-    right: -200px;
+    height: 100%;
+    width: 0;
+    left: 100vw;
     top: 0;
     padding: 5vh 4vw;
     background: var(--dark-gray);
@@ -73,7 +73,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    transition: transform .18s cubic-bezier(.1,.6,.8,.9);
+    transition: all .18s cubic-bezier(.1,.6,.8,.9);
     z-index: 99;
   }
 
@@ -111,7 +111,7 @@ section {
   .nav-item {
     position: relative;
     color: #06AED5;
-  }
+}
 
   .nav-item:not(.home) {
     writing-mode: vertical-lr;
@@ -162,6 +162,7 @@ section {
   
   #nav-bar:focus-within {
     transform: translateX(-100%);
+    width: 200px;
   }
   
   #nav-bar:focus-within:before {
@@ -175,9 +176,7 @@ section {
   
   #nav-bar:focus-within > .nav-close {
     visibility: visible;
-  }
-
-  
+  }  
 
 img.warp { filter: url(#filter-warp)}
 
@@ -497,7 +496,7 @@ footer p {
 footer nav {
     background: var(--dark-gray);
     border-radius: 5px 5px 0 0;
-    min-width: 500px;
+    min-width: 300px;
     padding: 2vh 5vw;
     display: flex;
     justify-content: space-around;
