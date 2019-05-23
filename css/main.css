@@ -201,9 +201,9 @@ section#bio .bio-name {
 
 section#bio .bio-img {
     grid-column: 2 / 3;
-    grid-row: 2 / end;
+    grid-row: 2 / 3;
     width: 100%;
-    object-fit: scale-down;
+    object-fit: contain;
     padding: 4vmax;
     padding-top: 0;
 }
@@ -223,7 +223,7 @@ section#bio .bio-quick {
     position: relative;
 }
 
-.bio-tagline::before, #bio-quick::before {
+/* .bio-tagline::before, #bio-quick::before {
     content: '';
     position: absolute;
     transform: rotate(-30deg);
@@ -243,7 +243,7 @@ section#bio .bio-quick {
     transform: rotate(95deg);
     background: linear-gradient(#ffccee, #cceeff);
     opacity: 0.2;
-}
+} */
 
 section#bio .bio-quick:first-child { margin-top: 0; }
 
@@ -253,7 +253,7 @@ section#bio .bio-quick:first-child { margin-top: 0; }
     }
 
     section#bio .bio-tagline {
-        grid-column: 1 / end;
+        grid-column: 1 / 3;
     }
 }
 
