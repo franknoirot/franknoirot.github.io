@@ -27,12 +27,15 @@ h4 {
     margin: .5em 0;
 }
 
+.resume-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .resume-nav a {
     text-decoration: none;
     position: relative;
     margin: .2em 1em;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .resume-nav a::after {
