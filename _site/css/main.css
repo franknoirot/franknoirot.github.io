@@ -202,7 +202,7 @@ section#bio .bio-name {
 
 section#bio .bio-img {
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-row: 2 / end;
     width: 100%;
     object-fit: contain;
     padding-top: 0;
