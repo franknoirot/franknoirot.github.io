@@ -506,6 +506,7 @@ footer nav a {
     color: #fcb131;
     text-decoration: none;
     position: relative;
+    margin: 0 1vw;
 }
 
 footer nav a::after {
