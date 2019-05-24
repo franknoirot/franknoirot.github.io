@@ -281,6 +281,7 @@ section#bio .bio-quick:first-child { margin-top: 0; }
 .iridium { --work-color: #fcb131; }
 .ashe { --work-color: #ff553e; }
 .furniture { --work-color: #06AED5; }
+.christmas { --work-color: #50a050; }
 
 .work-item {
     width: 80vw;
