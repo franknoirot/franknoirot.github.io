@@ -567,7 +567,7 @@ input[type="submit"] {
 
 .about__section .about__video {
     margin: 3vh 4vw;
-    object-fit: cover;
+    object-fit: scale-down;
     max-width: 100%;
 }
 
