@@ -297,7 +297,7 @@ section#bio .bio-quick:first-child { margin-top: 0; }
     position: relative;
 }
 .work-item *:focus {
-    outline-color: var(--work-color);
+    outline: solid 1px var(--work-color);
 }
 
 .work-item p {
@@ -338,6 +338,11 @@ section#bio .bio-quick:first-child { margin-top: 0; }
     list-style: none;
     position: relative;
     transition: transform .22s ease-in;
+}
+
+.carousel__track:focus {
+    outline-width: 1px;
+    outline-offset: -4px;
 }
 
 .carousel__slide {
@@ -478,6 +483,10 @@ section#bio .bio-quick:first-child { margin-top: 0; }
     left: 0;
     top: 0;
     background: rgba(51,51,51,0.8);
+}
+
+.carousel.lightbox .carousel__track {
+    outline: none;
 }
 
 .carousel.lightbox .active .carousel__item-info {
