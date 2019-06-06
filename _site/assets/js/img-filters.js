@@ -18,8 +18,8 @@ function updateWarp(e) {
 
   rX -= rect.left;
   rY -= rect.top;
-  pointLight.setAttribute("x", rX * 1.2);
-  pointLight.setAttribute("y", rY * 1.2);
+  pointLight.setAttribute("x", rX * 1.1);
+  pointLight.setAttribute("y", rY * 1.1);
   displMap.setAttribute("scale", 20 + .8 * (rect.width - 480) / 8);
 }
 
