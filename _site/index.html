@@ -25,13 +25,155 @@
       <section id="bio">
   <h1 class="bio-name">Frank <span class="roll-replace" data-replace="Noirot" data-duration='.1' data-delay=".05">Johnson</span></h1>
   <div id="bio-quick">
-    <p class="bio-quick">Working as a <strong>Designer</strong></p>
-    <p class="bio-quick">Trained as a <strong>Planner</strong></p>
-    <p class="bio-quick">Raised as a <strong>Maker</strong></p>
+    <p class="bio-quick">A digital & physical designer</p>
+    <p class="bio-quick">based out of NYC & DC</p>
+    <p class="bio-quick">making websites & furniture.</p>
   </div>
   <img class="bio-img warp" src="/assets/img/homepage-1.jpg" alt="Frank in front of the bar cart he made."/>
   <div class="bio-tagline">
-    <p>It is my joy to learn widely and help build things <br>for and with good people,<br>whether it's a bar cart, a website, or a brand.</p>
+    <p>I build all kinds of things, and I try to make them delightful to use. Take this category picker below, which I built for a company history site:</p>
+    <fieldset class="category-picker">
+        <style>
+                .category-picker {
+          --cat-opac: .9;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          border: 0;
+          width: fit-content;
+          padding: 0;
+          border-left: solid;
+          padding-left: 8px;
+        /*   background: linear-gradient(to right, rgba(255,255,255,0.3), transparent); */
+        }
+        
+        .category-picker > label {
+          margin: .5em 0;
+          user-select: none;
+          position: relative;
+        }
+        
+        .cat-all { --cat-color: hsla(358, 80%, 40%, var(--cat-opac)); }
+        .cat-awards { --cat-color: hsla(45, 100%, 35%, var(--cat-opac)); }
+        .cat-update { --cat-color: hsla(80, 100%, 33%, var(--cat-opac)); }
+        .cat-milestone { --cat-color: hsla(160, 90%, 40%, var(--cat-opac)); }
+        .cat-industry { --cat-color: hsla(210, 100%, 55%, var(--cat-opac)); }
+        .cat-products { --cat-color: hsla(260, 90%, 53%, var(--cat-opac)); }
+        .cat-satellites { --cat-color: hsla(305, 85%, 40%, var(--cat-opac)); }
+        
+        
+        /* input sucks to style, so just get that hidden, but keep it in dom so you can accept change and input events from the label parent */
+        .category-picker input {
+          position: absolute;
+          width: 0;
+          height: 0;
+        }
+
+        .category-picker > label span {
+          color: var(--cat-color);
+          transition: color .13s ease-in-out;
+        }
+        
+        .category-picker > label span::before,
+        .category-picker > label span::after {
+          content: '';
+          opacity: 0.6;
+          width: .8em;
+          height: 1.5em;
+          position: absolute;
+          right: calc(100% + 8px + 3px);
+          top: 50%;
+          transform: translateY(-50%);
+          background: var(--cat-color);
+          transition: width .13s ease-in-out;
+        }
+        
+        .category-picker > label span::after {
+          z-index: -1;
+          right: initial;
+          left: -8px;
+          width: 0;
+        }
+        
+        .category-picker > label:hover span::before {
+          width: 1.5em;
+        }
+        
+        .category-picker input:checked ~ span::before {
+          width: 1.5em;
+        }
+        
+        .category-picker > label:hover input:checked ~ span::before {
+          width: calc(1.5em - .4em);
+        }
+        
+        .category-picker input:checked ~ span::after {
+          width: calc(100% + 16px);
+        }
+
+        .category-picker > label > input:checked ~ span { color: white; }
+    </style>        
+    <label class="cat-all">
+        	<input type="checkbox" name="category" value="all"><span>All Categories</span>
+    </label>
+    <label class="cat cat-awards">
+        <input type="checkbox" name="category" value="awards"><span>Awards &amp; Recognitions</span>
+    </label>
+    <label class="cat cat-update">
+        <input type="checkbox" name="category" value="update"><span>Business Update</span>
+    </label>
+    <label class="cat cat-milestone">
+        <input type="checkbox" name="category" value="milestone"><span>Company Milestone</span>
+    </label>
+    <label class="cat cat-industry">
+        <input type="checkbox" name="category" value="industry"><span>Industry</span>
+    </label>
+    <label class="cat cat-products">
+        <input type="checkbox" name="category" value="products"><span>Products &amp; Services</span>
+    </label>
+    <label class="cat cat-satellites">
+        <input type="checkbox" name="category" value="satellites"><span>Satellites</span>
+    </label>
+    <script type="text/javascript">
+        let checkboxes = [].slice.call(document.querySelectorAll('label.cat input'))
+                         
+                         // Handle clicks on category toggles (except 'all-categories')
+                         let catOptions = [].slice.call(document.querySelectorAll('.cat')).map(el => el.children[0]);
+                         catOptions.forEach(el => {
+                           el.addEventListener('click', e => {
+                             let allCats = document.querySelector('.cat-all');
+                         
+                             // FILTER array of checkboxes to remove the one just clicked
+                             let filteredOpts = catOptions.filter(opt => opt !== el);    
+                             
+                             if (!e.target.checked && filteredOpts.every(el => el.checked)) {
+                               filteredOpts.forEach(opt => opt.checked = false);
+                               e.target.checked = true;
+                             }
+                             
+                             if (catOptions.every(el => !el.checked)) catOptions.forEach(el => el.checked = true);
+                             
+                             let allChecked = catOptions.every(el => el.checked);
+                             allCats.children[0].checked = (allChecked) ? true : false;
+                           });
+                         });
+                         
+                         // Select all button separate
+                         document.querySelector('.cat-all').addEventListener('click', (e) => {
+                           // uhhh why do html checkboxes fire twice for 'click' events, with the first event firing as typeof element.checked === undefined??????
+                           if (typeof e.target.checked === 'undefined') return;
+                           let allChecked = e.target.checked;
+                           // high-order functions will be the next .com bubble for sure.
+                           let checkboxes = [].slice.call(document.querySelectorAll('.cat > input'))
+                           console.log(checkboxes);
+                           checkboxes.forEach(f => f.checked = allChecked);
+                           
+                         });
+                         
+    </script>
+</fieldset>
+    <p>It's fun to click, right? I try to put that spirit of disciplined simplicity and happy detail in everything I do, whether it's a user interface, a bar cart, or a brand.</p>
+    <p>I'm looking for new work in any design field right now, so please <a class='btn-fancy' href="/contact">reach out</a> or <a href="https://codepen.io/franknoirot">visit my Codepen</a> to see more of my web work.</p>
   </div>
 </section>
 <section id="work">

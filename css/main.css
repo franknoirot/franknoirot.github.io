@@ -220,7 +220,19 @@ section#bio .bio-quick {
 }
 
 #bio-quick {
-    position: relative;
+    /* position: relative; */
+}
+
+#bio-quick::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 10%;
+    opacity: .3;
+    background: linear-gradient(to bottom, transparent, white), url(/assets/img/Tile-01.svg);
+    background-size: 5vh;
+    filter: hue-rotate(320deg);
 }
 
 /* .bio-tagline::before, #bio-quick::before {
@@ -497,6 +509,7 @@ section#bio .bio-quick:first-child { margin-top: 0; }
 .carousel.lightbox .carousel__indicator.active::after {
     color: white;
 }
+
 
 /* FOOTER */
 footer p {

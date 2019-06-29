@@ -9,17 +9,18 @@ function updateWarp(e) {
   var rX, rY;
 
   if (e.type === "mousemove") {
-    rX = e.x;
-    rY = e.y;
+    rX = e.x * 1.2;
+    rY = e.y * 1.1;
   } else if (e.type === "touchmove") {
-    rX = e.touches[0].clientX;
-    rY = e.touches[0].clientY;
+    const touchScale = 1;
+    rX = e.touches[0].screenX * touchScale;
+    rY = e.touches[0].screenY * 1.1;
   }
 
   rX -= rect.left;
   rY -= rect.top;
-  pointLight.setAttribute("x", rX * 1.1);
-  pointLight.setAttribute("y", rY * 1.1);
+  pointLight.setAttribute("x", rX);
+  pointLight.setAttribute("y", rY);
   displMap.setAttribute("scale", 20 + .8 * (rect.width - 480) / 8);
 }
 
