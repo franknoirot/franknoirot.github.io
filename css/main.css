@@ -216,23 +216,27 @@ section#bio .bio-tagline {
 
 section#bio .bio-quick {
     text-align: right;
-    font-size: 135%;
+    font-size: calc(95% + .5vw);
 }
 
 #bio-quick {
-    /* position: relative; */
+    position: relative;
+    padding-bottom: 3vh;
 }
 
-#bio-quick::after {
+#bio-quick::before, #bio-quick::after {
     content: '';
     position: absolute;
-    left: 0;
     width: 100vw;
-    height: 10%;
-    opacity: .3;
-    background: linear-gradient(to bottom, transparent, white), url(/assets/img/Tile-01.svg);
-    background-size: 5vh;
-    filter: hue-rotate(320deg);
+    left: -10vw;
+    bottom: 0;
+    height: 2px;
+    background: var(--dark-gray);
+}
+#bio-quick::after {
+    bottom: -7px;
+    height: 1px;
+    background: linear-gradient(to right, hsl(90, 90%, 40%), hsl(15, 90%, 65%));
 }
 
 /* .bio-tagline::before, #bio-quick::before {
