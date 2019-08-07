@@ -310,6 +310,12 @@ section#bio .bio-quick:first-child { margin-top: 0; }
     height: 40vh;
     width: 100%;
     counter-reset: slide-count;
+    transform: scale(1);
+    transition: transform .09s ease-in-out;
+}
+
+.carousel:hover {
+    transform: scale(1.02);
 }
 
 .carousel__item {
@@ -391,12 +397,19 @@ section#bio .bio-quick:first-child { margin-top: 0; }
     height: 100%;
 }
 
-.carousel__button--left { left: 12px; }
-.carousel__button--right { right: 12px; }
+.carousel__button--left { left: 12px; --shadow-dir: -1; }
+.carousel__button--right { right: 12px; --shadow-dir: 1; }
 
 .carousel__button img {
     width: 10px;
-    fill: var(--dark-gray);
+    fill: var(--work-color);
+    filter: drop-shadow(calc(var(--shadow-dir) * .4vmin) 0 0px var(--work-color));
+    transform: scale(1);
+    transition: all .09s ease-in-out;
+}
+.carousel__button:hover img {
+    filter: drop-shadow(calc(var(--shadow-dir) * 1vmin) 0 0px var(--work-color));
+    transform: scale(1.1);
 }
 
 .carousel__nav {
@@ -415,6 +428,12 @@ section#bio .bio-quick:first-child { margin-top: 0; }
     height: 3vh;
     position: relative;
     cursor: pointer;
+    transform: scale(1);
+    transition: all .09s ease-in-out;
+}
+
+.carousel__indicator:hover {
+    transform: scale(1.2);
 }
 
 .carousel__indicator:focus {
