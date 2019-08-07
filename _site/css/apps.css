@@ -16,26 +16,6 @@
   width: 50%;
 }
 
-.app__visit {
-  display: inline-block;
-  margin-top: .4em;
-  padding: .2em .4em;
-  font-family: 'Domine', serif;
-  text-decoration: none;
-  font-size: 1.25em;
-  color: var(--design-color);
-  border-style: solid;
-  border-color: var(--design-color);
-  border-radius: 1em;
-  background: transparent;
-  transition: all .1s ease-in-out;
-}
-.app__visit:hover,
-.app__visit:focus {
-  background: var(--design-color);
-  color: white;
-}
-
 .app__tools::before {
   content: "Tools: ";
 }
