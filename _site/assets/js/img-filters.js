@@ -9,19 +9,16 @@ function updateWarp(e) {
   var rX, rY;
 
   if (e.type === "mousemove") {
-    rX = e.x * 1.2;
-    rY = e.y * 1.1;
+    rX = e.offsetX
+    rY = e.offsetY
   } else if (e.type === "touchmove") {
-    const touchScale = 1;
-    rX = e.touches[0].screenX * touchScale;
-    rY = e.touches[0].screenY * 1.1;
+    rX = e.touches[0].offsetX;
+    rY = e.touches[0].offsetY
   }
 
-  rX -= rect.left;
-  rY -= rect.top;
   pointLight.setAttribute("x", rX);
   pointLight.setAttribute("y", rY);
-  displMap.setAttribute("scale", 20 + .8 * (rect.width - 480) / 8);
+  displMap.setAttribute("scale", 20 + 1 * (rect.width - 480) / 8);
 }
 
 warped.addEventListener('mousemove', updateWarp);
