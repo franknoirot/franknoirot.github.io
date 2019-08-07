@@ -6,7 +6,7 @@
     box-sizing: border-box;
     --dark-gray: #333;
     --light-gray: #737373;
-    --design-color: #33658A;
+    --design-color: #06AED5;
     --slop-underline: all .23s cubic-bezier(0.1,0.7, 0.8, 1.4);
     color: var(--dark-gray);
 }
@@ -29,6 +29,14 @@ h5 { font-size: 125%; }
     position: absolute;
 }
 
+main a {
+    color: inherit;
+    position: relative;
+    transition: color .1s ease-in-out;
+}
+main a:hover { color: var(--design-color); }
+main a:focus { color: var(--design-color); }
+
 body {
     width: 100%;
     min-height: 100vh;
@@ -44,6 +52,7 @@ body {
 
 main {
     margin-bottom: 10vh;
+    min-height: 100vh;
 }
 
 section {
@@ -525,14 +534,20 @@ footer nav {
     display: flex;
     justify-content: space-around;
 }
-footer nav a {
+footer nav a,
+footer nav button {
+    font-family: 'Space Mono', monospace;
+    font-size: inherit;
     color: #fcb131;
     text-decoration: none;
+    border: none;
+    background: transparent;
     position: relative;
     margin: 0 1vw;
 }
 
-footer nav a::after {
+footer nav a::after,
+footer nav button::after {
     content:'';
     position: absolute;
     bottom: -2px;
@@ -544,7 +559,8 @@ footer nav a::after {
     transition: var(--slop-underline);
 }
 
-footer nav a:hover::after {
+footer nav a:hover::after,
+footer nav button:hover::after {
     width: 100%;
     transform: translate(0,0);
 }
@@ -598,7 +614,7 @@ input[type="submit"] {
     width: 75%;
 }
 
-@media(orientation: portrait) {
+@media(max-width: 1400px) {
     .about__section {
         flex-direction: column;
     }
@@ -611,3 +627,24 @@ input[type="submit"] {
         width: 100%;
     }
 }
+
+/* Apps page styles */
+.app__visit {
+    display: inline-block;
+    margin-top: .4em;
+    padding: .2em .4em;
+    font-family: 'Domine', serif;
+    text-decoration: none;
+    font-size: 1.25em;
+    color: var(--design-color);
+    border-style: solid;
+    border-color: var(--design-color);
+    border-radius: 1em;
+    background: transparent;
+    transition: all .1s ease-in-out;
+  }
+  .app__visit:hover,
+  .app__visit:focus {
+    background: var(--design-color);
+    color: white;
+  }

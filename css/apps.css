@@ -1,0 +1,70 @@
+.fun {
+  display: inline-block;
+  position: relative;
+  animation: bob 1s var(--delay) ease-in-out alternate infinite;
+}
+@keyframes bob {
+  from { transform: translate(0px, -.25em); }
+  to { transform: translate(0px, .25em); }
+}
+
+.app__work-item {
+  position: relative;
+}
+
+.app__work-item p {
+  width: 50%;
+}
+
+.app__visit {
+  display: inline-block;
+  margin-top: .4em;
+  padding: .2em .4em;
+  font-family: 'Domine', serif;
+  text-decoration: none;
+  font-size: 1.25em;
+  color: var(--design-color);
+  border-style: solid;
+  border-color: var(--design-color);
+  border-radius: 1em;
+  background: transparent;
+  transition: all .1s ease-in-out;
+}
+.app__visit:hover,
+.app__visit:focus {
+  background: var(--design-color);
+  color: white;
+}
+
+.app__tools::before {
+  content: "Tools: ";
+}
+
+.app__date::before {
+  content: "Date: ";
+}
+
+.app__vid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  object-fit: cover;
+  filter: grayscale(.5);
+  z-index: -1;
+  opacity: .5;
+  transform: translate(25%);
+  transition: all .1s ease-in-out;
+}
+
+.app__work-item:hover .app__vid {
+  filter: grayscale(0);
+  transform: translate(0);
+  opacity: 1;
+}
+
+@media(orientation: portrait) {
+  .app__work-item p:not(.app__tools), .app__work-item p:not(.app__date) {
+    width: 100%;
+  }
+}

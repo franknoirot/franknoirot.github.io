@@ -5,7 +5,7 @@
 {% assign start = start | plus: 0 %}
 {% assign end = end | plus: 0  %}
 
-<div id="{{ slideSlug }}" class="carousel {% if include.help %}help-text{% endif %}">
+<div id="{{ slideSlug }}" class="carousel">
   <div class="carousel__track-container">
     <ul class="carousel__track" tabindex="0">
       {%- for slide in (start..end) -%}
