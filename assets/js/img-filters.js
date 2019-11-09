@@ -21,8 +21,8 @@ function updateWarp(e) {
   displMap.setAttribute("scale", 20 + 1 * (rect.width - 480) / 8);
 }
 
-warped.addEventListener('mousemove', updateWarp);
+warped.addEventListener('mousemove', updateWarp, {passive: true});
 warped.addEventListener('touchmove', function (e) {
   e.preventDefault();
   updateWarp(e);
-});
+}, {passive: true});

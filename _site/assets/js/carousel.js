@@ -122,7 +122,7 @@ var setup = function setup(carousel) {
   track.addEventListener('touchstart', function (e) {
     swipeX = e.changedTouches[0].pageX;
     swipeY = e.changedTouches[0].pageY;
-  }, false);
+  }, {passive: true});
   track.addEventListener('touchend', function (e) {
     if (!swipeX) return;
     var distX = swipeX - e.changedTouches[0].pageX;
@@ -132,7 +132,7 @@ var setup = function setup(carousel) {
     if (Math.abs(distX) > swipeThresh) {
       if (distX >= 0) slideRight();else slideLeft();
     }
-  }, false);
+  }, {passive: true});
 };
 
 

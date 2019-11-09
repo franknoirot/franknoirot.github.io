@@ -17,7 +17,7 @@
             
             <h4>{{ card.heading }}</h4>
             {%- if card.href -%}
-            <a href="{{ card.href }}" target="_blank">Play on {{ card.site }}</a>
+            <a href="{{ card.href }}" target="_blank" rel="noopener">Play on {{ card.site }}</a>
             {% endif %}
             <p>{{ card.body }}</p>
           </div>
@@ -33,7 +33,7 @@
   </button>
   <div class="carousel__nav">
     {% for slide in (start..end) %}
-    <button class="carousel__indicator {% if slide == 1 %}active{% endif %}"></button>
+    <button class="carousel__indicator {% if slide == 1 %}active{% endif %}" title="Go to {{ include.title }} slide number {{ slide }}"></button>
     {% endfor %}
   </div>
 </div>
