@@ -115,7 +115,7 @@ header a.site-logo:focus {
   height: 0; 
   border-left: var(--tri-size) solid transparent;
   border-right: var(--tri-size) solid transparent;
-  border-top: var(--tri-size) solid black;
+  border-top: var(--tri-size) solid var(--body-color);
   transform: translate(0, -50%);
 }
 
