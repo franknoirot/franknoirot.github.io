@@ -64,3 +64,20 @@ button:not(:disabled):active {
 button:focus {
 	border-color: #666;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px,1px,1px,1px);
+    white-space: nowrap;
+}
+
+input[type='color'] {
+	height: 2em;
+	padding: 0;
+	border: none;
+	margin: 0;
+	background: transparent
+}
