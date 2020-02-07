@@ -1,16 +1,32 @@
 html, body {
 	position: relative;
 	width: 100%;
-	min-height: 100vh;
-	--primary_hsl: 190deg, 85%, 60%;
+	height: 100%;
 }
 
 body {
 	color: #333;
 	margin: 0;
-	padding: 10vh 3vw;
+	padding: 8px;
 	box-sizing: border-box;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.right-align {
+	text-align: right;
+}
+
+td, th {
+	border: solid 1px black;
+	padding: .4em 1.5em;
+}
+
+th {
+	text-align: left;
 }
 
 a {
@@ -66,33 +82,31 @@ button:focus {
 	border-color: #666;
 }
 
-.behavior-statements {
+.keyword {
+	background: yellow;
+}
+
+.keyword.focus {
+	background: cyan;
+}
+
+.input-fields {
 	display: grid;
 	grid-template-columns: 50% 50%;
-	grid-gap: 1.25em;
-	text-align: left;
+	gap: 2vmax;
 }
 
-.warning {
-	color: hsl(350deg, 70%, 30%);
-	background: hsl(357deg, 20%, 90%);
-	border: solid 1px hsl(350deg, 70%, 30%);
-	box-sizing: border-box;
-	border-radius: .5em;
-	margin-top: 1em;
-	padding: 1em 2em;
-	opacity: 0;
-	transform: translateY(.5em);
-	animation: appear .12s ease-in-out forwards;
+.input-fields div:last-child {
+	grid-column: span 2;
 }
 
-@keyframes appear {
-	from {
-		opacity: 0;
-		transform: translateY(.5em);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
+.input-fields textarea {
+	width: 100%;
+	height: 5vem;
+}
+
+.post-content {
+	margin-block-start: 5vh;
+	padding-block-start: 5vh;
+	border-top: solid 1px;
 }
